@@ -1,4 +1,4 @@
-import discord, asyncio, json, requests
+import discord, json, requests, logging
 from discord.ext import commands
 import discord.utils
 from discord.ext.commands.cooldowns import BucketType
@@ -48,36 +48,36 @@ class Utils(commands.Cog, name='Utilidades'):
     @commands.command(name='novo', help='Adiciona permissões para novos autores ao usar `.novo <id-do-discord>`'
                                             ' __(campo de id do usuário é opcional, caso já seja autor ou autora)__ ')
     @commands.max_concurrency(1, per=BucketType.default, wait=False)
-    @commands.has_any_role("Ajudante", "Equipe", "Administrador")
-    async def release(self, ctx, member: str):
+    @commands.has_any_role("Ajudante", "Equipe", "Administrador", "Editores")
+    async def release(self, ctx, member: str = None):
+        
         if not member:
-            return await ctx.send('Você não adicionou um autor.', delete_after=10)
+            return await ctx.reply('Você não adicionou um autor.', delete_after=10)
         
         user = ctx.guild.get_member_named(member)
-        await ctx.message.delete()
         
         if not user:
-            return await ctx.send(f'Não encontrei ninguém com o nome "{member}".', delete_after=10)
+            return await ctx.reply(f'Não encontrei ninguém com o nome "{member}".', delete_after=10)
         
         try:
             autorRole = discord.utils.get(ctx.guild.roles, id=self.cfg.aut_role)
             creatorRole = discord.utils.get(ctx.guild.roles, id=self.cfg.creat_role)
             markAuthorRole = discord.utils.get(ctx.guild.roles, id=self.cfg.mark_role)
-            await user.add_roles(markAuthorRole, autorRole if not markAuthorRole in user.roles else autorRole)
             
-            emb = discord.Embed(
+            embb = discord.Embed(
                                     title='Deseja lançar uma nova história?',
                                     description='O ideal seria aguardar alguns segundos após publicar, para que o bot possa identificar a nova história',
                                     color=discord.Color.green()).set_footer(text='Use a reação para confirmar.')
-            msg = await ctx.reply(embed=emb,
+            msg = await ctx.send(embed=embb,
                                 components = [[
                                     Button(style=ButtonStyle.green, label = "Sim", custom_id = "Aceitar", emoji="👌"),
                                     Button(style=ButtonStyle.red, label = "Não", custom_id = "Negar", emoji="👎")
                                 ]])
             eqpRole = discord.utils.get(ctx.guild.roles, id=self.cfg.eqp_role)
-            res  = await self.client.wait_for("button_click", check = lambda i: eqpRole in i.user.roles)
+            res  = await self.client.wait_for("button_click", check = lambda i: eqpRole in i.user.roles and i.message.id == msg.id)
             if res.component.label == "Sim":
                 try:
+                    await user.add_roles(markAuthorRole, autorRole if not markAuthorRole in user.roles else autorRole)
                     soup = BeautifulSoup(requests.get("http://kiniga.com/").text, 'lxml')
                     table = soup.find_all('div', attrs={'class': 'tab-content-wrap'})[3]
                     novel_recente = table.find_all('div', attrs={'class': 'page-item-detail'})[0]
@@ -115,25 +115,30 @@ class Utils(commands.Cog, name='Utilidades'):
                                                                 id=self.cfg.chat_cmds)
                                     await channel_cmds.send(f"{user.mention}, meus parabéns por se tornar um autor da Kiniga! \n"
                                                     f"Por favor, leia os fixados! E se tiver alguma dúvida relacionada a publicação, pergunte no <#{creators_channel}>")
-                                    return await res.send("Feito.")
+                                    return await res.respond(content="Feito.", components=[])
                                 except Exception as e:
-                                    await ctx.send(e)
+                                    await res.respond(content=e, components=[])
                         except Exception as i:
-                            await ctx.send(i)
+                            await res.respond(content=i, components=[])
                         
                 except Exception as u:
-                    await ctx.send(u)
+                    await res.respond(content=u, components=[])
+                    
             if res.component.label == "Não":
                 emb = discord.Embed(
                                     description='Certo!',
                                     color=discord.Color.blue())
-                await res.respond(embed=emb)
-            await user.remove_roles(markAuthorRole, autorRole, creatorRole if not markAuthorRole in user.roles else autorRole, creatorRole)
-            await asyncio.sleep(5)
-            return await msg.delete()
+                await res.respond(embed=emb, components=[])
+                try:
+                    await user.remove_roles(markAuthorRole, autorRole, creatorRole if not markAuthorRole in user.roles else autorRole, creatorRole)
+                except Exception as a:
+                    await ctx.send("Não consegui finalizar por conta do seguinte erro: \n {} \n Marca o Jonathan aí.".format(a), delete_after=5)
             # Fim
         except Exception as e:
-            return await ctx.reply(f"Ocorreu um erro \n ```{e}``` \n Tente novamente em alguns segundos.")
+            print(e)
+            await ctx.send(f"Ocorreu um erro \n ```{e}``` \n Tente novamente em alguns segundos.", delete_after=5)
+            
+        #await ctx.message.delete()
         
        
 def setup(client):

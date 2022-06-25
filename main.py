@@ -77,7 +77,7 @@ class Bot(commands.Bot):
                                 emoji = self.get_emoji(id=769235205407637505)
                                 channel = discord.utils.get(self.get_all_channels(), 
                                                             guild__name=self.cfg.guild, 
-                                                            id=self.cfg.chat_cmds)
+                                                            id=self.cfg.chat_loop)
                                 messages = await channel.history(limit=1).flatten()
                                 messages.reverse()
                                 cont = '{} | Saiu o **{}** de **{}**!\n{}'.format(emoji, l.get_text(),

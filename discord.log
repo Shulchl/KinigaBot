@@ -461,3 +461,703 @@
 [2022-06-25 13:36:13] [INFO    ] discord.client: Closing the event loop.
 [2022-06-25 13:36:13] [INFO    ] discord.client: Closing the event loop.
 [2022-06-25 13:36:13] [INFO    ] discord.client: Closing the event loop.
+[2022-06-25 13:53:06] [WARNING ] discord.client: PyNaCl is not installed, voice will NOT be supported
+[2022-06-25 13:53:06] [INFO    ] discord.client: logging in using static token
+[2022-06-25 13:53:06] [INFO    ] discord.client: logging in using static token
+[2022-06-25 13:53:06] [INFO    ] discord.client: logging in using static token
+[2022-06-25 13:53:07] [INFO    ] discord.gateway: Shard ID None has sent the IDENTIFY payload.
+[2022-06-25 13:53:07] [INFO    ] discord.gateway: Shard ID None has sent the IDENTIFY payload.
+[2022-06-25 13:53:07] [INFO    ] discord.gateway: Shard ID None has sent the IDENTIFY payload.
+[2022-06-25 13:53:07] [INFO    ] discord.gateway: Shard ID None has connected to Gateway: ["gateway-prd-main-p5ns",{"micros":70863,"calls":["discord-sessions-blue-prd-2-19",{"micros":69126,"calls":["start_session",{"micros":44797,"calls":["discord-api-fdb87b79f-pcsr7",{"micros":39832,"calls":["get_user",{"micros":8497},"add_authorized_ip",{"micros":1711},"get_guilds",{"micros":7032},"coros_wait",{"micros":1}]}]},"guilds_connect",{"micros":1,"calls":[]},"presence_connect",{"micros":3854,"calls":[]}]}]}] (Session ID: bc0c0f50a5070b92af2cc3a6e5c4f6a8).
+[2022-06-25 13:53:07] [INFO    ] discord.gateway: Shard ID None has connected to Gateway: ["gateway-prd-main-p5ns",{"micros":70863,"calls":["discord-sessions-blue-prd-2-19",{"micros":69126,"calls":["start_session",{"micros":44797,"calls":["discord-api-fdb87b79f-pcsr7",{"micros":39832,"calls":["get_user",{"micros":8497},"add_authorized_ip",{"micros":1711},"get_guilds",{"micros":7032},"coros_wait",{"micros":1}]}]},"guilds_connect",{"micros":1,"calls":[]},"presence_connect",{"micros":3854,"calls":[]}]}]}] (Session ID: bc0c0f50a5070b92af2cc3a6e5c4f6a8).
+[2022-06-25 13:53:07] [INFO    ] discord.gateway: Shard ID None has connected to Gateway: ["gateway-prd-main-p5ns",{"micros":70863,"calls":["discord-sessions-blue-prd-2-19",{"micros":69126,"calls":["start_session",{"micros":44797,"calls":["discord-api-fdb87b79f-pcsr7",{"micros":39832,"calls":["get_user",{"micros":8497},"add_authorized_ip",{"micros":1711},"get_guilds",{"micros":7032},"coros_wait",{"micros":1}]}]},"guilds_connect",{"micros":1,"calls":[]},"presence_connect",{"micros":3854,"calls":[]}]}]}] (Session ID: bc0c0f50a5070b92af2cc3a6e5c4f6a8).
+[2022-06-25 13:54:47] [INFO    ] discord.client: Received signal to terminate bot and event loop.
+[2022-06-25 13:54:47] [INFO    ] discord.client: Received signal to terminate bot and event loop.
+[2022-06-25 13:54:47] [INFO    ] discord.client: Received signal to terminate bot and event loop.
+[2022-06-25 13:54:47] [INFO    ] discord.client: Cleaning up tasks.
+[2022-06-25 13:54:47] [INFO    ] discord.client: Cleaning up tasks.
+[2022-06-25 13:54:47] [INFO    ] discord.client: Cleaning up tasks.
+[2022-06-25 13:54:47] [INFO    ] discord.client: Cleaning up after 2 tasks.
+[2022-06-25 13:54:47] [INFO    ] discord.client: Cleaning up after 2 tasks.
+[2022-06-25 13:54:47] [INFO    ] discord.client: Cleaning up after 2 tasks.
+[2022-06-25 13:54:47] [INFO    ] discord.client: All tasks finished cancelling.
+[2022-06-25 13:54:47] [INFO    ] discord.client: All tasks finished cancelling.
+[2022-06-25 13:54:47] [INFO    ] discord.client: All tasks finished cancelling.
+[2022-06-25 13:54:47] [INFO    ] discord.client: Closing the event loop.
+[2022-06-25 13:54:47] [INFO    ] discord.client: Closing the event loop.
+[2022-06-25 13:54:47] [INFO    ] discord.client: Closing the event loop.
+[2022-06-25 13:54:51] [WARNING ] discord.client: PyNaCl is not installed, voice will NOT be supported
+[2022-06-25 13:54:51] [INFO    ] discord.client: logging in using static token
+[2022-06-25 13:54:51] [INFO    ] discord.client: logging in using static token
+[2022-06-25 13:54:51] [INFO    ] discord.client: logging in using static token
+[2022-06-25 13:54:51] [INFO    ] discord.gateway: Shard ID None has sent the IDENTIFY payload.
+[2022-06-25 13:54:51] [INFO    ] discord.gateway: Shard ID None has sent the IDENTIFY payload.
+[2022-06-25 13:54:51] [INFO    ] discord.gateway: Shard ID None has sent the IDENTIFY payload.
+[2022-06-25 13:54:51] [INFO    ] discord.gateway: Shard ID None has connected to Gateway: ["gateway-prd-main-2b61",{"micros":81783,"calls":["discord-sessions-blue-prd-2-138",{"micros":80163,"calls":["start_session",{"micros":48974,"calls":["discord-api-fdb87b79f-4lf45",{"micros":44112,"calls":["get_user",{"micros":6008},"add_authorized_ip",{"micros":2132},"get_guilds",{"micros":5634},"coros_wait",{"micros":0}]}]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":1,"calls":[]}]}]}] (Session ID: 80d7fd0bff9f76fe07f0b4f4f56c841d).
+[2022-06-25 13:54:51] [INFO    ] discord.gateway: Shard ID None has connected to Gateway: ["gateway-prd-main-2b61",{"micros":81783,"calls":["discord-sessions-blue-prd-2-138",{"micros":80163,"calls":["start_session",{"micros":48974,"calls":["discord-api-fdb87b79f-4lf45",{"micros":44112,"calls":["get_user",{"micros":6008},"add_authorized_ip",{"micros":2132},"get_guilds",{"micros":5634},"coros_wait",{"micros":0}]}]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":1,"calls":[]}]}]}] (Session ID: 80d7fd0bff9f76fe07f0b4f4f56c841d).
+[2022-06-25 13:54:51] [INFO    ] discord.gateway: Shard ID None has connected to Gateway: ["gateway-prd-main-2b61",{"micros":81783,"calls":["discord-sessions-blue-prd-2-138",{"micros":80163,"calls":["start_session",{"micros":48974,"calls":["discord-api-fdb87b79f-4lf45",{"micros":44112,"calls":["get_user",{"micros":6008},"add_authorized_ip",{"micros":2132},"get_guilds",{"micros":5634},"coros_wait",{"micros":0}]}]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":1,"calls":[]}]}]}] (Session ID: 80d7fd0bff9f76fe07f0b4f4f56c841d).
+[2022-06-25 13:55:46] [INFO    ] discord.client: Received signal to terminate bot and event loop.
+[2022-06-25 13:55:46] [INFO    ] discord.client: Received signal to terminate bot and event loop.
+[2022-06-25 13:55:46] [INFO    ] discord.client: Received signal to terminate bot and event loop.
+[2022-06-25 13:55:46] [INFO    ] discord.client: Cleaning up tasks.
+[2022-06-25 13:55:46] [INFO    ] discord.client: Cleaning up tasks.
+[2022-06-25 13:55:46] [INFO    ] discord.client: Cleaning up tasks.
+[2022-06-25 13:55:46] [INFO    ] discord.client: Cleaning up after 2 tasks.
+[2022-06-25 13:55:46] [INFO    ] discord.client: Cleaning up after 2 tasks.
+[2022-06-25 13:55:46] [INFO    ] discord.client: Cleaning up after 2 tasks.
+[2022-06-25 13:55:46] [INFO    ] discord.client: All tasks finished cancelling.
+[2022-06-25 13:55:46] [INFO    ] discord.client: All tasks finished cancelling.
+[2022-06-25 13:55:46] [INFO    ] discord.client: All tasks finished cancelling.
+[2022-06-25 13:55:46] [INFO    ] discord.client: Closing the event loop.
+[2022-06-25 13:55:46] [INFO    ] discord.client: Closing the event loop.
+[2022-06-25 13:55:46] [INFO    ] discord.client: Closing the event loop.
+[2022-06-25 13:55:52] [WARNING ] discord.client: PyNaCl is not installed, voice will NOT be supported
+[2022-06-25 13:55:52] [INFO    ] discord.client: logging in using static token
+[2022-06-25 13:55:52] [INFO    ] discord.client: logging in using static token
+[2022-06-25 13:55:52] [INFO    ] discord.client: logging in using static token
+[2022-06-25 13:55:53] [INFO    ] discord.gateway: Shard ID None has sent the IDENTIFY payload.
+[2022-06-25 13:55:53] [INFO    ] discord.gateway: Shard ID None has sent the IDENTIFY payload.
+[2022-06-25 13:55:53] [INFO    ] discord.gateway: Shard ID None has sent the IDENTIFY payload.
+[2022-06-25 13:55:53] [INFO    ] discord.gateway: Shard ID None has connected to Gateway: ["gateway-prd-main-7kj1",{"micros":88119,"calls":["discord-sessions-blue-prd-2-191",{"micros":86097,"calls":["start_session",{"micros":40080,"calls":["discord-api-fdb87b79f-mpj9j",{"micros":35770,"calls":["get_user",{"micros":11528},"add_authorized_ip",{"micros":2120},"get_guilds",{"micros":3078},"coros_wait",{"micros":1}]}]},"guilds_connect",{"micros":1,"calls":[]},"presence_connect",{"micros":18300,"calls":[]}]}]}] (Session ID: 0adb04b2dea122d28da0c20da868ed62).
+[2022-06-25 13:55:53] [INFO    ] discord.gateway: Shard ID None has connected to Gateway: ["gateway-prd-main-7kj1",{"micros":88119,"calls":["discord-sessions-blue-prd-2-191",{"micros":86097,"calls":["start_session",{"micros":40080,"calls":["discord-api-fdb87b79f-mpj9j",{"micros":35770,"calls":["get_user",{"micros":11528},"add_authorized_ip",{"micros":2120},"get_guilds",{"micros":3078},"coros_wait",{"micros":1}]}]},"guilds_connect",{"micros":1,"calls":[]},"presence_connect",{"micros":18300,"calls":[]}]}]}] (Session ID: 0adb04b2dea122d28da0c20da868ed62).
+[2022-06-25 13:55:53] [INFO    ] discord.gateway: Shard ID None has connected to Gateway: ["gateway-prd-main-7kj1",{"micros":88119,"calls":["discord-sessions-blue-prd-2-191",{"micros":86097,"calls":["start_session",{"micros":40080,"calls":["discord-api-fdb87b79f-mpj9j",{"micros":35770,"calls":["get_user",{"micros":11528},"add_authorized_ip",{"micros":2120},"get_guilds",{"micros":3078},"coros_wait",{"micros":1}]}]},"guilds_connect",{"micros":1,"calls":[]},"presence_connect",{"micros":18300,"calls":[]}]}]}] (Session ID: 0adb04b2dea122d28da0c20da868ed62).
+[2022-06-25 13:56:05] [INFO    ] discord.client: Received signal to terminate bot and event loop.
+[2022-06-25 13:56:05] [INFO    ] discord.client: Received signal to terminate bot and event loop.
+[2022-06-25 13:56:05] [INFO    ] discord.client: Received signal to terminate bot and event loop.
+[2022-06-25 13:56:05] [INFO    ] discord.client: Cleaning up tasks.
+[2022-06-25 13:56:05] [INFO    ] discord.client: Cleaning up tasks.
+[2022-06-25 13:56:05] [INFO    ] discord.client: Cleaning up tasks.
+[2022-06-25 13:56:05] [INFO    ] discord.client: Cleaning up after 2 tasks.
+[2022-06-25 13:56:05] [INFO    ] discord.client: Cleaning up after 2 tasks.
+[2022-06-25 13:56:05] [INFO    ] discord.client: Cleaning up after 2 tasks.
+[2022-06-25 13:56:05] [INFO    ] discord.client: All tasks finished cancelling.
+[2022-06-25 13:56:05] [INFO    ] discord.client: All tasks finished cancelling.
+[2022-06-25 13:56:05] [INFO    ] discord.client: All tasks finished cancelling.
+[2022-06-25 13:56:05] [INFO    ] discord.client: Closing the event loop.
+[2022-06-25 13:56:05] [INFO    ] discord.client: Closing the event loop.
+[2022-06-25 13:56:05] [INFO    ] discord.client: Closing the event loop.
+[2022-06-25 13:56:09] [WARNING ] discord.client: PyNaCl is not installed, voice will NOT be supported
+[2022-06-25 13:56:09] [INFO    ] discord.client: logging in using static token
+[2022-06-25 13:56:09] [INFO    ] discord.client: logging in using static token
+[2022-06-25 13:56:09] [INFO    ] discord.client: logging in using static token
+[2022-06-25 13:56:10] [INFO    ] discord.gateway: Shard ID None has sent the IDENTIFY payload.
+[2022-06-25 13:56:10] [INFO    ] discord.gateway: Shard ID None has sent the IDENTIFY payload.
+[2022-06-25 13:56:10] [INFO    ] discord.gateway: Shard ID None has sent the IDENTIFY payload.
+[2022-06-25 13:56:10] [INFO    ] discord.gateway: Shard ID None has connected to Gateway: ["gateway-prd-main-cn38",{"micros":76362,"calls":["discord-sessions-blue-prd-2-176",{"micros":69836,"calls":["start_session",{"micros":60237,"calls":["discord-api-fdb87b79f-9vtsk",{"micros":54232,"calls":["get_user",{"micros":8832},"add_authorized_ip",{"micros":3280},"get_guilds",{"micros":5006},"coros_wait",{"micros":1}]}]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":8440,"calls":[]}]}]}] (Session ID: 3448ac3306a8294206366e762bf4da0b).
+[2022-06-25 13:56:10] [INFO    ] discord.gateway: Shard ID None has connected to Gateway: ["gateway-prd-main-cn38",{"micros":76362,"calls":["discord-sessions-blue-prd-2-176",{"micros":69836,"calls":["start_session",{"micros":60237,"calls":["discord-api-fdb87b79f-9vtsk",{"micros":54232,"calls":["get_user",{"micros":8832},"add_authorized_ip",{"micros":3280},"get_guilds",{"micros":5006},"coros_wait",{"micros":1}]}]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":8440,"calls":[]}]}]}] (Session ID: 3448ac3306a8294206366e762bf4da0b).
+[2022-06-25 13:56:10] [INFO    ] discord.gateway: Shard ID None has connected to Gateway: ["gateway-prd-main-cn38",{"micros":76362,"calls":["discord-sessions-blue-prd-2-176",{"micros":69836,"calls":["start_session",{"micros":60237,"calls":["discord-api-fdb87b79f-9vtsk",{"micros":54232,"calls":["get_user",{"micros":8832},"add_authorized_ip",{"micros":3280},"get_guilds",{"micros":5006},"coros_wait",{"micros":1}]}]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":8440,"calls":[]}]}]}] (Session ID: 3448ac3306a8294206366e762bf4da0b).
+[2022-06-25 13:57:09] [INFO    ] discord.client: Received signal to terminate bot and event loop.
+[2022-06-25 13:57:09] [INFO    ] discord.client: Received signal to terminate bot and event loop.
+[2022-06-25 13:57:09] [INFO    ] discord.client: Received signal to terminate bot and event loop.
+[2022-06-25 13:57:09] [INFO    ] discord.client: Cleaning up tasks.
+[2022-06-25 13:57:09] [INFO    ] discord.client: Cleaning up tasks.
+[2022-06-25 13:57:09] [INFO    ] discord.client: Cleaning up tasks.
+[2022-06-25 13:57:09] [INFO    ] discord.client: Cleaning up after 2 tasks.
+[2022-06-25 13:57:09] [INFO    ] discord.client: Cleaning up after 2 tasks.
+[2022-06-25 13:57:09] [INFO    ] discord.client: Cleaning up after 2 tasks.
+[2022-06-25 13:57:09] [INFO    ] discord.client: All tasks finished cancelling.
+[2022-06-25 13:57:09] [INFO    ] discord.client: All tasks finished cancelling.
+[2022-06-25 13:57:09] [INFO    ] discord.client: All tasks finished cancelling.
+[2022-06-25 13:57:09] [INFO    ] discord.client: Closing the event loop.
+[2022-06-25 13:57:09] [INFO    ] discord.client: Closing the event loop.
+[2022-06-25 13:57:09] [INFO    ] discord.client: Closing the event loop.
+[2022-06-25 13:57:12] [WARNING ] discord.client: PyNaCl is not installed, voice will NOT be supported
+[2022-06-25 13:57:12] [INFO    ] discord.client: logging in using static token
+[2022-06-25 13:57:12] [INFO    ] discord.client: logging in using static token
+[2022-06-25 13:57:12] [INFO    ] discord.client: logging in using static token
+[2022-06-25 13:57:13] [INFO    ] discord.gateway: Shard ID None has sent the IDENTIFY payload.
+[2022-06-25 13:57:13] [INFO    ] discord.gateway: Shard ID None has sent the IDENTIFY payload.
+[2022-06-25 13:57:13] [INFO    ] discord.gateway: Shard ID None has sent the IDENTIFY payload.
+[2022-06-25 13:57:13] [INFO    ] discord.gateway: Shard ID None has connected to Gateway: ["gateway-prd-main-xmdf",{"micros":123200,"calls":["discord-sessions-blue-prd-2-23",{"micros":117659,"calls":["start_session",{"micros":44267,"calls":["discord-api-fdb87b79f-l8vxp",{"micros":37857,"calls":["get_user",{"micros":10241},"add_authorized_ip",{"micros":1849},"get_guilds",{"micros":4496},"coros_wait",{"micros":1}]}]},"guilds_connect",{"micros":1,"calls":[]},"presence_connect",{"micros":47731,"calls":[]}]}]}] (Session ID: 6a6663118abf0a7ea887c88f5fdfddba).
+[2022-06-25 13:57:13] [INFO    ] discord.gateway: Shard ID None has connected to Gateway: ["gateway-prd-main-xmdf",{"micros":123200,"calls":["discord-sessions-blue-prd-2-23",{"micros":117659,"calls":["start_session",{"micros":44267,"calls":["discord-api-fdb87b79f-l8vxp",{"micros":37857,"calls":["get_user",{"micros":10241},"add_authorized_ip",{"micros":1849},"get_guilds",{"micros":4496},"coros_wait",{"micros":1}]}]},"guilds_connect",{"micros":1,"calls":[]},"presence_connect",{"micros":47731,"calls":[]}]}]}] (Session ID: 6a6663118abf0a7ea887c88f5fdfddba).
+[2022-06-25 13:57:13] [INFO    ] discord.gateway: Shard ID None has connected to Gateway: ["gateway-prd-main-xmdf",{"micros":123200,"calls":["discord-sessions-blue-prd-2-23",{"micros":117659,"calls":["start_session",{"micros":44267,"calls":["discord-api-fdb87b79f-l8vxp",{"micros":37857,"calls":["get_user",{"micros":10241},"add_authorized_ip",{"micros":1849},"get_guilds",{"micros":4496},"coros_wait",{"micros":1}]}]},"guilds_connect",{"micros":1,"calls":[]},"presence_connect",{"micros":47731,"calls":[]}]}]}] (Session ID: 6a6663118abf0a7ea887c88f5fdfddba).
+[2022-06-25 13:58:24] [INFO    ] discord.client: Received signal to terminate bot and event loop.
+[2022-06-25 13:58:24] [INFO    ] discord.client: Received signal to terminate bot and event loop.
+[2022-06-25 13:58:24] [INFO    ] discord.client: Received signal to terminate bot and event loop.
+[2022-06-25 13:58:24] [INFO    ] discord.client: Cleaning up tasks.
+[2022-06-25 13:58:24] [INFO    ] discord.client: Cleaning up tasks.
+[2022-06-25 13:58:24] [INFO    ] discord.client: Cleaning up tasks.
+[2022-06-25 13:58:24] [INFO    ] discord.client: Cleaning up after 2 tasks.
+[2022-06-25 13:58:24] [INFO    ] discord.client: Cleaning up after 2 tasks.
+[2022-06-25 13:58:24] [INFO    ] discord.client: Cleaning up after 2 tasks.
+[2022-06-25 13:58:24] [INFO    ] discord.client: All tasks finished cancelling.
+[2022-06-25 13:58:24] [INFO    ] discord.client: All tasks finished cancelling.
+[2022-06-25 13:58:24] [INFO    ] discord.client: All tasks finished cancelling.
+[2022-06-25 13:58:24] [INFO    ] discord.client: Closing the event loop.
+[2022-06-25 13:58:24] [INFO    ] discord.client: Closing the event loop.
+[2022-06-25 13:58:24] [INFO    ] discord.client: Closing the event loop.
+[2022-06-25 13:58:27] [WARNING ] discord.client: PyNaCl is not installed, voice will NOT be supported
+[2022-06-25 13:58:27] [INFO    ] discord.client: logging in using static token
+[2022-06-25 13:58:27] [INFO    ] discord.client: logging in using static token
+[2022-06-25 13:58:27] [INFO    ] discord.client: logging in using static token
+[2022-06-25 13:58:27] [INFO    ] discord.gateway: Shard ID None has sent the IDENTIFY payload.
+[2022-06-25 13:58:27] [INFO    ] discord.gateway: Shard ID None has sent the IDENTIFY payload.
+[2022-06-25 13:58:27] [INFO    ] discord.gateway: Shard ID None has sent the IDENTIFY payload.
+[2022-06-25 13:58:28] [INFO    ] discord.gateway: Shard ID None has connected to Gateway: ["gateway-prd-main-nhnf",{"micros":123545,"calls":["discord-sessions-blue-prd-2-17",{"micros":119823,"calls":["start_session",{"micros":105407,"calls":["discord-api-fdb87b79f-ckfpp",{"micros":98538,"calls":["get_user",{"micros":17297},"add_authorized_ip",{"micros":3527},"get_guilds",{"micros":11848},"coros_wait",{"micros":2}]}]},"guilds_connect",{"micros":1,"calls":[]},"presence_connect",{"micros":9201,"calls":[]}]}]}] (Session ID: f467adf717fa4a8422bba9d27f7ecbf4).
+[2022-06-25 13:58:28] [INFO    ] discord.gateway: Shard ID None has connected to Gateway: ["gateway-prd-main-nhnf",{"micros":123545,"calls":["discord-sessions-blue-prd-2-17",{"micros":119823,"calls":["start_session",{"micros":105407,"calls":["discord-api-fdb87b79f-ckfpp",{"micros":98538,"calls":["get_user",{"micros":17297},"add_authorized_ip",{"micros":3527},"get_guilds",{"micros":11848},"coros_wait",{"micros":2}]}]},"guilds_connect",{"micros":1,"calls":[]},"presence_connect",{"micros":9201,"calls":[]}]}]}] (Session ID: f467adf717fa4a8422bba9d27f7ecbf4).
+[2022-06-25 13:58:28] [INFO    ] discord.gateway: Shard ID None has connected to Gateway: ["gateway-prd-main-nhnf",{"micros":123545,"calls":["discord-sessions-blue-prd-2-17",{"micros":119823,"calls":["start_session",{"micros":105407,"calls":["discord-api-fdb87b79f-ckfpp",{"micros":98538,"calls":["get_user",{"micros":17297},"add_authorized_ip",{"micros":3527},"get_guilds",{"micros":11848},"coros_wait",{"micros":2}]}]},"guilds_connect",{"micros":1,"calls":[]},"presence_connect",{"micros":9201,"calls":[]}]}]}] (Session ID: f467adf717fa4a8422bba9d27f7ecbf4).
+[2022-06-25 13:59:02] [INFO    ] discord.client: Received signal to terminate bot and event loop.
+[2022-06-25 13:59:02] [INFO    ] discord.client: Received signal to terminate bot and event loop.
+[2022-06-25 13:59:02] [INFO    ] discord.client: Received signal to terminate bot and event loop.
+[2022-06-25 13:59:02] [INFO    ] discord.client: Cleaning up tasks.
+[2022-06-25 13:59:02] [INFO    ] discord.client: Cleaning up tasks.
+[2022-06-25 13:59:02] [INFO    ] discord.client: Cleaning up tasks.
+[2022-06-25 13:59:02] [INFO    ] discord.client: Cleaning up after 2 tasks.
+[2022-06-25 13:59:02] [INFO    ] discord.client: Cleaning up after 2 tasks.
+[2022-06-25 13:59:02] [INFO    ] discord.client: Cleaning up after 2 tasks.
+[2022-06-25 13:59:02] [INFO    ] discord.client: All tasks finished cancelling.
+[2022-06-25 13:59:02] [INFO    ] discord.client: All tasks finished cancelling.
+[2022-06-25 13:59:02] [INFO    ] discord.client: All tasks finished cancelling.
+[2022-06-25 13:59:02] [INFO    ] discord.client: Closing the event loop.
+[2022-06-25 13:59:02] [INFO    ] discord.client: Closing the event loop.
+[2022-06-25 13:59:02] [INFO    ] discord.client: Closing the event loop.
+[2022-06-25 13:59:05] [WARNING ] discord.client: PyNaCl is not installed, voice will NOT be supported
+[2022-06-25 13:59:05] [INFO    ] discord.client: logging in using static token
+[2022-06-25 13:59:05] [INFO    ] discord.client: logging in using static token
+[2022-06-25 13:59:05] [INFO    ] discord.client: logging in using static token
+[2022-06-25 13:59:06] [INFO    ] discord.gateway: Shard ID None has sent the IDENTIFY payload.
+[2022-06-25 13:59:06] [INFO    ] discord.gateway: Shard ID None has sent the IDENTIFY payload.
+[2022-06-25 13:59:06] [INFO    ] discord.gateway: Shard ID None has sent the IDENTIFY payload.
+[2022-06-25 13:59:06] [INFO    ] discord.gateway: Shard ID None has connected to Gateway: ["gateway-prd-main-53f9",{"micros":101014,"calls":["discord-sessions-blue-prd-2-102",{"micros":99432,"calls":["start_session",{"micros":77980,"calls":["discord-api-fdb87b79f-mh5zs",{"micros":71809,"calls":["get_user",{"micros":8558},"add_authorized_ip",{"micros":4141},"get_guilds",{"micros":10313},"coros_wait",{"micros":2}]}]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":15457,"calls":[]}]}]}] (Session ID: 14263b1bad9511e560e466da988465f6).
+[2022-06-25 13:59:06] [INFO    ] discord.gateway: Shard ID None has connected to Gateway: ["gateway-prd-main-53f9",{"micros":101014,"calls":["discord-sessions-blue-prd-2-102",{"micros":99432,"calls":["start_session",{"micros":77980,"calls":["discord-api-fdb87b79f-mh5zs",{"micros":71809,"calls":["get_user",{"micros":8558},"add_authorized_ip",{"micros":4141},"get_guilds",{"micros":10313},"coros_wait",{"micros":2}]}]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":15457,"calls":[]}]}]}] (Session ID: 14263b1bad9511e560e466da988465f6).
+[2022-06-25 13:59:06] [INFO    ] discord.gateway: Shard ID None has connected to Gateway: ["gateway-prd-main-53f9",{"micros":101014,"calls":["discord-sessions-blue-prd-2-102",{"micros":99432,"calls":["start_session",{"micros":77980,"calls":["discord-api-fdb87b79f-mh5zs",{"micros":71809,"calls":["get_user",{"micros":8558},"add_authorized_ip",{"micros":4141},"get_guilds",{"micros":10313},"coros_wait",{"micros":2}]}]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":15457,"calls":[]}]}]}] (Session ID: 14263b1bad9511e560e466da988465f6).
+[2022-06-25 13:59:18] [INFO    ] discord.client: Received signal to terminate bot and event loop.
+[2022-06-25 13:59:18] [INFO    ] discord.client: Received signal to terminate bot and event loop.
+[2022-06-25 13:59:18] [INFO    ] discord.client: Received signal to terminate bot and event loop.
+[2022-06-25 13:59:18] [INFO    ] discord.client: Cleaning up tasks.
+[2022-06-25 13:59:18] [INFO    ] discord.client: Cleaning up tasks.
+[2022-06-25 13:59:18] [INFO    ] discord.client: Cleaning up tasks.
+[2022-06-25 13:59:18] [INFO    ] discord.client: Cleaning up after 2 tasks.
+[2022-06-25 13:59:18] [INFO    ] discord.client: Cleaning up after 2 tasks.
+[2022-06-25 13:59:18] [INFO    ] discord.client: Cleaning up after 2 tasks.
+[2022-06-25 13:59:18] [INFO    ] discord.client: All tasks finished cancelling.
+[2022-06-25 13:59:18] [INFO    ] discord.client: All tasks finished cancelling.
+[2022-06-25 13:59:18] [INFO    ] discord.client: All tasks finished cancelling.
+[2022-06-25 13:59:18] [INFO    ] discord.client: Closing the event loop.
+[2022-06-25 13:59:18] [INFO    ] discord.client: Closing the event loop.
+[2022-06-25 13:59:18] [INFO    ] discord.client: Closing the event loop.
+[2022-06-25 13:59:21] [WARNING ] discord.client: PyNaCl is not installed, voice will NOT be supported
+[2022-06-25 13:59:21] [INFO    ] discord.client: logging in using static token
+[2022-06-25 13:59:21] [INFO    ] discord.client: logging in using static token
+[2022-06-25 13:59:21] [INFO    ] discord.client: logging in using static token
+[2022-06-25 13:59:22] [INFO    ] discord.gateway: Shard ID None has sent the IDENTIFY payload.
+[2022-06-25 13:59:22] [INFO    ] discord.gateway: Shard ID None has sent the IDENTIFY payload.
+[2022-06-25 13:59:22] [INFO    ] discord.gateway: Shard ID None has sent the IDENTIFY payload.
+[2022-06-25 13:59:22] [INFO    ] discord.gateway: Shard ID None has connected to Gateway: ["gateway-prd-main-m7mt",{"micros":126535,"calls":["discord-sessions-blue-prd-2-73",{"micros":125185,"calls":["start_session",{"micros":92543,"calls":["discord-api-fdb87b79f-zz4vd",{"micros":89268,"calls":["get_user",{"micros":12088},"add_authorized_ip",{"micros":3232},"get_guilds",{"micros":11459},"coros_wait",{"micros":1}]}]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":27025,"calls":[]}]}]}] (Session ID: 9f2b5fc7bece0a9d6f2f3358a5bc6587).
+[2022-06-25 13:59:22] [INFO    ] discord.gateway: Shard ID None has connected to Gateway: ["gateway-prd-main-m7mt",{"micros":126535,"calls":["discord-sessions-blue-prd-2-73",{"micros":125185,"calls":["start_session",{"micros":92543,"calls":["discord-api-fdb87b79f-zz4vd",{"micros":89268,"calls":["get_user",{"micros":12088},"add_authorized_ip",{"micros":3232},"get_guilds",{"micros":11459},"coros_wait",{"micros":1}]}]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":27025,"calls":[]}]}]}] (Session ID: 9f2b5fc7bece0a9d6f2f3358a5bc6587).
+[2022-06-25 13:59:22] [INFO    ] discord.gateway: Shard ID None has connected to Gateway: ["gateway-prd-main-m7mt",{"micros":126535,"calls":["discord-sessions-blue-prd-2-73",{"micros":125185,"calls":["start_session",{"micros":92543,"calls":["discord-api-fdb87b79f-zz4vd",{"micros":89268,"calls":["get_user",{"micros":12088},"add_authorized_ip",{"micros":3232},"get_guilds",{"micros":11459},"coros_wait",{"micros":1}]}]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":27025,"calls":[]}]}]}] (Session ID: 9f2b5fc7bece0a9d6f2f3358a5bc6587).
+[2022-06-25 14:00:17] [INFO    ] discord.client: Received signal to terminate bot and event loop.
+[2022-06-25 14:00:17] [INFO    ] discord.client: Received signal to terminate bot and event loop.
+[2022-06-25 14:00:17] [INFO    ] discord.client: Received signal to terminate bot and event loop.
+[2022-06-25 14:00:17] [INFO    ] discord.client: Cleaning up tasks.
+[2022-06-25 14:00:17] [INFO    ] discord.client: Cleaning up tasks.
+[2022-06-25 14:00:17] [INFO    ] discord.client: Cleaning up tasks.
+[2022-06-25 14:00:17] [INFO    ] discord.client: Cleaning up after 2 tasks.
+[2022-06-25 14:00:17] [INFO    ] discord.client: Cleaning up after 2 tasks.
+[2022-06-25 14:00:17] [INFO    ] discord.client: Cleaning up after 2 tasks.
+[2022-06-25 14:00:17] [INFO    ] discord.client: All tasks finished cancelling.
+[2022-06-25 14:00:17] [INFO    ] discord.client: All tasks finished cancelling.
+[2022-06-25 14:00:17] [INFO    ] discord.client: All tasks finished cancelling.
+[2022-06-25 14:00:17] [INFO    ] discord.client: Closing the event loop.
+[2022-06-25 14:00:17] [INFO    ] discord.client: Closing the event loop.
+[2022-06-25 14:00:17] [INFO    ] discord.client: Closing the event loop.
+[2022-06-25 14:00:20] [WARNING ] discord.client: PyNaCl is not installed, voice will NOT be supported
+[2022-06-25 14:00:21] [INFO    ] discord.client: logging in using static token
+[2022-06-25 14:00:21] [INFO    ] discord.client: logging in using static token
+[2022-06-25 14:00:21] [INFO    ] discord.client: logging in using static token
+[2022-06-25 14:00:21] [INFO    ] discord.gateway: Shard ID None has sent the IDENTIFY payload.
+[2022-06-25 14:00:21] [INFO    ] discord.gateway: Shard ID None has sent the IDENTIFY payload.
+[2022-06-25 14:00:21] [INFO    ] discord.gateway: Shard ID None has sent the IDENTIFY payload.
+[2022-06-25 14:00:21] [INFO    ] discord.gateway: Shard ID None has connected to Gateway: ["gateway-prd-main-q6xr",{"micros":83540,"calls":["discord-sessions-blue-prd-2-167",{"micros":82266,"calls":["start_session",{"micros":56251,"calls":["discord-api-fdb87b79f-c8vnl",{"micros":50041,"calls":["get_user",{"micros":11749},"add_authorized_ip",{"micros":2627},"get_guilds",{"micros":9186},"coros_wait",{"micros":1}]}]},"guilds_connect",{"micros":1,"calls":[]},"presence_connect",{"micros":21649,"calls":[]}]}]}] (Session ID: 912e0fbc758b783ea912e16c688ae609).
+[2022-06-25 14:00:21] [INFO    ] discord.gateway: Shard ID None has connected to Gateway: ["gateway-prd-main-q6xr",{"micros":83540,"calls":["discord-sessions-blue-prd-2-167",{"micros":82266,"calls":["start_session",{"micros":56251,"calls":["discord-api-fdb87b79f-c8vnl",{"micros":50041,"calls":["get_user",{"micros":11749},"add_authorized_ip",{"micros":2627},"get_guilds",{"micros":9186},"coros_wait",{"micros":1}]}]},"guilds_connect",{"micros":1,"calls":[]},"presence_connect",{"micros":21649,"calls":[]}]}]}] (Session ID: 912e0fbc758b783ea912e16c688ae609).
+[2022-06-25 14:00:21] [INFO    ] discord.gateway: Shard ID None has connected to Gateway: ["gateway-prd-main-q6xr",{"micros":83540,"calls":["discord-sessions-blue-prd-2-167",{"micros":82266,"calls":["start_session",{"micros":56251,"calls":["discord-api-fdb87b79f-c8vnl",{"micros":50041,"calls":["get_user",{"micros":11749},"add_authorized_ip",{"micros":2627},"get_guilds",{"micros":9186},"coros_wait",{"micros":1}]}]},"guilds_connect",{"micros":1,"calls":[]},"presence_connect",{"micros":21649,"calls":[]}]}]}] (Session ID: 912e0fbc758b783ea912e16c688ae609).
+[2022-06-25 14:01:09] [INFO    ] discord.client: Received signal to terminate bot and event loop.
+[2022-06-25 14:01:09] [INFO    ] discord.client: Received signal to terminate bot and event loop.
+[2022-06-25 14:01:09] [INFO    ] discord.client: Received signal to terminate bot and event loop.
+[2022-06-25 14:01:09] [INFO    ] discord.client: Cleaning up tasks.
+[2022-06-25 14:01:09] [INFO    ] discord.client: Cleaning up tasks.
+[2022-06-25 14:01:09] [INFO    ] discord.client: Cleaning up tasks.
+[2022-06-25 14:01:09] [INFO    ] discord.client: Cleaning up after 2 tasks.
+[2022-06-25 14:01:09] [INFO    ] discord.client: Cleaning up after 2 tasks.
+[2022-06-25 14:01:09] [INFO    ] discord.client: Cleaning up after 2 tasks.
+[2022-06-25 14:01:09] [INFO    ] discord.client: All tasks finished cancelling.
+[2022-06-25 14:01:09] [INFO    ] discord.client: All tasks finished cancelling.
+[2022-06-25 14:01:09] [INFO    ] discord.client: All tasks finished cancelling.
+[2022-06-25 14:01:09] [INFO    ] discord.client: Closing the event loop.
+[2022-06-25 14:01:09] [INFO    ] discord.client: Closing the event loop.
+[2022-06-25 14:01:09] [INFO    ] discord.client: Closing the event loop.
+[2022-06-25 14:01:16] [WARNING ] discord.client: PyNaCl is not installed, voice will NOT be supported
+[2022-06-25 14:01:17] [INFO    ] discord.client: logging in using static token
+[2022-06-25 14:01:17] [INFO    ] discord.client: logging in using static token
+[2022-06-25 14:01:17] [INFO    ] discord.client: logging in using static token
+[2022-06-25 14:01:17] [INFO    ] discord.gateway: Shard ID None has sent the IDENTIFY payload.
+[2022-06-25 14:01:17] [INFO    ] discord.gateway: Shard ID None has sent the IDENTIFY payload.
+[2022-06-25 14:01:17] [INFO    ] discord.gateway: Shard ID None has sent the IDENTIFY payload.
+[2022-06-25 14:01:17] [INFO    ] discord.gateway: Shard ID None has connected to Gateway: ["gateway-prd-main-rk9v",{"micros":76573,"calls":["discord-sessions-blue-prd-2-178",{"micros":68470,"calls":["start_session",{"micros":41966,"calls":["discord-api-fdb87b79f-jqwzs",{"micros":38042,"calls":["get_user",{"micros":6282},"add_authorized_ip",{"micros":2504},"get_guilds",{"micros":10873},"coros_wait",{"micros":1}]}]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":1,"calls":[]}]}]}] (Session ID: b3bf5ed1298613802d528ee24ed78be2).
+[2022-06-25 14:01:17] [INFO    ] discord.gateway: Shard ID None has connected to Gateway: ["gateway-prd-main-rk9v",{"micros":76573,"calls":["discord-sessions-blue-prd-2-178",{"micros":68470,"calls":["start_session",{"micros":41966,"calls":["discord-api-fdb87b79f-jqwzs",{"micros":38042,"calls":["get_user",{"micros":6282},"add_authorized_ip",{"micros":2504},"get_guilds",{"micros":10873},"coros_wait",{"micros":1}]}]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":1,"calls":[]}]}]}] (Session ID: b3bf5ed1298613802d528ee24ed78be2).
+[2022-06-25 14:01:17] [INFO    ] discord.gateway: Shard ID None has connected to Gateway: ["gateway-prd-main-rk9v",{"micros":76573,"calls":["discord-sessions-blue-prd-2-178",{"micros":68470,"calls":["start_session",{"micros":41966,"calls":["discord-api-fdb87b79f-jqwzs",{"micros":38042,"calls":["get_user",{"micros":6282},"add_authorized_ip",{"micros":2504},"get_guilds",{"micros":10873},"coros_wait",{"micros":1}]}]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":1,"calls":[]}]}]}] (Session ID: b3bf5ed1298613802d528ee24ed78be2).
+[2022-06-25 14:04:00] [INFO    ] discord.client: Received signal to terminate bot and event loop.
+[2022-06-25 14:04:00] [INFO    ] discord.client: Received signal to terminate bot and event loop.
+[2022-06-25 14:04:00] [INFO    ] discord.client: Received signal to terminate bot and event loop.
+[2022-06-25 14:04:00] [INFO    ] discord.client: Cleaning up tasks.
+[2022-06-25 14:04:00] [INFO    ] discord.client: Cleaning up tasks.
+[2022-06-25 14:04:00] [INFO    ] discord.client: Cleaning up tasks.
+[2022-06-25 14:04:00] [INFO    ] discord.client: Cleaning up after 2 tasks.
+[2022-06-25 14:04:00] [INFO    ] discord.client: Cleaning up after 2 tasks.
+[2022-06-25 14:04:00] [INFO    ] discord.client: Cleaning up after 2 tasks.
+[2022-06-25 14:04:00] [INFO    ] discord.client: All tasks finished cancelling.
+[2022-06-25 14:04:00] [INFO    ] discord.client: All tasks finished cancelling.
+[2022-06-25 14:04:00] [INFO    ] discord.client: All tasks finished cancelling.
+[2022-06-25 14:04:00] [INFO    ] discord.client: Closing the event loop.
+[2022-06-25 14:04:00] [INFO    ] discord.client: Closing the event loop.
+[2022-06-25 14:04:00] [INFO    ] discord.client: Closing the event loop.
+[2022-06-25 14:04:03] [WARNING ] discord.client: PyNaCl is not installed, voice will NOT be supported
+[2022-06-25 14:04:03] [INFO    ] discord.client: logging in using static token
+[2022-06-25 14:04:03] [INFO    ] discord.client: logging in using static token
+[2022-06-25 14:04:03] [INFO    ] discord.client: logging in using static token
+[2022-06-25 14:04:03] [INFO    ] discord.gateway: Shard ID None has sent the IDENTIFY payload.
+[2022-06-25 14:04:03] [INFO    ] discord.gateway: Shard ID None has sent the IDENTIFY payload.
+[2022-06-25 14:04:03] [INFO    ] discord.gateway: Shard ID None has sent the IDENTIFY payload.
+[2022-06-25 14:04:04] [INFO    ] discord.gateway: Shard ID None has connected to Gateway: ["gateway-prd-main-dn0t",{"micros":99272,"calls":["discord-sessions-blue-prd-2-83",{"micros":96363,"calls":["start_session",{"micros":35040,"calls":["discord-api-fdb87b79f-2nqcg",{"micros":31395,"calls":["get_user",{"micros":6757},"add_authorized_ip",{"micros":1398},"get_guilds",{"micros":4833},"coros_wait",{"micros":1}]}]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":44390,"calls":[]}]}]}] (Session ID: 14c97077a930a2689ca766686f98f6d2).
+[2022-06-25 14:04:04] [INFO    ] discord.gateway: Shard ID None has connected to Gateway: ["gateway-prd-main-dn0t",{"micros":99272,"calls":["discord-sessions-blue-prd-2-83",{"micros":96363,"calls":["start_session",{"micros":35040,"calls":["discord-api-fdb87b79f-2nqcg",{"micros":31395,"calls":["get_user",{"micros":6757},"add_authorized_ip",{"micros":1398},"get_guilds",{"micros":4833},"coros_wait",{"micros":1}]}]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":44390,"calls":[]}]}]}] (Session ID: 14c97077a930a2689ca766686f98f6d2).
+[2022-06-25 14:04:04] [INFO    ] discord.gateway: Shard ID None has connected to Gateway: ["gateway-prd-main-dn0t",{"micros":99272,"calls":["discord-sessions-blue-prd-2-83",{"micros":96363,"calls":["start_session",{"micros":35040,"calls":["discord-api-fdb87b79f-2nqcg",{"micros":31395,"calls":["get_user",{"micros":6757},"add_authorized_ip",{"micros":1398},"get_guilds",{"micros":4833},"coros_wait",{"micros":1}]}]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":44390,"calls":[]}]}]}] (Session ID: 14c97077a930a2689ca766686f98f6d2).
+[2022-06-25 14:05:43] [INFO    ] discord.client: Received signal to terminate bot and event loop.
+[2022-06-25 14:05:43] [INFO    ] discord.client: Received signal to terminate bot and event loop.
+[2022-06-25 14:05:43] [INFO    ] discord.client: Received signal to terminate bot and event loop.
+[2022-06-25 14:05:43] [INFO    ] discord.client: Cleaning up tasks.
+[2022-06-25 14:05:43] [INFO    ] discord.client: Cleaning up tasks.
+[2022-06-25 14:05:43] [INFO    ] discord.client: Cleaning up tasks.
+[2022-06-25 14:05:43] [INFO    ] discord.client: Cleaning up after 2 tasks.
+[2022-06-25 14:05:43] [INFO    ] discord.client: Cleaning up after 2 tasks.
+[2022-06-25 14:05:43] [INFO    ] discord.client: Cleaning up after 2 tasks.
+[2022-06-25 14:05:43] [INFO    ] discord.client: All tasks finished cancelling.
+[2022-06-25 14:05:43] [INFO    ] discord.client: All tasks finished cancelling.
+[2022-06-25 14:05:43] [INFO    ] discord.client: All tasks finished cancelling.
+[2022-06-25 14:05:43] [INFO    ] discord.client: Closing the event loop.
+[2022-06-25 14:05:43] [INFO    ] discord.client: Closing the event loop.
+[2022-06-25 14:05:43] [INFO    ] discord.client: Closing the event loop.
+[2022-06-25 14:07:06] [WARNING ] discord.client: PyNaCl is not installed, voice will NOT be supported
+[2022-06-25 14:07:06] [INFO    ] discord.client: logging in using static token
+[2022-06-25 14:07:06] [INFO    ] discord.client: logging in using static token
+[2022-06-25 14:07:06] [INFO    ] discord.client: logging in using static token
+[2022-06-25 14:07:06] [INFO    ] discord.gateway: Shard ID None has sent the IDENTIFY payload.
+[2022-06-25 14:07:06] [INFO    ] discord.gateway: Shard ID None has sent the IDENTIFY payload.
+[2022-06-25 14:07:06] [INFO    ] discord.gateway: Shard ID None has sent the IDENTIFY payload.
+[2022-06-25 14:07:06] [INFO    ] discord.gateway: Shard ID None has connected to Gateway: ["gateway-prd-main-061f",{"micros":91685,"calls":["discord-sessions-blue-prd-2-131",{"micros":89500,"calls":["start_session",{"micros":41764,"calls":["discord-api-fdb87b79f-jnmfz",{"micros":36454,"calls":["get_user",{"micros":6969},"add_authorized_ip",{"micros":2054},"get_guilds",{"micros":5245},"coros_wait",{"micros":2}]}]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":1,"calls":[]}]}]}] (Session ID: b5c647605af2d9516cf0229a3d8890eb).
+[2022-06-25 14:07:06] [INFO    ] discord.gateway: Shard ID None has connected to Gateway: ["gateway-prd-main-061f",{"micros":91685,"calls":["discord-sessions-blue-prd-2-131",{"micros":89500,"calls":["start_session",{"micros":41764,"calls":["discord-api-fdb87b79f-jnmfz",{"micros":36454,"calls":["get_user",{"micros":6969},"add_authorized_ip",{"micros":2054},"get_guilds",{"micros":5245},"coros_wait",{"micros":2}]}]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":1,"calls":[]}]}]}] (Session ID: b5c647605af2d9516cf0229a3d8890eb).
+[2022-06-25 14:07:06] [INFO    ] discord.gateway: Shard ID None has connected to Gateway: ["gateway-prd-main-061f",{"micros":91685,"calls":["discord-sessions-blue-prd-2-131",{"micros":89500,"calls":["start_session",{"micros":41764,"calls":["discord-api-fdb87b79f-jnmfz",{"micros":36454,"calls":["get_user",{"micros":6969},"add_authorized_ip",{"micros":2054},"get_guilds",{"micros":5245},"coros_wait",{"micros":2}]}]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":1,"calls":[]}]}]}] (Session ID: b5c647605af2d9516cf0229a3d8890eb).
+[2022-06-25 14:08:40] [INFO    ] discord.client: Received signal to terminate bot and event loop.
+[2022-06-25 14:08:40] [INFO    ] discord.client: Received signal to terminate bot and event loop.
+[2022-06-25 14:08:40] [INFO    ] discord.client: Received signal to terminate bot and event loop.
+[2022-06-25 14:08:40] [INFO    ] discord.client: Cleaning up tasks.
+[2022-06-25 14:08:40] [INFO    ] discord.client: Cleaning up tasks.
+[2022-06-25 14:08:40] [INFO    ] discord.client: Cleaning up tasks.
+[2022-06-25 14:08:40] [INFO    ] discord.client: Cleaning up after 2 tasks.
+[2022-06-25 14:08:40] [INFO    ] discord.client: Cleaning up after 2 tasks.
+[2022-06-25 14:08:40] [INFO    ] discord.client: Cleaning up after 2 tasks.
+[2022-06-25 14:08:40] [INFO    ] discord.client: All tasks finished cancelling.
+[2022-06-25 14:08:40] [INFO    ] discord.client: All tasks finished cancelling.
+[2022-06-25 14:08:40] [INFO    ] discord.client: All tasks finished cancelling.
+[2022-06-25 14:08:40] [INFO    ] discord.client: Closing the event loop.
+[2022-06-25 14:08:40] [INFO    ] discord.client: Closing the event loop.
+[2022-06-25 14:08:40] [INFO    ] discord.client: Closing the event loop.
+[2022-06-25 14:08:44] [WARNING ] discord.client: PyNaCl is not installed, voice will NOT be supported
+[2022-06-25 14:08:44] [INFO    ] discord.client: logging in using static token
+[2022-06-25 14:08:44] [INFO    ] discord.client: logging in using static token
+[2022-06-25 14:08:44] [INFO    ] discord.client: logging in using static token
+[2022-06-25 14:08:44] [INFO    ] discord.gateway: Shard ID None has sent the IDENTIFY payload.
+[2022-06-25 14:08:44] [INFO    ] discord.gateway: Shard ID None has sent the IDENTIFY payload.
+[2022-06-25 14:08:44] [INFO    ] discord.gateway: Shard ID None has sent the IDENTIFY payload.
+[2022-06-25 14:08:45] [INFO    ] discord.gateway: Shard ID None has connected to Gateway: ["gateway-prd-main-857j",{"micros":75006,"calls":["discord-sessions-blue-prd-2-17",{"micros":71581,"calls":["start_session",{"micros":50411,"calls":["discord-api-fdb87b79f-n466w",{"micros":44002,"calls":["get_user",{"micros":8394},"add_authorized_ip",{"micros":2946},"get_guilds",{"micros":8894},"coros_wait",{"micros":2}]}]},"guilds_connect",{"micros":1,"calls":[]},"presence_connect",{"micros":643,"calls":[]}]}]}] (Session ID: 24a6fd3fcd1f9e9ac34618cf90a3705f).
+[2022-06-25 14:08:45] [INFO    ] discord.gateway: Shard ID None has connected to Gateway: ["gateway-prd-main-857j",{"micros":75006,"calls":["discord-sessions-blue-prd-2-17",{"micros":71581,"calls":["start_session",{"micros":50411,"calls":["discord-api-fdb87b79f-n466w",{"micros":44002,"calls":["get_user",{"micros":8394},"add_authorized_ip",{"micros":2946},"get_guilds",{"micros":8894},"coros_wait",{"micros":2}]}]},"guilds_connect",{"micros":1,"calls":[]},"presence_connect",{"micros":643,"calls":[]}]}]}] (Session ID: 24a6fd3fcd1f9e9ac34618cf90a3705f).
+[2022-06-25 14:08:45] [INFO    ] discord.gateway: Shard ID None has connected to Gateway: ["gateway-prd-main-857j",{"micros":75006,"calls":["discord-sessions-blue-prd-2-17",{"micros":71581,"calls":["start_session",{"micros":50411,"calls":["discord-api-fdb87b79f-n466w",{"micros":44002,"calls":["get_user",{"micros":8394},"add_authorized_ip",{"micros":2946},"get_guilds",{"micros":8894},"coros_wait",{"micros":2}]}]},"guilds_connect",{"micros":1,"calls":[]},"presence_connect",{"micros":643,"calls":[]}]}]}] (Session ID: 24a6fd3fcd1f9e9ac34618cf90a3705f).
+[2022-06-25 14:10:28] [INFO    ] discord.client: Received signal to terminate bot and event loop.
+[2022-06-25 14:10:28] [INFO    ] discord.client: Received signal to terminate bot and event loop.
+[2022-06-25 14:10:28] [INFO    ] discord.client: Received signal to terminate bot and event loop.
+[2022-06-25 14:10:28] [INFO    ] discord.client: Cleaning up tasks.
+[2022-06-25 14:10:28] [INFO    ] discord.client: Cleaning up tasks.
+[2022-06-25 14:10:28] [INFO    ] discord.client: Cleaning up tasks.
+[2022-06-25 14:10:28] [INFO    ] discord.client: Cleaning up after 2 tasks.
+[2022-06-25 14:10:28] [INFO    ] discord.client: Cleaning up after 2 tasks.
+[2022-06-25 14:10:28] [INFO    ] discord.client: Cleaning up after 2 tasks.
+[2022-06-25 14:10:28] [INFO    ] discord.client: All tasks finished cancelling.
+[2022-06-25 14:10:28] [INFO    ] discord.client: All tasks finished cancelling.
+[2022-06-25 14:10:28] [INFO    ] discord.client: All tasks finished cancelling.
+[2022-06-25 14:10:28] [INFO    ] discord.client: Closing the event loop.
+[2022-06-25 14:10:28] [INFO    ] discord.client: Closing the event loop.
+[2022-06-25 14:10:28] [INFO    ] discord.client: Closing the event loop.
+[2022-06-25 14:10:31] [WARNING ] discord.client: PyNaCl is not installed, voice will NOT be supported
+[2022-06-25 14:10:32] [INFO    ] discord.client: logging in using static token
+[2022-06-25 14:10:32] [INFO    ] discord.client: logging in using static token
+[2022-06-25 14:10:32] [INFO    ] discord.client: logging in using static token
+[2022-06-25 14:10:32] [INFO    ] discord.gateway: Shard ID None has sent the IDENTIFY payload.
+[2022-06-25 14:10:32] [INFO    ] discord.gateway: Shard ID None has sent the IDENTIFY payload.
+[2022-06-25 14:10:32] [INFO    ] discord.gateway: Shard ID None has sent the IDENTIFY payload.
+[2022-06-25 14:10:32] [INFO    ] discord.gateway: Shard ID None has connected to Gateway: ["gateway-prd-main-xjpg",{"micros":47092,"calls":["discord-sessions-blue-prd-2-7",{"micros":45989,"calls":["start_session",{"micros":40685,"calls":["discord-api-fdb87b79f-pzjw7",{"micros":37396,"calls":["get_user",{"micros":9598},"add_authorized_ip",{"micros":2039},"get_guilds",{"micros":3739},"coros_wait",{"micros":1}]}]},"guilds_connect",{"micros":1,"calls":[]},"presence_connect",{"micros":1584,"calls":[]}]}]}] (Session ID: d3e301864369d9221ac04c2a6945d13d).
+[2022-06-25 14:10:32] [INFO    ] discord.gateway: Shard ID None has connected to Gateway: ["gateway-prd-main-xjpg",{"micros":47092,"calls":["discord-sessions-blue-prd-2-7",{"micros":45989,"calls":["start_session",{"micros":40685,"calls":["discord-api-fdb87b79f-pzjw7",{"micros":37396,"calls":["get_user",{"micros":9598},"add_authorized_ip",{"micros":2039},"get_guilds",{"micros":3739},"coros_wait",{"micros":1}]}]},"guilds_connect",{"micros":1,"calls":[]},"presence_connect",{"micros":1584,"calls":[]}]}]}] (Session ID: d3e301864369d9221ac04c2a6945d13d).
+[2022-06-25 14:10:32] [INFO    ] discord.gateway: Shard ID None has connected to Gateway: ["gateway-prd-main-xjpg",{"micros":47092,"calls":["discord-sessions-blue-prd-2-7",{"micros":45989,"calls":["start_session",{"micros":40685,"calls":["discord-api-fdb87b79f-pzjw7",{"micros":37396,"calls":["get_user",{"micros":9598},"add_authorized_ip",{"micros":2039},"get_guilds",{"micros":3739},"coros_wait",{"micros":1}]}]},"guilds_connect",{"micros":1,"calls":[]},"presence_connect",{"micros":1584,"calls":[]}]}]}] (Session ID: d3e301864369d9221ac04c2a6945d13d).
+[2022-06-25 14:12:31] [INFO    ] discord.client: Received signal to terminate bot and event loop.
+[2022-06-25 14:12:31] [INFO    ] discord.client: Received signal to terminate bot and event loop.
+[2022-06-25 14:12:31] [INFO    ] discord.client: Received signal to terminate bot and event loop.
+[2022-06-25 14:12:31] [INFO    ] discord.client: Cleaning up tasks.
+[2022-06-25 14:12:31] [INFO    ] discord.client: Cleaning up tasks.
+[2022-06-25 14:12:31] [INFO    ] discord.client: Cleaning up tasks.
+[2022-06-25 14:12:31] [INFO    ] discord.client: Cleaning up after 2 tasks.
+[2022-06-25 14:12:31] [INFO    ] discord.client: Cleaning up after 2 tasks.
+[2022-06-25 14:12:31] [INFO    ] discord.client: Cleaning up after 2 tasks.
+[2022-06-25 14:12:31] [INFO    ] discord.client: All tasks finished cancelling.
+[2022-06-25 14:12:31] [INFO    ] discord.client: All tasks finished cancelling.
+[2022-06-25 14:12:31] [INFO    ] discord.client: All tasks finished cancelling.
+[2022-06-25 14:12:31] [INFO    ] discord.client: Closing the event loop.
+[2022-06-25 14:12:31] [INFO    ] discord.client: Closing the event loop.
+[2022-06-25 14:12:31] [INFO    ] discord.client: Closing the event loop.
+[2022-06-25 14:23:40] [WARNING ] discord.client: PyNaCl is not installed, voice will NOT be supported
+[2022-06-25 14:23:41] [INFO    ] discord.client: logging in using static token
+[2022-06-25 14:23:41] [INFO    ] discord.client: logging in using static token
+[2022-06-25 14:23:41] [INFO    ] discord.client: logging in using static token
+[2022-06-25 14:23:42] [INFO    ] discord.gateway: Shard ID None has sent the IDENTIFY payload.
+[2022-06-25 14:23:42] [INFO    ] discord.gateway: Shard ID None has sent the IDENTIFY payload.
+[2022-06-25 14:23:42] [INFO    ] discord.gateway: Shard ID None has sent the IDENTIFY payload.
+[2022-06-25 14:23:42] [INFO    ] discord.gateway: Shard ID None has connected to Gateway: ["gateway-prd-main-cn38",{"micros":124452,"calls":["discord-sessions-blue-prd-2-156",{"micros":115991,"calls":["start_session",{"micros":87330,"calls":["discord-api-fdb87b79f-2wmpd",{"micros":73149,"calls":["get_user",{"micros":13095},"add_authorized_ip",{"micros":5701},"get_guilds",{"micros":13291},"coros_wait",{"micros":1}]}]},"guilds_connect",{"micros":1,"calls":[]},"presence_connect",{"micros":15605,"calls":[]}]}]}] (Session ID: f29f13888589022415da921954b4283d).
+[2022-06-25 14:23:42] [INFO    ] discord.gateway: Shard ID None has connected to Gateway: ["gateway-prd-main-cn38",{"micros":124452,"calls":["discord-sessions-blue-prd-2-156",{"micros":115991,"calls":["start_session",{"micros":87330,"calls":["discord-api-fdb87b79f-2wmpd",{"micros":73149,"calls":["get_user",{"micros":13095},"add_authorized_ip",{"micros":5701},"get_guilds",{"micros":13291},"coros_wait",{"micros":1}]}]},"guilds_connect",{"micros":1,"calls":[]},"presence_connect",{"micros":15605,"calls":[]}]}]}] (Session ID: f29f13888589022415da921954b4283d).
+[2022-06-25 14:23:42] [INFO    ] discord.gateway: Shard ID None has connected to Gateway: ["gateway-prd-main-cn38",{"micros":124452,"calls":["discord-sessions-blue-prd-2-156",{"micros":115991,"calls":["start_session",{"micros":87330,"calls":["discord-api-fdb87b79f-2wmpd",{"micros":73149,"calls":["get_user",{"micros":13095},"add_authorized_ip",{"micros":5701},"get_guilds",{"micros":13291},"coros_wait",{"micros":1}]}]},"guilds_connect",{"micros":1,"calls":[]},"presence_connect",{"micros":15605,"calls":[]}]}]}] (Session ID: f29f13888589022415da921954b4283d).
+[2022-06-25 14:25:15] [INFO    ] discord.client: Received signal to terminate bot and event loop.
+[2022-06-25 14:25:15] [INFO    ] discord.client: Received signal to terminate bot and event loop.
+[2022-06-25 14:25:15] [INFO    ] discord.client: Received signal to terminate bot and event loop.
+[2022-06-25 14:25:15] [INFO    ] discord.client: Cleaning up tasks.
+[2022-06-25 14:25:15] [INFO    ] discord.client: Cleaning up tasks.
+[2022-06-25 14:25:15] [INFO    ] discord.client: Cleaning up tasks.
+[2022-06-25 14:25:15] [INFO    ] discord.client: Cleaning up after 2 tasks.
+[2022-06-25 14:25:15] [INFO    ] discord.client: Cleaning up after 2 tasks.
+[2022-06-25 14:25:15] [INFO    ] discord.client: Cleaning up after 2 tasks.
+[2022-06-25 14:25:15] [INFO    ] discord.client: All tasks finished cancelling.
+[2022-06-25 14:25:15] [INFO    ] discord.client: All tasks finished cancelling.
+[2022-06-25 14:25:15] [INFO    ] discord.client: All tasks finished cancelling.
+[2022-06-25 14:25:15] [INFO    ] discord.client: Closing the event loop.
+[2022-06-25 14:25:15] [INFO    ] discord.client: Closing the event loop.
+[2022-06-25 14:25:15] [INFO    ] discord.client: Closing the event loop.
+[2022-06-25 14:25:18] [WARNING ] discord.client: PyNaCl is not installed, voice will NOT be supported
+[2022-06-25 14:25:18] [INFO    ] discord.client: logging in using static token
+[2022-06-25 14:25:18] [INFO    ] discord.client: logging in using static token
+[2022-06-25 14:25:18] [INFO    ] discord.client: logging in using static token
+[2022-06-25 14:25:18] [INFO    ] discord.gateway: Shard ID None has sent the IDENTIFY payload.
+[2022-06-25 14:25:18] [INFO    ] discord.gateway: Shard ID None has sent the IDENTIFY payload.
+[2022-06-25 14:25:18] [INFO    ] discord.gateway: Shard ID None has sent the IDENTIFY payload.
+[2022-06-25 14:25:19] [INFO    ] discord.gateway: Shard ID None has connected to Gateway: ["gateway-prd-main-qk0b",{"micros":147641,"calls":["discord-sessions-blue-prd-2-96",{"micros":145795,"calls":["start_session",{"micros":69093,"calls":["discord-api-fdb87b79f-fvbp6",{"micros":59677,"calls":["get_user",{"micros":11437},"add_authorized_ip",{"micros":8158},"get_guilds",{"micros":9653},"coros_wait",{"micros":1}]}]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":48460,"calls":[]}]}]}] (Session ID: c462151e12e0c56ebb56b7d0dd11e911).
+[2022-06-25 14:25:19] [INFO    ] discord.gateway: Shard ID None has connected to Gateway: ["gateway-prd-main-qk0b",{"micros":147641,"calls":["discord-sessions-blue-prd-2-96",{"micros":145795,"calls":["start_session",{"micros":69093,"calls":["discord-api-fdb87b79f-fvbp6",{"micros":59677,"calls":["get_user",{"micros":11437},"add_authorized_ip",{"micros":8158},"get_guilds",{"micros":9653},"coros_wait",{"micros":1}]}]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":48460,"calls":[]}]}]}] (Session ID: c462151e12e0c56ebb56b7d0dd11e911).
+[2022-06-25 14:25:19] [INFO    ] discord.gateway: Shard ID None has connected to Gateway: ["gateway-prd-main-qk0b",{"micros":147641,"calls":["discord-sessions-blue-prd-2-96",{"micros":145795,"calls":["start_session",{"micros":69093,"calls":["discord-api-fdb87b79f-fvbp6",{"micros":59677,"calls":["get_user",{"micros":11437},"add_authorized_ip",{"micros":8158},"get_guilds",{"micros":9653},"coros_wait",{"micros":1}]}]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":48460,"calls":[]}]}]}] (Session ID: c462151e12e0c56ebb56b7d0dd11e911).
+[2022-06-25 14:25:59] [INFO    ] discord.client: Received signal to terminate bot and event loop.
+[2022-06-25 14:25:59] [INFO    ] discord.client: Received signal to terminate bot and event loop.
+[2022-06-25 14:25:59] [INFO    ] discord.client: Received signal to terminate bot and event loop.
+[2022-06-25 14:25:59] [INFO    ] discord.client: Cleaning up tasks.
+[2022-06-25 14:25:59] [INFO    ] discord.client: Cleaning up tasks.
+[2022-06-25 14:25:59] [INFO    ] discord.client: Cleaning up tasks.
+[2022-06-25 14:25:59] [INFO    ] discord.client: Cleaning up after 2 tasks.
+[2022-06-25 14:25:59] [INFO    ] discord.client: Cleaning up after 2 tasks.
+[2022-06-25 14:25:59] [INFO    ] discord.client: Cleaning up after 2 tasks.
+[2022-06-25 14:25:59] [INFO    ] discord.client: All tasks finished cancelling.
+[2022-06-25 14:25:59] [INFO    ] discord.client: All tasks finished cancelling.
+[2022-06-25 14:25:59] [INFO    ] discord.client: All tasks finished cancelling.
+[2022-06-25 14:25:59] [INFO    ] discord.client: Closing the event loop.
+[2022-06-25 14:25:59] [INFO    ] discord.client: Closing the event loop.
+[2022-06-25 14:25:59] [INFO    ] discord.client: Closing the event loop.
+[2022-06-25 14:29:39] [WARNING ] discord.client: PyNaCl is not installed, voice will NOT be supported
+[2022-06-25 14:29:39] [INFO    ] discord.client: logging in using static token
+[2022-06-25 14:29:39] [INFO    ] discord.client: logging in using static token
+[2022-06-25 14:29:39] [INFO    ] discord.client: logging in using static token
+[2022-06-25 14:29:40] [INFO    ] discord.gateway: Shard ID None has sent the IDENTIFY payload.
+[2022-06-25 14:29:40] [INFO    ] discord.gateway: Shard ID None has sent the IDENTIFY payload.
+[2022-06-25 14:29:40] [INFO    ] discord.gateway: Shard ID None has sent the IDENTIFY payload.
+[2022-06-25 14:29:40] [INFO    ] discord.gateway: Shard ID None has connected to Gateway: ["gateway-prd-main-5h75",{"micros":100683,"calls":["discord-sessions-blue-prd-2-79",{"micros":99483,"calls":["start_session",{"micros":62203,"calls":["discord-api-fdb87b79f-p87f7",{"micros":56756,"calls":["get_user",{"micros":13710},"add_authorized_ip",{"micros":1355},"get_guilds",{"micros":8798},"coros_wait",{"micros":2}]}]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":1,"calls":[]}]}]}] (Session ID: 354579e549020c376739fbb4ffca1e1b).
+[2022-06-25 14:29:40] [INFO    ] discord.gateway: Shard ID None has connected to Gateway: ["gateway-prd-main-5h75",{"micros":100683,"calls":["discord-sessions-blue-prd-2-79",{"micros":99483,"calls":["start_session",{"micros":62203,"calls":["discord-api-fdb87b79f-p87f7",{"micros":56756,"calls":["get_user",{"micros":13710},"add_authorized_ip",{"micros":1355},"get_guilds",{"micros":8798},"coros_wait",{"micros":2}]}]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":1,"calls":[]}]}]}] (Session ID: 354579e549020c376739fbb4ffca1e1b).
+[2022-06-25 14:29:40] [INFO    ] discord.gateway: Shard ID None has connected to Gateway: ["gateway-prd-main-5h75",{"micros":100683,"calls":["discord-sessions-blue-prd-2-79",{"micros":99483,"calls":["start_session",{"micros":62203,"calls":["discord-api-fdb87b79f-p87f7",{"micros":56756,"calls":["get_user",{"micros":13710},"add_authorized_ip",{"micros":1355},"get_guilds",{"micros":8798},"coros_wait",{"micros":2}]}]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":1,"calls":[]}]}]}] (Session ID: 354579e549020c376739fbb4ffca1e1b).
+[2022-06-25 14:30:04] [INFO    ] discord.client: Received signal to terminate bot and event loop.
+[2022-06-25 14:30:04] [INFO    ] discord.client: Received signal to terminate bot and event loop.
+[2022-06-25 14:30:04] [INFO    ] discord.client: Received signal to terminate bot and event loop.
+[2022-06-25 14:30:04] [INFO    ] discord.client: Cleaning up tasks.
+[2022-06-25 14:30:04] [INFO    ] discord.client: Cleaning up tasks.
+[2022-06-25 14:30:04] [INFO    ] discord.client: Cleaning up tasks.
+[2022-06-25 14:30:04] [INFO    ] discord.client: Cleaning up after 2 tasks.
+[2022-06-25 14:30:04] [INFO    ] discord.client: Cleaning up after 2 tasks.
+[2022-06-25 14:30:04] [INFO    ] discord.client: Cleaning up after 2 tasks.
+[2022-06-25 14:30:04] [INFO    ] discord.client: All tasks finished cancelling.
+[2022-06-25 14:30:04] [INFO    ] discord.client: All tasks finished cancelling.
+[2022-06-25 14:30:04] [INFO    ] discord.client: All tasks finished cancelling.
+[2022-06-25 14:30:04] [INFO    ] discord.client: Closing the event loop.
+[2022-06-25 14:30:04] [INFO    ] discord.client: Closing the event loop.
+[2022-06-25 14:30:04] [INFO    ] discord.client: Closing the event loop.
+[2022-06-25 14:30:06] [WARNING ] discord.client: PyNaCl is not installed, voice will NOT be supported
+[2022-06-25 14:30:06] [INFO    ] discord.client: logging in using static token
+[2022-06-25 14:30:06] [INFO    ] discord.client: logging in using static token
+[2022-06-25 14:30:06] [INFO    ] discord.client: logging in using static token
+[2022-06-25 14:30:07] [INFO    ] discord.gateway: Shard ID None has sent the IDENTIFY payload.
+[2022-06-25 14:30:07] [INFO    ] discord.gateway: Shard ID None has sent the IDENTIFY payload.
+[2022-06-25 14:30:07] [INFO    ] discord.gateway: Shard ID None has sent the IDENTIFY payload.
+[2022-06-25 14:30:07] [INFO    ] discord.gateway: Shard ID None has connected to Gateway: ["gateway-prd-main-bnhv",{"micros":54617,"calls":["discord-sessions-blue-prd-2-200",{"micros":52450,"calls":["start_session",{"micros":47291,"calls":["discord-api-fdb87b79f-pl9d7",{"micros":43038,"calls":["get_user",{"micros":11235},"add_authorized_ip",{"micros":3870},"get_guilds",{"micros":3523},"coros_wait",{"micros":2}]}]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":1,"calls":[]}]}]}] (Session ID: 27c6b612698d8f6960bdc7758842620a).
+[2022-06-25 14:30:07] [INFO    ] discord.gateway: Shard ID None has connected to Gateway: ["gateway-prd-main-bnhv",{"micros":54617,"calls":["discord-sessions-blue-prd-2-200",{"micros":52450,"calls":["start_session",{"micros":47291,"calls":["discord-api-fdb87b79f-pl9d7",{"micros":43038,"calls":["get_user",{"micros":11235},"add_authorized_ip",{"micros":3870},"get_guilds",{"micros":3523},"coros_wait",{"micros":2}]}]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":1,"calls":[]}]}]}] (Session ID: 27c6b612698d8f6960bdc7758842620a).
+[2022-06-25 14:30:07] [INFO    ] discord.gateway: Shard ID None has connected to Gateway: ["gateway-prd-main-bnhv",{"micros":54617,"calls":["discord-sessions-blue-prd-2-200",{"micros":52450,"calls":["start_session",{"micros":47291,"calls":["discord-api-fdb87b79f-pl9d7",{"micros":43038,"calls":["get_user",{"micros":11235},"add_authorized_ip",{"micros":3870},"get_guilds",{"micros":3523},"coros_wait",{"micros":2}]}]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":1,"calls":[]}]}]}] (Session ID: 27c6b612698d8f6960bdc7758842620a).
+[2022-06-25 14:30:20] [INFO    ] discord.client: Received signal to terminate bot and event loop.
+[2022-06-25 14:30:20] [INFO    ] discord.client: Received signal to terminate bot and event loop.
+[2022-06-25 14:30:20] [INFO    ] discord.client: Received signal to terminate bot and event loop.
+[2022-06-25 14:30:20] [INFO    ] discord.client: Cleaning up tasks.
+[2022-06-25 14:30:20] [INFO    ] discord.client: Cleaning up tasks.
+[2022-06-25 14:30:20] [INFO    ] discord.client: Cleaning up tasks.
+[2022-06-25 14:30:20] [INFO    ] discord.client: Cleaning up after 2 tasks.
+[2022-06-25 14:30:20] [INFO    ] discord.client: Cleaning up after 2 tasks.
+[2022-06-25 14:30:20] [INFO    ] discord.client: Cleaning up after 2 tasks.
+[2022-06-25 14:30:20] [INFO    ] discord.client: All tasks finished cancelling.
+[2022-06-25 14:30:20] [INFO    ] discord.client: All tasks finished cancelling.
+[2022-06-25 14:30:20] [INFO    ] discord.client: All tasks finished cancelling.
+[2022-06-25 14:30:20] [INFO    ] discord.client: Closing the event loop.
+[2022-06-25 14:30:20] [INFO    ] discord.client: Closing the event loop.
+[2022-06-25 14:30:20] [INFO    ] discord.client: Closing the event loop.
+[2022-06-25 14:30:22] [WARNING ] discord.client: PyNaCl is not installed, voice will NOT be supported
+[2022-06-25 14:30:22] [INFO    ] discord.client: logging in using static token
+[2022-06-25 14:30:22] [INFO    ] discord.client: logging in using static token
+[2022-06-25 14:30:22] [INFO    ] discord.client: logging in using static token
+[2022-06-25 14:30:23] [INFO    ] discord.gateway: Shard ID None has sent the IDENTIFY payload.
+[2022-06-25 14:30:23] [INFO    ] discord.gateway: Shard ID None has sent the IDENTIFY payload.
+[2022-06-25 14:30:23] [INFO    ] discord.gateway: Shard ID None has sent the IDENTIFY payload.
+[2022-06-25 14:30:23] [INFO    ] discord.gateway: Shard ID None has connected to Gateway: ["gateway-prd-main-cm91",{"micros":120849,"calls":["discord-sessions-blue-prd-2-73",{"micros":112918,"calls":["start_session",{"micros":89899,"calls":["discord-api-fdb87b79f-q6btk",{"micros":80209,"calls":["get_user",{"micros":16860},"add_authorized_ip",{"micros":5587},"get_guilds",{"micros":13271},"coros_wait",{"micros":2}]}]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":16544,"calls":[]}]}]}] (Session ID: 508305bd2506498360e5096132be8162).
+[2022-06-25 14:30:23] [INFO    ] discord.gateway: Shard ID None has connected to Gateway: ["gateway-prd-main-cm91",{"micros":120849,"calls":["discord-sessions-blue-prd-2-73",{"micros":112918,"calls":["start_session",{"micros":89899,"calls":["discord-api-fdb87b79f-q6btk",{"micros":80209,"calls":["get_user",{"micros":16860},"add_authorized_ip",{"micros":5587},"get_guilds",{"micros":13271},"coros_wait",{"micros":2}]}]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":16544,"calls":[]}]}]}] (Session ID: 508305bd2506498360e5096132be8162).
+[2022-06-25 14:30:23] [INFO    ] discord.gateway: Shard ID None has connected to Gateway: ["gateway-prd-main-cm91",{"micros":120849,"calls":["discord-sessions-blue-prd-2-73",{"micros":112918,"calls":["start_session",{"micros":89899,"calls":["discord-api-fdb87b79f-q6btk",{"micros":80209,"calls":["get_user",{"micros":16860},"add_authorized_ip",{"micros":5587},"get_guilds",{"micros":13271},"coros_wait",{"micros":2}]}]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":16544,"calls":[]}]}]}] (Session ID: 508305bd2506498360e5096132be8162).
+[2022-06-25 14:35:05] [INFO    ] discord.client: Received signal to terminate bot and event loop.
+[2022-06-25 14:35:05] [INFO    ] discord.client: Received signal to terminate bot and event loop.
+[2022-06-25 14:35:05] [INFO    ] discord.client: Received signal to terminate bot and event loop.
+[2022-06-25 14:35:05] [INFO    ] discord.client: Cleaning up tasks.
+[2022-06-25 14:35:05] [INFO    ] discord.client: Cleaning up tasks.
+[2022-06-25 14:35:05] [INFO    ] discord.client: Cleaning up tasks.
+[2022-06-25 14:35:05] [INFO    ] discord.client: Cleaning up after 2 tasks.
+[2022-06-25 14:35:05] [INFO    ] discord.client: Cleaning up after 2 tasks.
+[2022-06-25 14:35:05] [INFO    ] discord.client: Cleaning up after 2 tasks.
+[2022-06-25 14:35:05] [INFO    ] discord.client: All tasks finished cancelling.
+[2022-06-25 14:35:05] [INFO    ] discord.client: All tasks finished cancelling.
+[2022-06-25 14:35:05] [INFO    ] discord.client: All tasks finished cancelling.
+[2022-06-25 14:35:05] [INFO    ] discord.client: Closing the event loop.
+[2022-06-25 14:35:05] [INFO    ] discord.client: Closing the event loop.
+[2022-06-25 14:35:05] [INFO    ] discord.client: Closing the event loop.
+[2022-06-25 14:35:23] [WARNING ] discord.client: PyNaCl is not installed, voice will NOT be supported
+[2022-06-25 14:35:23] [INFO    ] discord.client: logging in using static token
+[2022-06-25 14:35:23] [INFO    ] discord.client: logging in using static token
+[2022-06-25 14:35:23] [INFO    ] discord.client: logging in using static token
+[2022-06-25 14:35:24] [INFO    ] discord.gateway: Shard ID None has sent the IDENTIFY payload.
+[2022-06-25 14:35:24] [INFO    ] discord.gateway: Shard ID None has sent the IDENTIFY payload.
+[2022-06-25 14:35:24] [INFO    ] discord.gateway: Shard ID None has sent the IDENTIFY payload.
+[2022-06-25 14:35:24] [INFO    ] discord.gateway: Shard ID None has connected to Gateway: ["gateway-prd-main-hclv",{"micros":110255,"calls":["discord-sessions-blue-prd-2-110",{"micros":108283,"calls":["start_session",{"micros":86146,"calls":["discord-api-fdb87b79f-9v6h7",{"micros":50905,"calls":["get_user",{"micros":22732},"add_authorized_ip",{"micros":2649},"get_guilds",{"micros":4121},"coros_wait",{"micros":5}]}]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":16608,"calls":[]}]}]}] (Session ID: 756ae03f876c7064553c15b85b927b92).
+[2022-06-25 14:35:24] [INFO    ] discord.gateway: Shard ID None has connected to Gateway: ["gateway-prd-main-hclv",{"micros":110255,"calls":["discord-sessions-blue-prd-2-110",{"micros":108283,"calls":["start_session",{"micros":86146,"calls":["discord-api-fdb87b79f-9v6h7",{"micros":50905,"calls":["get_user",{"micros":22732},"add_authorized_ip",{"micros":2649},"get_guilds",{"micros":4121},"coros_wait",{"micros":5}]}]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":16608,"calls":[]}]}]}] (Session ID: 756ae03f876c7064553c15b85b927b92).
+[2022-06-25 14:35:24] [INFO    ] discord.gateway: Shard ID None has connected to Gateway: ["gateway-prd-main-hclv",{"micros":110255,"calls":["discord-sessions-blue-prd-2-110",{"micros":108283,"calls":["start_session",{"micros":86146,"calls":["discord-api-fdb87b79f-9v6h7",{"micros":50905,"calls":["get_user",{"micros":22732},"add_authorized_ip",{"micros":2649},"get_guilds",{"micros":4121},"coros_wait",{"micros":5}]}]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":16608,"calls":[]}]}]}] (Session ID: 756ae03f876c7064553c15b85b927b92).
+[2022-06-25 14:36:34] [INFO    ] discord.client: Received signal to terminate bot and event loop.
+[2022-06-25 14:36:34] [INFO    ] discord.client: Received signal to terminate bot and event loop.
+[2022-06-25 14:36:34] [INFO    ] discord.client: Received signal to terminate bot and event loop.
+[2022-06-25 14:36:34] [INFO    ] discord.client: Cleaning up tasks.
+[2022-06-25 14:36:34] [INFO    ] discord.client: Cleaning up tasks.
+[2022-06-25 14:36:34] [INFO    ] discord.client: Cleaning up tasks.
+[2022-06-25 14:36:34] [INFO    ] discord.client: Cleaning up after 2 tasks.
+[2022-06-25 14:36:34] [INFO    ] discord.client: Cleaning up after 2 tasks.
+[2022-06-25 14:36:34] [INFO    ] discord.client: Cleaning up after 2 tasks.
+[2022-06-25 14:36:34] [INFO    ] discord.client: All tasks finished cancelling.
+[2022-06-25 14:36:34] [INFO    ] discord.client: All tasks finished cancelling.
+[2022-06-25 14:36:34] [INFO    ] discord.client: All tasks finished cancelling.
+[2022-06-25 14:36:34] [INFO    ] discord.client: Closing the event loop.
+[2022-06-25 14:36:34] [INFO    ] discord.client: Closing the event loop.
+[2022-06-25 14:36:34] [INFO    ] discord.client: Closing the event loop.
+[2022-06-25 14:36:37] [WARNING ] discord.client: PyNaCl is not installed, voice will NOT be supported
+[2022-06-25 14:36:37] [INFO    ] discord.client: logging in using static token
+[2022-06-25 14:36:37] [INFO    ] discord.client: logging in using static token
+[2022-06-25 14:36:37] [INFO    ] discord.client: logging in using static token
+[2022-06-25 14:36:37] [INFO    ] discord.gateway: Shard ID None has sent the IDENTIFY payload.
+[2022-06-25 14:36:37] [INFO    ] discord.gateway: Shard ID None has sent the IDENTIFY payload.
+[2022-06-25 14:36:37] [INFO    ] discord.gateway: Shard ID None has sent the IDENTIFY payload.
+[2022-06-25 14:36:38] [INFO    ] discord.gateway: Shard ID None has connected to Gateway: ["gateway-prd-main-7kj1",{"micros":97912,"calls":["discord-sessions-blue-prd-2-125",{"micros":96532,"calls":["start_session",{"micros":45339,"calls":["discord-api-fdb87b79f-nqwg4",{"micros":39433,"calls":["get_user",{"micros":7948},"add_authorized_ip",{"micros":1567},"get_guilds",{"micros":7108},"coros_wait",{"micros":1}]}]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":21909,"calls":[]}]}]}] (Session ID: 649d3d444aa6b963d08622983b09b9f6).
+[2022-06-25 14:36:38] [INFO    ] discord.gateway: Shard ID None has connected to Gateway: ["gateway-prd-main-7kj1",{"micros":97912,"calls":["discord-sessions-blue-prd-2-125",{"micros":96532,"calls":["start_session",{"micros":45339,"calls":["discord-api-fdb87b79f-nqwg4",{"micros":39433,"calls":["get_user",{"micros":7948},"add_authorized_ip",{"micros":1567},"get_guilds",{"micros":7108},"coros_wait",{"micros":1}]}]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":21909,"calls":[]}]}]}] (Session ID: 649d3d444aa6b963d08622983b09b9f6).
+[2022-06-25 14:36:38] [INFO    ] discord.gateway: Shard ID None has connected to Gateway: ["gateway-prd-main-7kj1",{"micros":97912,"calls":["discord-sessions-blue-prd-2-125",{"micros":96532,"calls":["start_session",{"micros":45339,"calls":["discord-api-fdb87b79f-nqwg4",{"micros":39433,"calls":["get_user",{"micros":7948},"add_authorized_ip",{"micros":1567},"get_guilds",{"micros":7108},"coros_wait",{"micros":1}]}]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":21909,"calls":[]}]}]}] (Session ID: 649d3d444aa6b963d08622983b09b9f6).
+[2022-06-25 14:37:18] [INFO    ] discord.client: Received signal to terminate bot and event loop.
+[2022-06-25 14:37:18] [INFO    ] discord.client: Received signal to terminate bot and event loop.
+[2022-06-25 14:37:18] [INFO    ] discord.client: Received signal to terminate bot and event loop.
+[2022-06-25 14:37:18] [INFO    ] discord.client: Cleaning up tasks.
+[2022-06-25 14:37:18] [INFO    ] discord.client: Cleaning up tasks.
+[2022-06-25 14:37:18] [INFO    ] discord.client: Cleaning up tasks.
+[2022-06-25 14:37:18] [INFO    ] discord.client: Cleaning up after 2 tasks.
+[2022-06-25 14:37:18] [INFO    ] discord.client: Cleaning up after 2 tasks.
+[2022-06-25 14:37:18] [INFO    ] discord.client: Cleaning up after 2 tasks.
+[2022-06-25 14:37:18] [INFO    ] discord.client: All tasks finished cancelling.
+[2022-06-25 14:37:18] [INFO    ] discord.client: All tasks finished cancelling.
+[2022-06-25 14:37:18] [INFO    ] discord.client: All tasks finished cancelling.
+[2022-06-25 14:37:18] [INFO    ] discord.client: Closing the event loop.
+[2022-06-25 14:37:18] [INFO    ] discord.client: Closing the event loop.
+[2022-06-25 14:37:18] [INFO    ] discord.client: Closing the event loop.
+[2022-06-25 14:37:21] [WARNING ] discord.client: PyNaCl is not installed, voice will NOT be supported
+[2022-06-25 14:37:21] [INFO    ] discord.client: logging in using static token
+[2022-06-25 14:37:21] [INFO    ] discord.client: logging in using static token
+[2022-06-25 14:37:21] [INFO    ] discord.client: logging in using static token
+[2022-06-25 14:37:22] [INFO    ] discord.gateway: Shard ID None has sent the IDENTIFY payload.
+[2022-06-25 14:37:22] [INFO    ] discord.gateway: Shard ID None has sent the IDENTIFY payload.
+[2022-06-25 14:37:22] [INFO    ] discord.gateway: Shard ID None has sent the IDENTIFY payload.
+[2022-06-25 14:37:22] [INFO    ] discord.gateway: Shard ID None has connected to Gateway: ["gateway-prd-main-8qsx",{"micros":141541,"calls":["discord-sessions-blue-prd-2-42",{"micros":140392,"calls":["start_session",{"micros":60347,"calls":["discord-api-fdb87b79f-9wlkh",{"micros":51563,"calls":["get_user",{"micros":14242},"add_authorized_ip",{"micros":1951},"get_guilds",{"micros":6910},"coros_wait",{"micros":1}]}]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":33568,"calls":[]}]}]}] (Session ID: cececfdfd370784951ba342f9a41a969).
+[2022-06-25 14:37:22] [INFO    ] discord.gateway: Shard ID None has connected to Gateway: ["gateway-prd-main-8qsx",{"micros":141541,"calls":["discord-sessions-blue-prd-2-42",{"micros":140392,"calls":["start_session",{"micros":60347,"calls":["discord-api-fdb87b79f-9wlkh",{"micros":51563,"calls":["get_user",{"micros":14242},"add_authorized_ip",{"micros":1951},"get_guilds",{"micros":6910},"coros_wait",{"micros":1}]}]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":33568,"calls":[]}]}]}] (Session ID: cececfdfd370784951ba342f9a41a969).
+[2022-06-25 14:37:22] [INFO    ] discord.gateway: Shard ID None has connected to Gateway: ["gateway-prd-main-8qsx",{"micros":141541,"calls":["discord-sessions-blue-prd-2-42",{"micros":140392,"calls":["start_session",{"micros":60347,"calls":["discord-api-fdb87b79f-9wlkh",{"micros":51563,"calls":["get_user",{"micros":14242},"add_authorized_ip",{"micros":1951},"get_guilds",{"micros":6910},"coros_wait",{"micros":1}]}]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":33568,"calls":[]}]}]}] (Session ID: cececfdfd370784951ba342f9a41a969).
+[2022-06-25 14:38:31] [INFO    ] discord.client: Received signal to terminate bot and event loop.
+[2022-06-25 14:38:31] [INFO    ] discord.client: Received signal to terminate bot and event loop.
+[2022-06-25 14:38:31] [INFO    ] discord.client: Received signal to terminate bot and event loop.
+[2022-06-25 14:38:31] [INFO    ] discord.client: Cleaning up tasks.
+[2022-06-25 14:38:31] [INFO    ] discord.client: Cleaning up tasks.
+[2022-06-25 14:38:31] [INFO    ] discord.client: Cleaning up tasks.
+[2022-06-25 14:38:31] [INFO    ] discord.client: Cleaning up after 2 tasks.
+[2022-06-25 14:38:31] [INFO    ] discord.client: Cleaning up after 2 tasks.
+[2022-06-25 14:38:31] [INFO    ] discord.client: Cleaning up after 2 tasks.
+[2022-06-25 14:38:31] [INFO    ] discord.client: All tasks finished cancelling.
+[2022-06-25 14:38:31] [INFO    ] discord.client: All tasks finished cancelling.
+[2022-06-25 14:38:31] [INFO    ] discord.client: All tasks finished cancelling.
+[2022-06-25 14:38:31] [INFO    ] discord.client: Closing the event loop.
+[2022-06-25 14:38:31] [INFO    ] discord.client: Closing the event loop.
+[2022-06-25 14:38:31] [INFO    ] discord.client: Closing the event loop.
+[2022-06-25 14:38:36] [WARNING ] discord.client: PyNaCl is not installed, voice will NOT be supported
+[2022-06-25 14:38:36] [INFO    ] discord.client: logging in using static token
+[2022-06-25 14:38:36] [INFO    ] discord.client: logging in using static token
+[2022-06-25 14:38:36] [INFO    ] discord.client: logging in using static token
+[2022-06-25 14:38:37] [INFO    ] discord.gateway: Shard ID None has sent the IDENTIFY payload.
+[2022-06-25 14:38:37] [INFO    ] discord.gateway: Shard ID None has sent the IDENTIFY payload.
+[2022-06-25 14:38:37] [INFO    ] discord.gateway: Shard ID None has sent the IDENTIFY payload.
+[2022-06-25 14:38:37] [INFO    ] discord.gateway: Shard ID None has connected to Gateway: ["gateway-prd-main-1jn2",{"micros":141568,"calls":["discord-sessions-blue-prd-2-192",{"micros":138171,"calls":["start_session",{"micros":66831,"calls":["discord-api-fdb87b79f-c4tfz",{"micros":60035,"calls":["get_user",{"micros":10601},"add_authorized_ip",{"micros":3451},"get_guilds",{"micros":7082},"coros_wait",{"micros":2}]}]},"guilds_connect",{"micros":1,"calls":[]},"presence_connect",{"micros":57692,"calls":[]}]}]}] (Session ID: 24c8d1a60a08f02d3a6efab74a134311).
+[2022-06-25 14:38:37] [INFO    ] discord.gateway: Shard ID None has connected to Gateway: ["gateway-prd-main-1jn2",{"micros":141568,"calls":["discord-sessions-blue-prd-2-192",{"micros":138171,"calls":["start_session",{"micros":66831,"calls":["discord-api-fdb87b79f-c4tfz",{"micros":60035,"calls":["get_user",{"micros":10601},"add_authorized_ip",{"micros":3451},"get_guilds",{"micros":7082},"coros_wait",{"micros":2}]}]},"guilds_connect",{"micros":1,"calls":[]},"presence_connect",{"micros":57692,"calls":[]}]}]}] (Session ID: 24c8d1a60a08f02d3a6efab74a134311).
+[2022-06-25 14:38:37] [INFO    ] discord.gateway: Shard ID None has connected to Gateway: ["gateway-prd-main-1jn2",{"micros":141568,"calls":["discord-sessions-blue-prd-2-192",{"micros":138171,"calls":["start_session",{"micros":66831,"calls":["discord-api-fdb87b79f-c4tfz",{"micros":60035,"calls":["get_user",{"micros":10601},"add_authorized_ip",{"micros":3451},"get_guilds",{"micros":7082},"coros_wait",{"micros":2}]}]},"guilds_connect",{"micros":1,"calls":[]},"presence_connect",{"micros":57692,"calls":[]}]}]}] (Session ID: 24c8d1a60a08f02d3a6efab74a134311).
+[2022-06-25 14:43:57] [INFO    ] discord.client: Received signal to terminate bot and event loop.
+[2022-06-25 14:43:57] [INFO    ] discord.client: Received signal to terminate bot and event loop.
+[2022-06-25 14:43:57] [INFO    ] discord.client: Received signal to terminate bot and event loop.
+[2022-06-25 14:43:57] [INFO    ] discord.client: Cleaning up tasks.
+[2022-06-25 14:43:57] [INFO    ] discord.client: Cleaning up tasks.
+[2022-06-25 14:43:57] [INFO    ] discord.client: Cleaning up tasks.
+[2022-06-25 14:43:57] [INFO    ] discord.client: Cleaning up after 2 tasks.
+[2022-06-25 14:43:57] [INFO    ] discord.client: Cleaning up after 2 tasks.
+[2022-06-25 14:43:57] [INFO    ] discord.client: Cleaning up after 2 tasks.
+[2022-06-25 14:43:57] [INFO    ] discord.client: All tasks finished cancelling.
+[2022-06-25 14:43:57] [INFO    ] discord.client: All tasks finished cancelling.
+[2022-06-25 14:43:57] [INFO    ] discord.client: All tasks finished cancelling.
+[2022-06-25 14:43:57] [INFO    ] discord.client: Closing the event loop.
+[2022-06-25 14:43:57] [INFO    ] discord.client: Closing the event loop.
+[2022-06-25 14:43:57] [INFO    ] discord.client: Closing the event loop.
+[2022-06-25 14:44:00] [WARNING ] discord.client: PyNaCl is not installed, voice will NOT be supported
+[2022-06-25 14:44:00] [INFO    ] discord.client: logging in using static token
+[2022-06-25 14:44:00] [INFO    ] discord.client: logging in using static token
+[2022-06-25 14:44:00] [INFO    ] discord.client: logging in using static token
+[2022-06-25 14:44:00] [INFO    ] discord.gateway: Shard ID None has sent the IDENTIFY payload.
+[2022-06-25 14:44:00] [INFO    ] discord.gateway: Shard ID None has sent the IDENTIFY payload.
+[2022-06-25 14:44:00] [INFO    ] discord.gateway: Shard ID None has sent the IDENTIFY payload.
+[2022-06-25 14:44:01] [INFO    ] discord.gateway: Shard ID None has connected to Gateway: ["gateway-prd-main-f4b8",{"micros":181493,"calls":["discord-sessions-blue-prd-2-65",{"micros":177336,"calls":["start_session",{"micros":160524,"calls":["discord-api-fdb87b79f-wrxmc",{"micros":113428,"calls":["get_user",{"micros":35449},"add_authorized_ip",{"micros":6942},"get_guilds",{"micros":12150},"coros_wait",{"micros":3}]}]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":15621,"calls":[]}]}]}] (Session ID: 7f1f84987c293452d4ee0d7c09ed1f1e).
+[2022-06-25 14:44:01] [INFO    ] discord.gateway: Shard ID None has connected to Gateway: ["gateway-prd-main-f4b8",{"micros":181493,"calls":["discord-sessions-blue-prd-2-65",{"micros":177336,"calls":["start_session",{"micros":160524,"calls":["discord-api-fdb87b79f-wrxmc",{"micros":113428,"calls":["get_user",{"micros":35449},"add_authorized_ip",{"micros":6942},"get_guilds",{"micros":12150},"coros_wait",{"micros":3}]}]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":15621,"calls":[]}]}]}] (Session ID: 7f1f84987c293452d4ee0d7c09ed1f1e).
+[2022-06-25 14:44:01] [INFO    ] discord.gateway: Shard ID None has connected to Gateway: ["gateway-prd-main-f4b8",{"micros":181493,"calls":["discord-sessions-blue-prd-2-65",{"micros":177336,"calls":["start_session",{"micros":160524,"calls":["discord-api-fdb87b79f-wrxmc",{"micros":113428,"calls":["get_user",{"micros":35449},"add_authorized_ip",{"micros":6942},"get_guilds",{"micros":12150},"coros_wait",{"micros":3}]}]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":15621,"calls":[]}]}]}] (Session ID: 7f1f84987c293452d4ee0d7c09ed1f1e).
+[2022-06-25 14:46:32] [INFO    ] discord.client: Received signal to terminate bot and event loop.
+[2022-06-25 14:46:32] [INFO    ] discord.client: Received signal to terminate bot and event loop.
+[2022-06-25 14:46:32] [INFO    ] discord.client: Received signal to terminate bot and event loop.
+[2022-06-25 14:46:32] [INFO    ] discord.client: Cleaning up tasks.
+[2022-06-25 14:46:32] [INFO    ] discord.client: Cleaning up tasks.
+[2022-06-25 14:46:32] [INFO    ] discord.client: Cleaning up tasks.
+[2022-06-25 14:46:32] [INFO    ] discord.client: Cleaning up after 2 tasks.
+[2022-06-25 14:46:32] [INFO    ] discord.client: Cleaning up after 2 tasks.
+[2022-06-25 14:46:32] [INFO    ] discord.client: Cleaning up after 2 tasks.
+[2022-06-25 14:46:32] [INFO    ] discord.client: All tasks finished cancelling.
+[2022-06-25 14:46:32] [INFO    ] discord.client: All tasks finished cancelling.
+[2022-06-25 14:46:32] [INFO    ] discord.client: All tasks finished cancelling.
+[2022-06-25 14:46:32] [INFO    ] discord.client: Closing the event loop.
+[2022-06-25 14:46:32] [INFO    ] discord.client: Closing the event loop.
+[2022-06-25 14:46:32] [INFO    ] discord.client: Closing the event loop.
+[2022-06-25 14:46:35] [WARNING ] discord.client: PyNaCl is not installed, voice will NOT be supported
+[2022-06-25 14:46:35] [INFO    ] discord.client: logging in using static token
+[2022-06-25 14:46:35] [INFO    ] discord.client: logging in using static token
+[2022-06-25 14:46:35] [INFO    ] discord.client: logging in using static token
+[2022-06-25 14:46:36] [INFO    ] discord.gateway: Shard ID None has sent the IDENTIFY payload.
+[2022-06-25 14:46:36] [INFO    ] discord.gateway: Shard ID None has sent the IDENTIFY payload.
+[2022-06-25 14:46:36] [INFO    ] discord.gateway: Shard ID None has sent the IDENTIFY payload.
+[2022-06-25 14:46:36] [INFO    ] discord.gateway: Shard ID None has connected to Gateway: ["gateway-prd-main-z4rc",{"micros":131141,"calls":["discord-sessions-blue-prd-2-108",{"micros":119370,"calls":["start_session",{"micros":51539,"calls":["discord-api-fdb87b79f-mw742",{"micros":46811,"calls":["get_user",{"micros":16651},"add_authorized_ip",{"micros":1655},"get_guilds",{"micros":7029},"coros_wait",{"micros":2}]}]},"guilds_connect",{"micros":1,"calls":[]},"presence_connect",{"micros":0,"calls":[]}]}]}] (Session ID: 5563f929740690c35c8c6108153cfd3f).
+[2022-06-25 14:46:36] [INFO    ] discord.gateway: Shard ID None has connected to Gateway: ["gateway-prd-main-z4rc",{"micros":131141,"calls":["discord-sessions-blue-prd-2-108",{"micros":119370,"calls":["start_session",{"micros":51539,"calls":["discord-api-fdb87b79f-mw742",{"micros":46811,"calls":["get_user",{"micros":16651},"add_authorized_ip",{"micros":1655},"get_guilds",{"micros":7029},"coros_wait",{"micros":2}]}]},"guilds_connect",{"micros":1,"calls":[]},"presence_connect",{"micros":0,"calls":[]}]}]}] (Session ID: 5563f929740690c35c8c6108153cfd3f).
+[2022-06-25 14:46:36] [INFO    ] discord.gateway: Shard ID None has connected to Gateway: ["gateway-prd-main-z4rc",{"micros":131141,"calls":["discord-sessions-blue-prd-2-108",{"micros":119370,"calls":["start_session",{"micros":51539,"calls":["discord-api-fdb87b79f-mw742",{"micros":46811,"calls":["get_user",{"micros":16651},"add_authorized_ip",{"micros":1655},"get_guilds",{"micros":7029},"coros_wait",{"micros":2}]}]},"guilds_connect",{"micros":1,"calls":[]},"presence_connect",{"micros":0,"calls":[]}]}]}] (Session ID: 5563f929740690c35c8c6108153cfd3f).
+[2022-06-25 14:47:06] [INFO    ] discord.client: Received signal to terminate bot and event loop.
+[2022-06-25 14:47:06] [INFO    ] discord.client: Received signal to terminate bot and event loop.
+[2022-06-25 14:47:06] [INFO    ] discord.client: Received signal to terminate bot and event loop.
+[2022-06-25 14:47:06] [INFO    ] discord.client: Cleaning up tasks.
+[2022-06-25 14:47:06] [INFO    ] discord.client: Cleaning up tasks.
+[2022-06-25 14:47:06] [INFO    ] discord.client: Cleaning up tasks.
+[2022-06-25 14:47:06] [INFO    ] discord.client: Cleaning up after 2 tasks.
+[2022-06-25 14:47:06] [INFO    ] discord.client: Cleaning up after 2 tasks.
+[2022-06-25 14:47:06] [INFO    ] discord.client: Cleaning up after 2 tasks.
+[2022-06-25 14:47:06] [INFO    ] discord.client: All tasks finished cancelling.
+[2022-06-25 14:47:06] [INFO    ] discord.client: All tasks finished cancelling.
+[2022-06-25 14:47:06] [INFO    ] discord.client: All tasks finished cancelling.
+[2022-06-25 14:47:06] [INFO    ] discord.client: Closing the event loop.
+[2022-06-25 14:47:06] [INFO    ] discord.client: Closing the event loop.
+[2022-06-25 14:47:06] [INFO    ] discord.client: Closing the event loop.
+[2022-06-25 14:47:09] [WARNING ] discord.client: PyNaCl is not installed, voice will NOT be supported
+[2022-06-25 14:47:09] [INFO    ] discord.client: logging in using static token
+[2022-06-25 14:47:09] [INFO    ] discord.client: logging in using static token
+[2022-06-25 14:47:09] [INFO    ] discord.client: logging in using static token
+[2022-06-25 14:47:10] [INFO    ] discord.gateway: Shard ID None has sent the IDENTIFY payload.
+[2022-06-25 14:47:10] [INFO    ] discord.gateway: Shard ID None has sent the IDENTIFY payload.
+[2022-06-25 14:47:10] [INFO    ] discord.gateway: Shard ID None has sent the IDENTIFY payload.
+[2022-06-25 14:47:10] [INFO    ] discord.gateway: Shard ID None has connected to Gateway: ["gateway-prd-main-tb9w",{"micros":70106,"calls":["discord-sessions-blue-prd-2-149",{"micros":67451,"calls":["start_session",{"micros":49851,"calls":["discord-api-fdb87b79f-qkdfl",{"micros":40809,"calls":["get_user",{"micros":6387},"add_authorized_ip",{"micros":3325},"get_guilds",{"micros":10921},"coros_wait",{"micros":1}]}]},"guilds_connect",{"micros":1,"calls":[]},"presence_connect",{"micros":6469,"calls":[]}]}]}] (Session ID: 3313f41512bbb41111ed16888107c5ee).
+[2022-06-25 14:47:10] [INFO    ] discord.gateway: Shard ID None has connected to Gateway: ["gateway-prd-main-tb9w",{"micros":70106,"calls":["discord-sessions-blue-prd-2-149",{"micros":67451,"calls":["start_session",{"micros":49851,"calls":["discord-api-fdb87b79f-qkdfl",{"micros":40809,"calls":["get_user",{"micros":6387},"add_authorized_ip",{"micros":3325},"get_guilds",{"micros":10921},"coros_wait",{"micros":1}]}]},"guilds_connect",{"micros":1,"calls":[]},"presence_connect",{"micros":6469,"calls":[]}]}]}] (Session ID: 3313f41512bbb41111ed16888107c5ee).
+[2022-06-25 14:47:10] [INFO    ] discord.gateway: Shard ID None has connected to Gateway: ["gateway-prd-main-tb9w",{"micros":70106,"calls":["discord-sessions-blue-prd-2-149",{"micros":67451,"calls":["start_session",{"micros":49851,"calls":["discord-api-fdb87b79f-qkdfl",{"micros":40809,"calls":["get_user",{"micros":6387},"add_authorized_ip",{"micros":3325},"get_guilds",{"micros":10921},"coros_wait",{"micros":1}]}]},"guilds_connect",{"micros":1,"calls":[]},"presence_connect",{"micros":6469,"calls":[]}]}]}] (Session ID: 3313f41512bbb41111ed16888107c5ee).
+[2022-06-25 14:50:49] [INFO    ] discord.client: Received signal to terminate bot and event loop.
+[2022-06-25 14:50:49] [INFO    ] discord.client: Received signal to terminate bot and event loop.
+[2022-06-25 14:50:49] [INFO    ] discord.client: Received signal to terminate bot and event loop.
+[2022-06-25 14:50:49] [INFO    ] discord.client: Cleaning up tasks.
+[2022-06-25 14:50:49] [INFO    ] discord.client: Cleaning up tasks.
+[2022-06-25 14:50:49] [INFO    ] discord.client: Cleaning up tasks.
+[2022-06-25 14:50:49] [INFO    ] discord.client: Cleaning up after 2 tasks.
+[2022-06-25 14:50:49] [INFO    ] discord.client: Cleaning up after 2 tasks.
+[2022-06-25 14:50:49] [INFO    ] discord.client: Cleaning up after 2 tasks.
+[2022-06-25 14:50:49] [INFO    ] discord.client: All tasks finished cancelling.
+[2022-06-25 14:50:49] [INFO    ] discord.client: All tasks finished cancelling.
+[2022-06-25 14:50:49] [INFO    ] discord.client: All tasks finished cancelling.
+[2022-06-25 14:50:49] [INFO    ] discord.client: Closing the event loop.
+[2022-06-25 14:50:49] [INFO    ] discord.client: Closing the event loop.
+[2022-06-25 14:50:49] [INFO    ] discord.client: Closing the event loop.
+[2022-06-25 14:50:55] [WARNING ] discord.client: PyNaCl is not installed, voice will NOT be supported
+[2022-06-25 14:50:55] [INFO    ] discord.client: logging in using static token
+[2022-06-25 14:50:55] [INFO    ] discord.client: logging in using static token
+[2022-06-25 14:50:55] [INFO    ] discord.client: logging in using static token
+[2022-06-25 14:50:56] [INFO    ] discord.gateway: Shard ID None has sent the IDENTIFY payload.
+[2022-06-25 14:50:56] [INFO    ] discord.gateway: Shard ID None has sent the IDENTIFY payload.
+[2022-06-25 14:50:56] [INFO    ] discord.gateway: Shard ID None has sent the IDENTIFY payload.
+[2022-06-25 14:50:56] [INFO    ] discord.gateway: Shard ID None has connected to Gateway: ["gateway-prd-main-6vlr",{"micros":183277,"calls":["discord-sessions-blue-prd-2-91",{"micros":181760,"calls":["start_session",{"micros":141051,"calls":["discord-api-fdb87b79f-nqwg4",{"micros":136379,"calls":["get_user",{"micros":24203},"add_authorized_ip",{"micros":10514},"get_guilds",{"micros":42741},"coros_wait",{"micros":1}]}]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":33107,"calls":[]}]}]}] (Session ID: 6e829804ff9860471f9f9aafe3c6c5f3).
+[2022-06-25 14:50:56] [INFO    ] discord.gateway: Shard ID None has connected to Gateway: ["gateway-prd-main-6vlr",{"micros":183277,"calls":["discord-sessions-blue-prd-2-91",{"micros":181760,"calls":["start_session",{"micros":141051,"calls":["discord-api-fdb87b79f-nqwg4",{"micros":136379,"calls":["get_user",{"micros":24203},"add_authorized_ip",{"micros":10514},"get_guilds",{"micros":42741},"coros_wait",{"micros":1}]}]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":33107,"calls":[]}]}]}] (Session ID: 6e829804ff9860471f9f9aafe3c6c5f3).
+[2022-06-25 14:50:56] [INFO    ] discord.gateway: Shard ID None has connected to Gateway: ["gateway-prd-main-6vlr",{"micros":183277,"calls":["discord-sessions-blue-prd-2-91",{"micros":181760,"calls":["start_session",{"micros":141051,"calls":["discord-api-fdb87b79f-nqwg4",{"micros":136379,"calls":["get_user",{"micros":24203},"add_authorized_ip",{"micros":10514},"get_guilds",{"micros":42741},"coros_wait",{"micros":1}]}]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":33107,"calls":[]}]}]}] (Session ID: 6e829804ff9860471f9f9aafe3c6c5f3).
+[2022-06-25 14:51:45] [INFO    ] discord.client: Received signal to terminate bot and event loop.
+[2022-06-25 14:51:45] [INFO    ] discord.client: Received signal to terminate bot and event loop.
+[2022-06-25 14:51:45] [INFO    ] discord.client: Received signal to terminate bot and event loop.
+[2022-06-25 14:51:45] [INFO    ] discord.client: Cleaning up tasks.
+[2022-06-25 14:51:45] [INFO    ] discord.client: Cleaning up tasks.
+[2022-06-25 14:51:45] [INFO    ] discord.client: Cleaning up tasks.
+[2022-06-25 14:51:45] [INFO    ] discord.client: Cleaning up after 2 tasks.
+[2022-06-25 14:51:45] [INFO    ] discord.client: Cleaning up after 2 tasks.
+[2022-06-25 14:51:45] [INFO    ] discord.client: Cleaning up after 2 tasks.
+[2022-06-25 14:51:45] [INFO    ] discord.client: All tasks finished cancelling.
+[2022-06-25 14:51:45] [INFO    ] discord.client: All tasks finished cancelling.
+[2022-06-25 14:51:45] [INFO    ] discord.client: All tasks finished cancelling.
+[2022-06-25 14:51:45] [INFO    ] discord.client: Closing the event loop.
+[2022-06-25 14:51:45] [INFO    ] discord.client: Closing the event loop.
+[2022-06-25 14:51:45] [INFO    ] discord.client: Closing the event loop.
+[2022-06-25 14:51:55] [WARNING ] discord.client: PyNaCl is not installed, voice will NOT be supported
+[2022-06-25 14:51:55] [INFO    ] discord.client: logging in using static token
+[2022-06-25 14:51:55] [INFO    ] discord.client: logging in using static token
+[2022-06-25 14:51:55] [INFO    ] discord.client: logging in using static token
+[2022-06-25 14:51:56] [INFO    ] discord.gateway: Shard ID None has sent the IDENTIFY payload.
+[2022-06-25 14:51:56] [INFO    ] discord.gateway: Shard ID None has sent the IDENTIFY payload.
+[2022-06-25 14:51:56] [INFO    ] discord.gateway: Shard ID None has sent the IDENTIFY payload.
+[2022-06-25 14:51:56] [INFO    ] discord.gateway: Shard ID None has connected to Gateway: ["gateway-prd-main-rjn7",{"micros":198194,"calls":["discord-sessions-blue-prd-2-162",{"micros":191168,"calls":["start_session",{"micros":169170,"calls":["discord-api-fdb87b79f-pml92",{"micros":163132,"calls":["get_user",{"micros":20526},"add_authorized_ip",{"micros":20864},"get_guilds",{"micros":38210},"coros_wait",{"micros":2}]}]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":7256,"calls":[]}]}]}] (Session ID: 13e73730c95fb4f36eb74c87d688703a).
+[2022-06-25 14:51:56] [INFO    ] discord.gateway: Shard ID None has connected to Gateway: ["gateway-prd-main-rjn7",{"micros":198194,"calls":["discord-sessions-blue-prd-2-162",{"micros":191168,"calls":["start_session",{"micros":169170,"calls":["discord-api-fdb87b79f-pml92",{"micros":163132,"calls":["get_user",{"micros":20526},"add_authorized_ip",{"micros":20864},"get_guilds",{"micros":38210},"coros_wait",{"micros":2}]}]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":7256,"calls":[]}]}]}] (Session ID: 13e73730c95fb4f36eb74c87d688703a).
+[2022-06-25 14:51:56] [INFO    ] discord.gateway: Shard ID None has connected to Gateway: ["gateway-prd-main-rjn7",{"micros":198194,"calls":["discord-sessions-blue-prd-2-162",{"micros":191168,"calls":["start_session",{"micros":169170,"calls":["discord-api-fdb87b79f-pml92",{"micros":163132,"calls":["get_user",{"micros":20526},"add_authorized_ip",{"micros":20864},"get_guilds",{"micros":38210},"coros_wait",{"micros":2}]}]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":7256,"calls":[]}]}]}] (Session ID: 13e73730c95fb4f36eb74c87d688703a).
+[2022-06-25 14:59:41] [INFO    ] discord.client: Received signal to terminate bot and event loop.
+[2022-06-25 14:59:41] [INFO    ] discord.client: Received signal to terminate bot and event loop.
+[2022-06-25 14:59:41] [INFO    ] discord.client: Received signal to terminate bot and event loop.
+[2022-06-25 14:59:41] [INFO    ] discord.client: Cleaning up tasks.
+[2022-06-25 14:59:41] [INFO    ] discord.client: Cleaning up tasks.
+[2022-06-25 14:59:41] [INFO    ] discord.client: Cleaning up tasks.
+[2022-06-25 14:59:41] [INFO    ] discord.client: Cleaning up after 2 tasks.
+[2022-06-25 14:59:41] [INFO    ] discord.client: Cleaning up after 2 tasks.
+[2022-06-25 14:59:41] [INFO    ] discord.client: Cleaning up after 2 tasks.
+[2022-06-25 14:59:41] [INFO    ] discord.client: All tasks finished cancelling.
+[2022-06-25 14:59:41] [INFO    ] discord.client: All tasks finished cancelling.
+[2022-06-25 14:59:41] [INFO    ] discord.client: All tasks finished cancelling.
+[2022-06-25 14:59:41] [INFO    ] discord.client: Closing the event loop.
+[2022-06-25 14:59:41] [INFO    ] discord.client: Closing the event loop.
+[2022-06-25 14:59:41] [INFO    ] discord.client: Closing the event loop.
