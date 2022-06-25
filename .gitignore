@@ -1,0 +1,10 @@
+.idea
+.vscode
+*.log
+config.json
+base/image.py
+cogs/__pycache__
+cogs/mod.py.deactivated
+venv
+module.py
+bot.py

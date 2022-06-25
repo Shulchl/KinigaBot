@@ -1,0 +1,463 @@
+[2022-06-18 17:54:41] [DEBUG   ] discord.client: Dispatching event socket_raw_receive
+[2022-06-18 17:54:41] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': 'PRESENCE_UPDATE', 's': 70, 'op': 0, 'd': {'user': {'id': '275583071326175242'}, 'status': 'dnd', 'roles': [], 'premium_since': None, 'nick': None, 'guild_id': '685932057657868289', 'game': {'type': 0, 'state': 'Full Stack & Full Cycle Developer', 'session_id': 'd489f60c228661b7fac587e700044afe', 'name': 'Programmer Status', 'id': '54ec4691e519e002', 'details': 'Mateus A. Martins', 'created_at': 1655585692464, 'buttons': ['My Website', 'LinkedIn'], 'assets': {'small_text': 'Busy', 'small_image': '929195532910461019', 'large_text': 'Created by Mateus A. Martins', 'large_image': '928684837877981234'}, 'application_id': '928684131695607928'}, 'client_status': {'desktop': 'dnd'}, 'activities': [{'type': 0, 'state': 'Full Stack & Full Cycle Developer', 'session_id': 'd489f60c228661b7fac587e700044afe', 'name': 'Programmer Status', 'id': '54ec4691e519e002', 'details': 'Mateus A. Martins', 'created_at': 1655585692464, 'buttons': ['My Website', 'LinkedIn'], 'assets': {'small_text': 'Busy', 'small_image': '929195532910461019', 'large_text': 'Created by Mateus A. Martins', 'large_image': '928684837877981234'}, 'application_id': '928684131695607928'}]}}
+[2022-06-18 17:54:41] [DEBUG   ] discord.client: Dispatching event socket_response
+[2022-06-18 17:54:41] [DEBUG   ] discord.client: Dispatching event member_update
+[2022-06-18 17:54:45] [DEBUG   ] discord.client: Dispatching event socket_raw_receive
+[2022-06-18 17:54:45] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': 'PRESENCE_UPDATE', 's': 71, 'op': 0, 'd': {'user': {'id': '179440483796385792'}, 'status': 'dnd', 'roles': ['686176482837397506', '686176490584408099', '686176488822669348', '686176486356418570', '757336248234016939', '686178897326637077', '686171312749674523'], 'premium_since': None, 'nick': None, 'guild_id': '685932057657868289', 'game': {'type': 4, 'state': 'this world was never meant for one as beautiful as you', 'session_id': None, 'name': 'Custom Status', 'id': 'custom', 'created_at': 1655561585888}, 'client_status': {'desktop': 'dnd'}, 'activities': [{'type': 4, 'state': 'this world was never meant for one as beautiful as you', 'name': 'Custom Status', 'id': 'custom', 'created_at': 1655561585888}, {'type': 2, 'timestamps': {'start': 1655585550061, 'end': 1655585733302}, 'sync_id': '6isTQfKXhNO3EyJd9mSxx8', 'state': 'Lil Nas X; Miley Cyrus', 'session_id': '81e891caebbc7bb04a44fda46c13dc72', 'party': {'id': 'spotify:179440483796385792'}, 'name': 'Spotify', 'id': 'spotify:1', 'flags': 48, 'details': 'AM I DREAMING (feat. Miley Cyrus)', 'created_at': 1655585561540, 'assets': {'large_text': 'MONTERO', 'large_image': 'spotify:ab67616d0000b273be82673b5f79d9658ec0a9fd'}}, {'type': 0, 'timestamps': {'start': 1655575492240}, 'state': 'In Kiniga-Bot', 'name': 'Code', 'id': 'aeedc8fa1338eecf', 'details': 'Viewing Utils.py - 0 problems found', 'created_at': 1655585696842, 'assets': {'small_text': 'Visual Studio Code', 'small_image': '736271915206967318', 'large_text': 'python file, on line 1 of 116', 'large_image': '774238859076698113'}, 'application_id': '732565262704050298'}]}}
+[2022-06-18 17:54:45] [DEBUG   ] discord.client: Dispatching event socket_response
+[2022-06-18 17:54:45] [DEBUG   ] discord.client: Dispatching event member_update
+[2022-06-18 17:54:45] [DEBUG   ] discord.client: Dispatching event socket_raw_receive
+[2022-06-18 17:54:45] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': 'PRESENCE_UPDATE', 's': 72, 'op': 0, 'd': {'user': {'id': '179440483796385792'}, 'status': 'dnd', 'roles': ['855117898074030121', '817573014807511050', '855117820814688307', '933539248974495764', '929100319433031741'], 'premium_since': None, 'nick': None, 'guild_id': '406996662997745672', 'game': {'type': 4, 'state': 'this world was never meant for one as beautiful as you', 'session_id': None, 'name': 'Custom Status', 'id': 'custom', 'created_at': 1655561585888}, 'client_status': {'desktop': 'dnd'}, 'activities': [{'type': 4, 'state': 'this world was never meant for one as beautiful as you', 'name': 'Custom Status', 'id': 'custom', 'created_at': 1655561585888}, {'type': 2, 'timestamps': {'start': 1655585550061, 'end': 1655585733302}, 'sync_id': '6isTQfKXhNO3EyJd9mSxx8', 'state': 'Lil Nas X; Miley Cyrus', 'session_id': '81e891caebbc7bb04a44fda46c13dc72', 'party': {'id': 'spotify:179440483796385792'}, 'name': 'Spotify', 'id': 'spotify:1', 'flags': 48, 'details': 'AM I DREAMING (feat. Miley Cyrus)', 'created_at': 1655585561540, 'assets': {'large_text': 'MONTERO', 'large_image': 'spotify:ab67616d0000b273be82673b5f79d9658ec0a9fd'}}, {'type': 0, 'timestamps': {'start': 1655575492240}, 'state': 'In Kiniga-Bot', 'name': 'Code', 'id': 'aeedc8fa1338eecf', 'details': 'Viewing Utils.py - 0 problems found', 'created_at': 1655585696842, 'assets': {'small_text': 'Visual Studio Code', 'small_image': '736271915206967318', 'large_text': 'python file, on line 1 of 116', 'large_image': '774238859076698113'}, 'application_id': '732565262704050298'}]}}
+[2022-06-18 17:54:45] [DEBUG   ] discord.client: Dispatching event socket_response
+[2022-06-18 17:54:45] [DEBUG   ] discord.client: Dispatching event member_update
+[2022-06-18 17:54:45] [DEBUG   ] discord.client: Dispatching event socket_raw_receive
+[2022-06-18 17:54:45] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': 'PRESENCE_UPDATE', 's': 73, 'op': 0, 'd': {'user': {'id': '738215394980003861'}, 'status': 'online', 'roles': ['731944464318464050', '686176482837397506'], 'premium_since': None, 'nick': None, 'guild_id': '685932057657868289', 'game': None, 'client_status': {'web': 'online'}, 'activities': []}}
+[2022-06-18 17:54:45] [DEBUG   ] discord.client: Dispatching event socket_response
+[2022-06-18 17:54:45] [DEBUG   ] discord.client: Dispatching event member_update
+[2022-06-18 17:54:46] [DEBUG   ] discord.client: Dispatching event socket_raw_receive
+[2022-06-18 17:54:46] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': 'PRESENCE_UPDATE', 's': 74, 'op': 0, 'd': {'user': {'id': '275583071326175242'}, 'status': 'dnd', 'roles': [], 'premium_since': None, 'nick': None, 'guild_id': '685932057657868289', 'game': {'type': 0, 'state': 'Full Stack & Full Cycle Developer', 'session_id': 'd489f60c228661b7fac587e700044afe', 'name': 'Programmer Status', 'id': '54ec4691e519e002', 'details': 'Mateus A. Martins', 'created_at': 1655585697590, 'buttons': ['My Website', 'Instagram'], 'assets': {'small_text': 'Busy', 'small_image': '929195532910461019', 'large_text': 'Created by Mateus A. Martins', 'large_image': '928684837877981234'}, 'application_id': '928684131695607928'}, 'client_status': {'desktop': 'dnd'}, 'activities': [{'type': 0, 'state': 'Full Stack & Full Cycle Developer', 'session_id': 'd489f60c228661b7fac587e700044afe', 'name': 'Programmer Status', 'id': '54ec4691e519e002', 'details': 'Mateus A. Martins', 'created_at': 1655585697590, 'buttons': ['My Website', 'Instagram'], 'assets': {'small_text': 'Busy', 'small_image': '929195532910461019', 'large_text': 'Created by Mateus A. Martins', 'large_image': '928684837877981234'}, 'application_id': '928684131695607928'}]}}
+[2022-06-18 17:54:46] [DEBUG   ] discord.client: Dispatching event socket_response
+[2022-06-18 17:54:46] [DEBUG   ] discord.client: Dispatching event member_update
+[2022-06-18 17:54:46] [DEBUG   ] discord.client: Dispatching event socket_raw_receive
+[2022-06-18 17:54:46] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': 'PRESENCE_UPDATE', 's': 75, 'op': 0, 'd': {'user': {'id': '179440483796385792'}, 'status': 'dnd', 'roles': ['686176482837397506', '686176490584408099', '686176488822669348', '686176486356418570', '757336248234016939', '686178897326637077', '686171312749674523'], 'premium_since': None, 'nick': None, 'guild_id': '685932057657868289', 'game': {'type': 4, 'state': 'this world was never meant for one as beautiful as you', 'session_id': None, 'name': 'Custom Status', 'id': 'custom', 'created_at': 1655561585888}, 'client_status': {'desktop': 'dnd'}, 'activities': [{'type': 4, 'state': 'this world was never meant for one as beautiful as you', 'name': 'Custom Status', 'id': 'custom', 'created_at': 1655561585888}, {'type': 2, 'timestamps': {'start': 1655585550061, 'end': 1655585733302}, 'sync_id': '6isTQfKXhNO3EyJd9mSxx8', 'state': 'Lil Nas X; Miley Cyrus', 'session_id': '81e891caebbc7bb04a44fda46c13dc72', 'party': {'id': 'spotify:179440483796385792'}, 'name': 'Spotify', 'id': 'spotify:1', 'flags': 48, 'details': 'AM I DREAMING (feat. Miley Cyrus)', 'created_at': 1655585561540, 'assets': {'large_text': 'MONTERO', 'large_image': 'spotify:ab67616d0000b273be82673b5f79d9658ec0a9fd'}}, {'type': 0, 'timestamps': {'start': 1655575492240}, 'state': 'In Kiniga-Bot', 'name': 'Code', 'id': 'aeedc8fa1338eecf', 'details': 'Editing discord.log - 0 problems found', 'created_at': 1655585697665, 'assets': {'small_text': 'Visual Studio Code', 'small_image': '736271915206967318', 'large_text': 'Log file, on line 17 of 17', 'large_image': '774238858744430622'}, 'application_id': '732565262704050298'}]}}
+[2022-06-18 17:54:46] [DEBUG   ] discord.client: Dispatching event socket_response
+[2022-06-18 17:54:46] [DEBUG   ] discord.client: Dispatching event member_update
+[2022-06-18 17:54:46] [DEBUG   ] discord.client: Dispatching event socket_raw_receive
+[2022-06-18 17:54:46] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': 'PRESENCE_UPDATE', 's': 76, 'op': 0, 'd': {'user': {'id': '179440483796385792'}, 'status': 'dnd', 'roles': ['855117898074030121', '817573014807511050', '855117820814688307', '933539248974495764', '929100319433031741'], 'premium_since': None, 'nick': None, 'guild_id': '406996662997745672', 'game': {'type': 4, 'state': 'this world was never meant for one as beautiful as you', 'session_id': None, 'name': 'Custom Status', 'id': 'custom', 'created_at': 1655561585888}, 'client_status': {'desktop': 'dnd'}, 'activities': [{'type': 4, 'state': 'this world was never meant for one as beautiful as you', 'name': 'Custom Status', 'id': 'custom', 'created_at': 1655561585888}, {'type': 2, 'timestamps': {'start': 1655585550061, 'end': 1655585733302}, 'sync_id': '6isTQfKXhNO3EyJd9mSxx8', 'state': 'Lil Nas X; Miley Cyrus', 'session_id': '81e891caebbc7bb04a44fda46c13dc72', 'party': {'id': 'spotify:179440483796385792'}, 'name': 'Spotify', 'id': 'spotify:1', 'flags': 48, 'details': 'AM I DREAMING (feat. Miley Cyrus)', 'created_at': 1655585561540, 'assets': {'large_text': 'MONTERO', 'large_image': 'spotify:ab67616d0000b273be82673b5f79d9658ec0a9fd'}}, {'type': 0, 'timestamps': {'start': 1655575492240}, 'state': 'In Kiniga-Bot', 'name': 'Code', 'id': 'aeedc8fa1338eecf', 'details': 'Editing discord.log - 0 problems found', 'created_at': 1655585697665, 'assets': {'small_text': 'Visual Studio Code', 'small_image': '736271915206967318', 'large_text': 'Log file, on line 17 of 17', 'large_image': '774238858744430622'}, 'application_id': '732565262704050298'}]}}
+[2022-06-18 17:54:46] [DEBUG   ] discord.client: Dispatching event socket_response
+[2022-06-18 17:54:46] [DEBUG   ] discord.client: Dispatching event member_update
+[2022-06-18 17:54:46] [DEBUG   ] discord.client: Dispatching event socket_raw_receive
+[2022-06-18 17:54:46] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': 'PRESENCE_UPDATE', 's': 77, 'op': 0, 'd': {'user': {'id': '742592151875223658'}, 'status': 'dnd', 'roles': [], 'premium_since': None, 'nick': None, 'guild_id': '685932057657868289', 'game': {'type': 4, 'state': 'Desenvolvo bots para o discord, sites que interagem com bots, sites normais, sistemas de automação em geral e software...', 'session_id': None, 'name': 'Custom Status', 'id': 'custom', 'created_at': 1655573134939}, 'client_status': {'desktop': 'dnd'}, 'activities': [{'type': 4, 'state': 'Desenvolvo bots para o discord, sites que interagem com bots, sites normais, sistemas de automação em geral e software...', 'name': 'Custom Status', 'id': 'custom', 'created_at': 1655573134939}, {'type': 0, 'timestamps': {'start': 1655585295000}, 'state': 'Jogando partida Dupla', 'session_id': '0d0b7c3c576a97300c35a2f7bb64224b', 'party': {'size': [2, 2], 'id': '012135f640b9401b41d2173b48bc8430'}, 'name': 'Fortnite', 'id': 'ea64af08e4740f89', 'flags': 194, 'details': 'Battle Royale — 34 restante(s)', 'created_at': 1655585697921, 'assets': {'small_text': 'Categoria 34', 'small_image': '443127519386927104'}, 'application_id': '432980957394370572'}]}}
+[2022-06-18 17:54:46] [DEBUG   ] discord.client: Dispatching event socket_response
+[2022-06-18 17:54:46] [DEBUG   ] discord.client: Dispatching event member_update
+[2022-06-18 17:54:48] [DEBUG   ] discord.client: Dispatching event socket_raw_receive
+[2022-06-18 17:54:48] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': 'PRESENCE_UPDATE', 's': 78, 'op': 0, 'd': {'user': {'id': '179440483796385792'}, 'status': 'dnd', 'roles': ['686176482837397506', '686176490584408099', '686176488822669348', '686176486356418570', '757336248234016939', '686178897326637077', '686171312749674523'], 'premium_since': None, 'nick': None, 'guild_id': '685932057657868289', 'game': {'type': 4, 'state': 'this world was never meant for one as beautiful as you', 'session_id': None, 'name': 'Custom Status', 'id': 'custom', 'created_at': 1655561585888}, 'client_status': {'desktop': 'dnd'}, 'activities': [{'type': 4, 'state': 'this world was never meant for one as beautiful as you', 'name': 'Custom Status', 'id': 'custom', 'created_at': 1655561585888}, {'type': 2, 'timestamps': {'start': 1655585550061, 'end': 1655585733302}, 'sync_id': '6isTQfKXhNO3EyJd9mSxx8', 'state': 'Lil Nas X; Miley Cyrus', 'session_id': '81e891caebbc7bb04a44fda46c13dc72', 'party': {'id': 'spotify:179440483796385792'}, 'name': 'Spotify', 'id': 'spotify:1', 'flags': 48, 'details': 'AM I DREAMING (feat. Miley Cyrus)', 'created_at': 1655585561540, 'assets': {'large_text': 'MONTERO', 'large_image': 'spotify:ab67616d0000b273be82673b5f79d9658ec0a9fd'}}, {'type': 0, 'timestamps': {'start': 1655575492240}, 'state': 'In Kiniga-Bot', 'name': 'Code', 'id': 'aeedc8fa1338eecf', 'details': 'Editing discord.log - 0 problems found', 'created_at': 1655585700302, 'assets': {'small_text': 'Visual Studio Code', 'small_image': '736271915206967318', 'large_text': 'Log file, on line 33 of 33', 'large_image': '774238858744430622'}, 'application_id': '732565262704050298'}]}}
+[2022-06-18 17:54:48] [DEBUG   ] discord.client: Dispatching event socket_response
+[2022-06-18 17:54:48] [DEBUG   ] discord.client: Dispatching event member_update
+[2022-06-18 17:54:49] [DEBUG   ] discord.client: Dispatching event socket_raw_receive
+[2022-06-18 17:54:49] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': 'PRESENCE_UPDATE', 's': 79, 'op': 0, 'd': {'user': {'id': '179440483796385792'}, 'status': 'dnd', 'roles': ['855117898074030121', '817573014807511050', '855117820814688307', '933539248974495764', '929100319433031741'], 'premium_since': None, 'nick': None, 'guild_id': '406996662997745672', 'game': {'type': 4, 'state': 'this world was never meant for one as beautiful as you', 'session_id': None, 'name': 'Custom Status', 'id': 'custom', 'created_at': 1655561585888}, 'client_status': {'desktop': 'dnd'}, 'activities': [{'type': 4, 'state': 'this world was never meant for one as beautiful as you', 'name': 'Custom Status', 'id': 'custom', 'created_at': 1655561585888}, {'type': 2, 'timestamps': {'start': 1655585550061, 'end': 1655585733302}, 'sync_id': '6isTQfKXhNO3EyJd9mSxx8', 'state': 'Lil Nas X; Miley Cyrus', 'session_id': '81e891caebbc7bb04a44fda46c13dc72', 'party': {'id': 'spotify:179440483796385792'}, 'name': 'Spotify', 'id': 'spotify:1', 'flags': 48, 'details': 'AM I DREAMING (feat. Miley Cyrus)', 'created_at': 1655585561540, 'assets': {'large_text': 'MONTERO', 'large_image': 'spotify:ab67616d0000b273be82673b5f79d9658ec0a9fd'}}, {'type': 0, 'timestamps': {'start': 1655575492240}, 'state': 'In Kiniga-Bot', 'name': 'Code', 'id': 'aeedc8fa1338eecf', 'details': 'Editing discord.log - 0 problems found', 'created_at': 1655585700302, 'assets': {'small_text': 'Visual Studio Code', 'small_image': '736271915206967318', 'large_text': 'Log file, on line 33 of 33', 'large_image': '774238858744430622'}, 'application_id': '732565262704050298'}]}}
+[2022-06-18 17:54:49] [DEBUG   ] discord.client: Dispatching event socket_response
+[2022-06-18 17:54:49] [DEBUG   ] discord.client: Dispatching event member_update
+[2022-06-18 17:54:49] [DEBUG   ] discord.gateway: Keeping shard ID None websocket alive with sequence 79.
+[2022-06-18 17:54:49] [DEBUG   ] discord.client: Dispatching event socket_raw_receive
+[2022-06-18 17:54:49] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+[2022-06-18 17:54:49] [DEBUG   ] discord.client: Dispatching event socket_response
+[2022-06-18 17:54:49] [DEBUG   ] discord.client: Dispatching event socket_raw_receive
+[2022-06-18 17:54:49] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': 'PRESENCE_UPDATE', 's': 80, 'op': 0, 'd': {'user': {'id': '179440483796385792'}, 'status': 'dnd', 'roles': ['686176482837397506', '686176490584408099', '686176488822669348', '686176486356418570', '757336248234016939', '686178897326637077', '686171312749674523'], 'premium_since': None, 'nick': None, 'guild_id': '685932057657868289', 'game': {'type': 4, 'state': 'this world was never meant for one as beautiful as you', 'session_id': None, 'name': 'Custom Status', 'id': 'custom', 'created_at': 1655561585888}, 'client_status': {'desktop': 'dnd'}, 'activities': [{'type': 4, 'state': 'this world was never meant for one as beautiful as you', 'name': 'Custom Status', 'id': 'custom', 'created_at': 1655561585888}, {'type': 2, 'timestamps': {'start': 1655585550061, 'end': 1655585733302}, 'sync_id': '6isTQfKXhNO3EyJd9mSxx8', 'state': 'Lil Nas X; Miley Cyrus', 'session_id': '81e891caebbc7bb04a44fda46c13dc72', 'party': {'id': 'spotify:179440483796385792'}, 'name': 'Spotify', 'id': 'spotify:1', 'flags': 48, 'details': 'AM I DREAMING (feat. Miley Cyrus)', 'created_at': 1655585561540, 'assets': {'large_text': 'MONTERO', 'large_image': 'spotify:ab67616d0000b273be82673b5f79d9658ec0a9fd'}}, {'type': 0, 'timestamps': {'start': 1655575492240}, 'state': 'In Kiniga-Bot', 'name': 'Code', 'id': 'aeedc8fa1338eecf', 'details': 'Editing discord.log - 0 problems found', 'created_at': 1655585701228, 'assets': {'small_text': 'Visual Studio Code', 'small_image': '736271915206967318', 'large_text': 'Log file, on line 45 of 45', 'large_image': '774238858744430622'}, 'application_id': '732565262704050298'}]}}
+[2022-06-18 17:54:49] [DEBUG   ] discord.client: Dispatching event socket_response
+[2022-06-18 17:54:49] [DEBUG   ] discord.client: Dispatching event member_update
+[2022-06-18 17:54:49] [DEBUG   ] discord.client: Dispatching event socket_raw_receive
+[2022-06-18 17:54:49] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': 'PRESENCE_UPDATE', 's': 81, 'op': 0, 'd': {'user': {'id': '179440483796385792'}, 'status': 'dnd', 'roles': ['855117898074030121', '817573014807511050', '855117820814688307', '933539248974495764', '929100319433031741'], 'premium_since': None, 'nick': None, 'guild_id': '406996662997745672', 'game': {'type': 4, 'state': 'this world was never meant for one as beautiful as you', 'session_id': None, 'name': 'Custom Status', 'id': 'custom', 'created_at': 1655561585888}, 'client_status': {'desktop': 'dnd'}, 'activities': [{'type': 4, 'state': 'this world was never meant for one as beautiful as you', 'name': 'Custom Status', 'id': 'custom', 'created_at': 1655561585888}, {'type': 2, 'timestamps': {'start': 1655585550061, 'end': 1655585733302}, 'sync_id': '6isTQfKXhNO3EyJd9mSxx8', 'state': 'Lil Nas X; Miley Cyrus', 'session_id': '81e891caebbc7bb04a44fda46c13dc72', 'party': {'id': 'spotify:179440483796385792'}, 'name': 'Spotify', 'id': 'spotify:1', 'flags': 48, 'details': 'AM I DREAMING (feat. Miley Cyrus)', 'created_at': 1655585561540, 'assets': {'large_text': 'MONTERO', 'large_image': 'spotify:ab67616d0000b273be82673b5f79d9658ec0a9fd'}}, {'type': 0, 'timestamps': {'start': 1655575492240}, 'state': 'In Kiniga-Bot', 'name': 'Code', 'id': 'aeedc8fa1338eecf', 'details': 'Editing discord.log - 0 problems found', 'created_at': 1655585701228, 'assets': {'small_text': 'Visual Studio Code', 'small_image': '736271915206967318', 'large_text': 'Log file, on line 45 of 45', 'large_image': '774238858744430622'}, 'application_id': '732565262704050298'}]}}
+[2022-06-18 17:54:49] [DEBUG   ] discord.client: Dispatching event socket_response
+[2022-06-18 17:54:49] [DEBUG   ] discord.client: Dispatching event member_update
+[2022-06-18 17:54:50] [DEBUG   ] discord.client: Dispatching event socket_raw_receive
+[2022-06-18 17:54:50] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': 'PRESENCE_UPDATE', 's': 82, 'op': 0, 'd': {'user': {'id': '179440483796385792'}, 'status': 'dnd', 'roles': ['686176482837397506', '686176490584408099', '686176488822669348', '686176486356418570', '757336248234016939', '686178897326637077', '686171312749674523'], 'premium_since': None, 'nick': None, 'guild_id': '685932057657868289', 'game': {'type': 4, 'state': 'this world was never meant for one as beautiful as you', 'session_id': None, 'name': 'Custom Status', 'id': 'custom', 'created_at': 1655561585888}, 'client_status': {'desktop': 'dnd'}, 'activities': [{'type': 4, 'state': 'this world was never meant for one as beautiful as you', 'name': 'Custom Status', 'id': 'custom', 'created_at': 1655561585888}, {'type': 2, 'timestamps': {'start': 1655585550061, 'end': 1655585733302}, 'sync_id': '6isTQfKXhNO3EyJd9mSxx8', 'state': 'Lil Nas X; Miley Cyrus', 'session_id': '81e891caebbc7bb04a44fda46c13dc72', 'party': {'id': 'spotify:179440483796385792'}, 'name': 'Spotify', 'id': 'spotify:1', 'flags': 48, 'details': 'AM I DREAMING (feat. Miley Cyrus)', 'created_at': 1655585561540, 'assets': {'large_text': 'MONTERO', 'large_image': 'spotify:ab67616d0000b273be82673b5f79d9658ec0a9fd'}}, {'type': 0, 'timestamps': {'start': 1655575492240}, 'state': 'In Kiniga-Bot', 'name': 'Code', 'id': 'aeedc8fa1338eecf', 'details': 'Editing discord.log - 0 problems found', 'created_at': 1655585701758, 'assets': {'small_text': 'Visual Studio Code', 'small_image': '736271915206967318', 'large_text': 'Log file, on line 53 of 53', 'large_image': '774238858744430622'}, 'application_id': '732565262704050298'}]}}
+[2022-06-18 17:54:50] [DEBUG   ] discord.client: Dispatching event socket_response
+[2022-06-18 17:54:50] [DEBUG   ] discord.client: Dispatching event member_update
+[2022-06-18 17:54:50] [DEBUG   ] discord.client: Dispatching event socket_raw_receive
+[2022-06-18 17:54:50] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': 'PRESENCE_UPDATE', 's': 83, 'op': 0, 'd': {'user': {'id': '179440483796385792'}, 'status': 'dnd', 'roles': ['855117898074030121', '817573014807511050', '855117820814688307', '933539248974495764', '929100319433031741'], 'premium_since': None, 'nick': None, 'guild_id': '406996662997745672', 'game': {'type': 4, 'state': 'this world was never meant for one as beautiful as you', 'session_id': None, 'name': 'Custom Status', 'id': 'custom', 'created_at': 1655561585888}, 'client_status': {'desktop': 'dnd'}, 'activities': [{'type': 4, 'state': 'this world was never meant for one as beautiful as you', 'name': 'Custom Status', 'id': 'custom', 'created_at': 1655561585888}, {'type': 2, 'timestamps': {'start': 1655585550061, 'end': 1655585733302}, 'sync_id': '6isTQfKXhNO3EyJd9mSxx8', 'state': 'Lil Nas X; Miley Cyrus', 'session_id': '81e891caebbc7bb04a44fda46c13dc72', 'party': {'id': 'spotify:179440483796385792'}, 'name': 'Spotify', 'id': 'spotify:1', 'flags': 48, 'details': 'AM I DREAMING (feat. Miley Cyrus)', 'created_at': 1655585561540, 'assets': {'large_text': 'MONTERO', 'large_image': 'spotify:ab67616d0000b273be82673b5f79d9658ec0a9fd'}}, {'type': 0, 'timestamps': {'start': 1655575492240}, 'state': 'In Kiniga-Bot', 'name': 'Code', 'id': 'aeedc8fa1338eecf', 'details': 'Editing discord.log - 0 problems found', 'created_at': 1655585701758, 'assets': {'small_text': 'Visual Studio Code', 'small_image': '736271915206967318', 'large_text': 'Log file, on line 53 of 53', 'large_image': '774238858744430622'}, 'application_id': '732565262704050298'}]}}
+[2022-06-18 17:54:50] [DEBUG   ] discord.client: Dispatching event socket_response
+[2022-06-18 17:54:50] [DEBUG   ] discord.client: Dispatching event member_update
+[2022-06-18 17:54:51] [INFO    ] discord.client: Received signal to terminate bot and event loop.
+[2022-06-18 17:54:51] [INFO    ] discord.client: Cleaning up tasks.
+[2022-06-18 17:54:51] [INFO    ] discord.client: Cleaning up after 3 tasks.
+[2022-06-18 17:54:51] [DEBUG   ] discord.client: Dispatching event command_completion
+[2022-06-18 17:54:51] [INFO    ] discord.client: All tasks finished cancelling.
+[2022-06-18 17:54:51] [INFO    ] discord.client: Closing the event loop.
+[2022-06-18 17:56:14] [WARNING ] discord.client: PyNaCl is not installed, voice will NOT be supported
+[2022-06-18 17:56:14] [INFO    ] discord.client: logging in using static token
+[2022-06-18 17:56:15] [INFO    ] discord.gateway: Shard ID None has sent the IDENTIFY payload.
+[2022-06-18 17:56:15] [INFO    ] discord.gateway: Shard ID None has connected to Gateway: ["gateway-prd-main-nx1p",{"micros":80068,"calls":["discord-sessions-green-prd-2-172",{"micros":78556,"calls":["start_session",{"micros":41141,"calls":["discord-api-9869d5fcc-ls798",{"micros":37933,"calls":["get_user",{"micros":5756},"add_authorized_ip",{"micros":1883},"get_guilds",{"micros":10644},"coros_wait",{"micros":1}]}]},"guilds_connect",{"micros":1,"calls":[]},"presence_connect",{"micros":20661,"calls":[]}]}]}] (Session ID: d318bef056783cf05f1eca178fbabc1b).
+[2022-06-18 17:57:30] [INFO    ] discord.client: Received signal to terminate bot and event loop.
+[2022-06-18 17:57:30] [INFO    ] discord.client: Cleaning up tasks.
+[2022-06-18 17:57:30] [INFO    ] discord.client: Cleaning up after 3 tasks.
+[2022-06-18 17:57:30] [INFO    ] discord.client: All tasks finished cancelling.
+[2022-06-18 17:57:30] [INFO    ] discord.client: Closing the event loop.
+[2022-06-18 17:58:02] [WARNING ] discord.client: PyNaCl is not installed, voice will NOT be supported
+[2022-06-18 17:58:02] [INFO    ] discord.client: logging in using static token
+[2022-06-18 17:58:03] [INFO    ] discord.gateway: Shard ID None has sent the IDENTIFY payload.
+[2022-06-18 17:58:03] [INFO    ] discord.gateway: Shard ID None has connected to Gateway: ["gateway-prd-main-76hm",{"micros":62529,"calls":["discord-sessions-green-prd-2-34",{"micros":59900,"calls":["start_session",{"micros":50843,"calls":["discord-api-9869d5fcc-xdzxq",{"micros":46376,"calls":["get_user",{"micros":8388},"add_authorized_ip",{"micros":1788},"get_guilds",{"micros":12365},"coros_wait",{"micros":2}]}]},"guilds_connect",{"micros":1,"calls":[]},"presence_connect",{"micros":0,"calls":[]}]}]}] (Session ID: 1d84300e66513401e90b5e306298a71c).
+[2022-06-18 18:01:04] [INFO    ] discord.client: Received signal to terminate bot and event loop.
+[2022-06-18 18:01:04] [INFO    ] discord.client: Cleaning up tasks.
+[2022-06-18 18:01:04] [INFO    ] discord.client: Cleaning up after 3 tasks.
+[2022-06-18 18:01:04] [INFO    ] discord.client: All tasks finished cancelling.
+[2022-06-18 18:01:04] [INFO    ] discord.client: Closing the event loop.
+[2022-06-18 18:01:08] [WARNING ] discord.client: PyNaCl is not installed, voice will NOT be supported
+[2022-06-18 18:01:08] [INFO    ] discord.client: logging in using static token
+[2022-06-18 18:01:09] [INFO    ] discord.gateway: Shard ID None has sent the IDENTIFY payload.
+[2022-06-18 18:01:09] [INFO    ] discord.gateway: Shard ID None has connected to Gateway: ["gateway-prd-main-rbmn",{"micros":53683,"calls":["discord-sessions-green-prd-2-39",{"micros":52187,"calls":["start_session",{"micros":43828,"calls":["discord-api-9869d5fcc-vmx5z",{"micros":37593,"calls":["get_user",{"micros":11130},"add_authorized_ip",{"micros":1274},"get_guilds",{"micros":3020},"coros_wait",{"micros":0}]}]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":1,"calls":[]}]}]}] (Session ID: fdea59f81954673916372ded28e09e8c).
+[2022-06-18 18:03:28] [INFO    ] discord.client: Received signal to terminate bot and event loop.
+[2022-06-18 18:03:28] [INFO    ] discord.client: Cleaning up tasks.
+[2022-06-18 18:03:28] [INFO    ] discord.client: Cleaning up after 3 tasks.
+[2022-06-18 18:03:28] [INFO    ] discord.client: All tasks finished cancelling.
+[2022-06-18 18:03:28] [INFO    ] discord.client: Closing the event loop.
+[2022-06-18 18:03:32] [WARNING ] discord.client: PyNaCl is not installed, voice will NOT be supported
+[2022-06-18 18:03:32] [INFO    ] discord.client: logging in using static token
+[2022-06-18 18:03:33] [INFO    ] discord.gateway: Shard ID None has sent the IDENTIFY payload.
+[2022-06-18 18:03:33] [INFO    ] discord.gateway: Shard ID None has connected to Gateway: ["gateway-prd-main-vbd5",{"micros":140236,"calls":["discord-sessions-green-prd-2-173",{"micros":138408,"calls":["start_session",{"micros":86173,"calls":["discord-api-9869d5fcc-4hqht",{"micros":74385,"calls":["get_user",{"micros":8154},"add_authorized_ip",{"micros":2908},"get_guilds",{"micros":12684},"coros_wait",{"micros":2}]}]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":1,"calls":[]}]}]}] (Session ID: 36c20ee527e0860484485005f69be39a).
+[2022-06-18 18:04:04] [INFO    ] discord.client: Received signal to terminate bot and event loop.
+[2022-06-18 18:04:04] [INFO    ] discord.client: Cleaning up tasks.
+[2022-06-18 18:04:04] [INFO    ] discord.client: Cleaning up after 2 tasks.
+[2022-06-18 18:04:04] [INFO    ] discord.client: All tasks finished cancelling.
+[2022-06-18 18:04:04] [INFO    ] discord.client: Closing the event loop.
+[2022-06-18 18:04:08] [WARNING ] discord.client: PyNaCl is not installed, voice will NOT be supported
+[2022-06-18 18:04:08] [INFO    ] discord.client: logging in using static token
+[2022-06-18 18:04:09] [INFO    ] discord.gateway: Shard ID None has sent the IDENTIFY payload.
+[2022-06-18 18:04:09] [INFO    ] discord.gateway: Shard ID None has connected to Gateway: ["gateway-prd-main-dw3z",{"micros":44418,"calls":["discord-sessions-green-prd-2-158",{"micros":43466,"calls":["start_session",{"micros":34871,"calls":["discord-api-9869d5fcc-zv44w",{"micros":30164,"calls":["get_user",{"micros":6643},"add_authorized_ip",{"micros":1197},"get_guilds",{"micros":4215},"coros_wait",{"micros":1}]}]},"guilds_connect",{"micros":1,"calls":[]},"presence_connect",{"micros":1,"calls":[]}]}]}] (Session ID: 745997a7b91f8198ca8c0118bdc374b1).
+[2022-06-18 18:06:18] [INFO    ] discord.client: Received signal to terminate bot and event loop.
+[2022-06-18 18:06:18] [INFO    ] discord.client: Cleaning up tasks.
+[2022-06-18 18:06:18] [INFO    ] discord.client: Cleaning up after 3 tasks.
+[2022-06-18 18:06:18] [INFO    ] discord.client: All tasks finished cancelling.
+[2022-06-18 18:06:18] [INFO    ] discord.client: Closing the event loop.
+[2022-06-18 18:06:24] [WARNING ] discord.client: PyNaCl is not installed, voice will NOT be supported
+[2022-06-18 18:06:24] [INFO    ] discord.client: logging in using static token
+[2022-06-18 18:06:25] [INFO    ] discord.gateway: Shard ID None has sent the IDENTIFY payload.
+[2022-06-18 18:06:25] [INFO    ] discord.gateway: Shard ID None has connected to Gateway: ["gateway-prd-main-93bs",{"micros":65257,"calls":["discord-sessions-green-prd-2-11",{"micros":63594,"calls":["start_session",{"micros":46136,"calls":["discord-api-9869d5fcc-v64rf",{"micros":39603,"calls":["get_user",{"micros":9376},"add_authorized_ip",{"micros":2968},"get_guilds",{"micros":4219},"coros_wait",{"micros":2}]}]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":16039,"calls":[]}]}]}] (Session ID: 4add34d631222a0167a8d8d98e42bf17).
+[2022-06-18 18:07:52] [INFO    ] discord.client: Received signal to terminate bot and event loop.
+[2022-06-18 18:07:52] [INFO    ] discord.client: Cleaning up tasks.
+[2022-06-18 18:07:52] [INFO    ] discord.client: Cleaning up after 2 tasks.
+[2022-06-18 18:07:52] [INFO    ] discord.client: All tasks finished cancelling.
+[2022-06-18 18:07:52] [INFO    ] discord.client: Closing the event loop.
+[2022-06-18 18:07:57] [WARNING ] discord.client: PyNaCl is not installed, voice will NOT be supported
+[2022-06-18 18:07:57] [INFO    ] discord.client: logging in using static token
+[2022-06-18 18:07:58] [INFO    ] discord.gateway: Shard ID None has sent the IDENTIFY payload.
+[2022-06-18 18:07:58] [INFO    ] discord.gateway: Shard ID None has connected to Gateway: ["gateway-prd-main-zmxv",{"micros":86962,"calls":["discord-sessions-green-prd-2-107",{"micros":83168,"calls":["start_session",{"micros":43625,"calls":["discord-api-9869d5fcc-snhvc",{"micros":35766,"calls":["get_user",{"micros":6397},"add_authorized_ip",{"micros":1549},"get_guilds",{"micros":4940},"coros_wait",{"micros":1}]}]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":9502,"calls":[]}]}]}] (Session ID: b82545dc0ad2f96d1cc6aad7d2a2bd4b).
+[2022-06-18 18:12:11] [INFO    ] discord.client: Received signal to terminate bot and event loop.
+[2022-06-18 18:12:11] [INFO    ] discord.client: Cleaning up tasks.
+[2022-06-18 18:12:11] [INFO    ] discord.client: Cleaning up after 2 tasks.
+[2022-06-18 18:12:11] [INFO    ] discord.client: All tasks finished cancelling.
+[2022-06-18 18:12:11] [INFO    ] discord.client: Closing the event loop.
+[2022-06-18 18:12:15] [WARNING ] discord.client: PyNaCl is not installed, voice will NOT be supported
+[2022-06-18 18:12:15] [INFO    ] discord.client: logging in using static token
+[2022-06-18 18:12:16] [INFO    ] discord.gateway: Shard ID None has sent the IDENTIFY payload.
+[2022-06-18 18:12:16] [INFO    ] discord.gateway: Shard ID None has connected to Gateway: ["gateway-prd-main-hlxc",{"micros":170013,"calls":["discord-sessions-green-prd-2-34",{"micros":161958,"calls":["start_session",{"micros":70953,"calls":["discord-api-9869d5fcc-v775w",{"micros":65364,"calls":["get_user",{"micros":13855},"add_authorized_ip",{"micros":4516},"get_guilds",{"micros":10628},"coros_wait",{"micros":1}]}]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":55562,"calls":[]}]}]}] (Session ID: 5ba7b8ed9482d82476d7826050f23aac).
+[2022-06-18 18:13:20] [INFO    ] discord.client: Received signal to terminate bot and event loop.
+[2022-06-18 18:13:20] [INFO    ] discord.client: Cleaning up tasks.
+[2022-06-18 18:13:20] [INFO    ] discord.client: Cleaning up after 2 tasks.
+[2022-06-18 18:13:20] [INFO    ] discord.client: All tasks finished cancelling.
+[2022-06-18 18:13:20] [INFO    ] discord.client: Closing the event loop.
+[2022-06-18 18:13:24] [WARNING ] discord.client: PyNaCl is not installed, voice will NOT be supported
+[2022-06-18 18:13:24] [INFO    ] discord.client: logging in using static token
+[2022-06-18 18:13:24] [INFO    ] discord.gateway: Shard ID None has sent the IDENTIFY payload.
+[2022-06-18 18:13:24] [INFO    ] discord.gateway: Shard ID None has connected to Gateway: ["gateway-prd-main-07nn",{"micros":105939,"calls":["discord-sessions-green-prd-2-51",{"micros":103260,"calls":["start_session",{"micros":59533,"calls":["discord-api-9869d5fcc-mg5md",{"micros":51516,"calls":["get_user",{"micros":7725},"add_authorized_ip",{"micros":2856},"get_guilds",{"micros":6659},"coros_wait",{"micros":2}]}]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":23927,"calls":[]}]}]}] (Session ID: d5e370fd9258cf4957fb4ca9a331b02a).
+[2022-06-18 18:14:39] [INFO    ] discord.client: Received signal to terminate bot and event loop.
+[2022-06-18 18:14:39] [INFO    ] discord.client: Cleaning up tasks.
+[2022-06-18 18:14:39] [INFO    ] discord.client: Cleaning up after 2 tasks.
+[2022-06-18 18:14:39] [INFO    ] discord.client: All tasks finished cancelling.
+[2022-06-18 18:14:39] [INFO    ] discord.client: Closing the event loop.
+[2022-06-18 18:15:10] [WARNING ] discord.client: PyNaCl is not installed, voice will NOT be supported
+[2022-06-18 18:15:10] [INFO    ] discord.client: logging in using static token
+[2022-06-18 18:15:11] [INFO    ] discord.gateway: Shard ID None has sent the IDENTIFY payload.
+[2022-06-18 18:15:11] [INFO    ] discord.gateway: Shard ID None has connected to Gateway: ["gateway-prd-main-r0wx",{"micros":76780,"calls":["discord-sessions-green-prd-2-163",{"micros":64113,"calls":["start_session",{"micros":39386,"calls":["discord-api-9869d5fcc-zc47q",{"micros":34430,"calls":["get_user",{"micros":7849},"add_authorized_ip",{"micros":1290},"get_guilds",{"micros":3235},"coros_wait",{"micros":0}]}]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":2,"calls":[]}]}]}] (Session ID: 86aaaf198aef14dd191d5b69f6560266).
+[2022-06-18 18:15:40] [INFO    ] discord.client: Received signal to terminate bot and event loop.
+[2022-06-18 18:15:40] [INFO    ] discord.client: Cleaning up tasks.
+[2022-06-18 18:15:40] [INFO    ] discord.client: Cleaning up after 2 tasks.
+[2022-06-18 18:15:40] [INFO    ] discord.client: All tasks finished cancelling.
+[2022-06-18 18:15:40] [INFO    ] discord.client: Closing the event loop.
+[2022-06-18 18:15:44] [WARNING ] discord.client: PyNaCl is not installed, voice will NOT be supported
+[2022-06-18 18:15:44] [INFO    ] discord.client: logging in using static token
+[2022-06-18 18:15:44] [INFO    ] discord.gateway: Shard ID None has sent the IDENTIFY payload.
+[2022-06-18 18:15:44] [INFO    ] discord.gateway: Shard ID None has connected to Gateway: ["gateway-prd-main-h8kp",{"micros":67485,"calls":["discord-sessions-green-prd-2-103",{"micros":65942,"calls":["start_session",{"micros":53038,"calls":["discord-api-9869d5fcc-5m6tv",{"micros":47864,"calls":["get_user",{"micros":10036},"add_authorized_ip",{"micros":3677},"get_guilds",{"micros":5872},"coros_wait",{"micros":2}]}]},"guilds_connect",{"micros":1,"calls":[]},"presence_connect",{"micros":11770,"calls":[]}]}]}] (Session ID: 9b574449c1afdd7f9bea55baef5f1eaf).
+[2022-06-18 18:16:09] [INFO    ] discord.client: Received signal to terminate bot and event loop.
+[2022-06-18 18:16:09] [INFO    ] discord.client: Cleaning up tasks.
+[2022-06-18 18:16:09] [INFO    ] discord.client: Cleaning up after 2 tasks.
+[2022-06-18 18:16:09] [INFO    ] discord.client: All tasks finished cancelling.
+[2022-06-18 18:16:09] [INFO    ] discord.client: Closing the event loop.
+[2022-06-18 18:16:15] [WARNING ] discord.client: PyNaCl is not installed, voice will NOT be supported
+[2022-06-18 18:16:15] [INFO    ] discord.client: logging in using static token
+[2022-06-18 18:16:16] [INFO    ] discord.gateway: Shard ID None has sent the IDENTIFY payload.
+[2022-06-18 18:16:16] [INFO    ] discord.gateway: Shard ID None has connected to Gateway: ["gateway-prd-main-0r6t",{"micros":106413,"calls":["discord-sessions-green-prd-2-13",{"micros":99833,"calls":["start_session",{"micros":46629,"calls":["discord-api-9869d5fcc-dg7rd",{"micros":41242,"calls":["get_user",{"micros":11155},"add_authorized_ip",{"micros":1827},"get_guilds",{"micros":3986},"coros_wait",{"micros":1}]}]},"guilds_connect",{"micros":3,"calls":[]},"presence_connect",{"micros":39748,"calls":[]}]}]}] (Session ID: 16324f76a4f99637d806f7a318aeefff).
+[2022-06-18 18:36:51] [INFO    ] discord.client: Received signal to terminate bot and event loop.
+[2022-06-18 18:36:51] [INFO    ] discord.client: Cleaning up tasks.
+[2022-06-18 18:36:51] [INFO    ] discord.client: Cleaning up after 2 tasks.
+[2022-06-18 18:36:51] [INFO    ] discord.client: All tasks finished cancelling.
+[2022-06-18 18:36:51] [INFO    ] discord.client: Closing the event loop.
+[2022-06-18 18:37:01] [WARNING ] discord.client: PyNaCl is not installed, voice will NOT be supported
+[2022-06-18 18:37:01] [INFO    ] discord.client: logging in using static token
+[2022-06-18 18:37:02] [INFO    ] discord.gateway: Shard ID None has sent the IDENTIFY payload.
+[2022-06-18 18:37:02] [INFO    ] discord.gateway: Shard ID None has connected to Gateway: ["gateway-prd-main-6vlr",{"micros":143762,"calls":["discord-sessions-green-prd-2-118",{"micros":142709,"calls":["start_session",{"micros":82998,"calls":["discord-api-9869d5fcc-spw8p",{"micros":78746,"calls":["get_user",{"micros":11273},"add_authorized_ip",{"micros":5030},"get_guilds",{"micros":15969},"coros_wait",{"micros":1}]}]},"guilds_connect",{"micros":1,"calls":[]},"presence_connect",{"micros":2,"calls":[]}]}]}] (Session ID: d61dc1aef23b2cb84fc73662f7e9fee8).
+[2022-06-18 18:47:03] [INFO    ] discord.client: Received signal to terminate bot and event loop.
+[2022-06-18 18:47:03] [INFO    ] discord.client: Cleaning up tasks.
+[2022-06-18 18:47:03] [INFO    ] discord.client: Cleaning up after 2 tasks.
+[2022-06-18 18:47:03] [INFO    ] discord.client: All tasks finished cancelling.
+[2022-06-18 18:47:03] [INFO    ] discord.client: Closing the event loop.
+[2022-06-18 18:53:22] [WARNING ] discord.client: PyNaCl is not installed, voice will NOT be supported
+[2022-06-18 18:53:22] [INFO    ] discord.client: logging in using static token
+[2022-06-18 18:53:23] [INFO    ] discord.gateway: Shard ID None has sent the IDENTIFY payload.
+[2022-06-18 18:53:23] [INFO    ] discord.gateway: Shard ID None has connected to Gateway: ["gateway-prd-main-24dg",{"micros":66568,"calls":["discord-sessions-green-prd-2-9",{"micros":61570,"calls":["start_session",{"micros":41843,"calls":["discord-api-9869d5fcc-bvftk",{"micros":37163,"calls":["get_user",{"micros":7721},"add_authorized_ip",{"micros":2789},"get_guilds",{"micros":5067},"coros_wait",{"micros":2}]}]},"guilds_connect",{"micros":11,"calls":[]},"presence_connect",{"micros":2531,"calls":[]}]}]}] (Session ID: fe03252532bd38bb989bfc811df55be4).
+[2022-06-18 18:54:25] [INFO    ] discord.client: Received signal to terminate bot and event loop.
+[2022-06-18 18:54:25] [INFO    ] discord.client: Cleaning up tasks.
+[2022-06-18 18:54:25] [INFO    ] discord.client: Cleaning up after 1 tasks.
+[2022-06-18 18:54:25] [INFO    ] discord.client: All tasks finished cancelling.
+[2022-06-18 18:54:25] [INFO    ] discord.client: Closing the event loop.
+[2022-06-18 18:54:29] [WARNING ] discord.client: PyNaCl is not installed, voice will NOT be supported
+[2022-06-18 18:54:29] [INFO    ] discord.client: logging in using static token
+[2022-06-18 18:54:29] [INFO    ] discord.gateway: Shard ID None has sent the IDENTIFY payload.
+[2022-06-18 18:54:30] [INFO    ] discord.gateway: Shard ID None has connected to Gateway: ["gateway-prd-main-xjpg",{"micros":157397,"calls":["discord-sessions-green-prd-2-9",{"micros":154317,"calls":["start_session",{"micros":94165,"calls":["discord-api-9869d5fcc-l6njv",{"micros":89641,"calls":["get_user",{"micros":14190},"add_authorized_ip",{"micros":8569},"get_guilds",{"micros":16306},"coros_wait",{"micros":2}]}]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":1,"calls":[]}]}]}] (Session ID: d36fcfee473dda25b3613b74d442146f).
+[2022-06-18 18:58:23] [INFO    ] discord.client: Received signal to terminate bot and event loop.
+[2022-06-18 18:58:23] [INFO    ] discord.client: Cleaning up tasks.
+[2022-06-18 18:58:23] [INFO    ] discord.client: Cleaning up after 1 tasks.
+[2022-06-18 18:58:23] [INFO    ] discord.client: All tasks finished cancelling.
+[2022-06-18 18:58:23] [INFO    ] discord.client: Closing the event loop.
+[2022-06-18 18:59:32] [WARNING ] discord.client: PyNaCl is not installed, voice will NOT be supported
+[2022-06-18 18:59:32] [INFO    ] discord.client: logging in using static token
+[2022-06-18 18:59:32] [INFO    ] discord.gateway: Shard ID None has sent the IDENTIFY payload.
+[2022-06-18 18:59:33] [INFO    ] discord.gateway: Shard ID None has connected to Gateway: ["gateway-prd-main-5t9h",{"micros":88186,"calls":["discord-sessions-green-prd-2-58",{"micros":86794,"calls":["start_session",{"micros":64694,"calls":["discord-api-9869d5fcc-gccpb",{"micros":60651,"calls":["get_user",{"micros":9775},"add_authorized_ip",{"micros":3111},"get_guilds",{"micros":8025},"coros_wait",{"micros":1}]}]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":20212,"calls":[]}]}]}] (Session ID: 98995d7463b4bb6524cb906072f1af3c).
+[2022-06-18 19:01:19] [INFO    ] discord.client: Received signal to terminate bot and event loop.
+[2022-06-18 19:01:19] [INFO    ] discord.client: Cleaning up tasks.
+[2022-06-18 19:01:19] [INFO    ] discord.client: Cleaning up after 1 tasks.
+[2022-06-18 19:01:19] [INFO    ] discord.client: All tasks finished cancelling.
+[2022-06-18 19:01:19] [INFO    ] discord.client: Closing the event loop.
+[2022-06-18 19:03:19] [WARNING ] discord.client: PyNaCl is not installed, voice will NOT be supported
+[2022-06-18 19:03:19] [INFO    ] discord.client: logging in using static token
+[2022-06-18 19:03:20] [INFO    ] discord.gateway: Shard ID None has sent the IDENTIFY payload.
+[2022-06-18 19:03:20] [INFO    ] discord.gateway: Shard ID None has connected to Gateway: ["gateway-prd-main-7lfj",{"micros":58298,"calls":["discord-sessions-green-prd-2-18",{"micros":47955,"calls":["start_session",{"micros":36452,"calls":["discord-api-9869d5fcc-8q976",{"micros":32495,"calls":["get_user",{"micros":6537},"add_authorized_ip",{"micros":1338},"get_guilds",{"micros":4678},"coros_wait",{"micros":2}]}]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":3667,"calls":[]}]}]}] (Session ID: 1c3d11b5bec8c593af19eac13a483c50).
+[2022-06-18 19:03:54] [INFO    ] discord.client: Received signal to terminate bot and event loop.
+[2022-06-18 19:03:54] [INFO    ] discord.client: Cleaning up tasks.
+[2022-06-18 19:03:54] [INFO    ] discord.client: Cleaning up after 1 tasks.
+[2022-06-18 19:03:54] [INFO    ] discord.client: All tasks finished cancelling.
+[2022-06-18 19:03:54] [INFO    ] discord.client: Closing the event loop.
+[2022-06-18 19:05:03] [WARNING ] discord.client: PyNaCl is not installed, voice will NOT be supported
+[2022-06-18 19:05:03] [INFO    ] discord.client: logging in using static token
+[2022-06-18 19:05:04] [INFO    ] discord.gateway: Shard ID None has sent the IDENTIFY payload.
+[2022-06-18 19:05:04] [INFO    ] discord.gateway: Shard ID None has connected to Gateway: ["gateway-prd-main-t8sb",{"micros":119747,"calls":["discord-sessions-green-prd-2-23",{"micros":117502,"calls":["start_session",{"micros":39145,"calls":["discord-api-9869d5fcc-ds4cg",{"micros":35151,"calls":["get_user",{"micros":9451},"add_authorized_ip",{"micros":1568},"get_guilds",{"micros":3190},"coros_wait",{"micros":1}]}]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":27966,"calls":[]}]}]}] (Session ID: f53e18165319444a928a8cc38cd4982b).
+[2022-06-18 19:05:21] [INFO    ] discord.client: Received signal to terminate bot and event loop.
+[2022-06-18 19:05:21] [INFO    ] discord.client: Cleaning up tasks.
+[2022-06-18 19:05:21] [INFO    ] discord.client: Cleaning up after 1 tasks.
+[2022-06-18 19:05:21] [INFO    ] discord.client: All tasks finished cancelling.
+[2022-06-18 19:05:21] [INFO    ] discord.client: Closing the event loop.
+[2022-06-18 19:05:34] [WARNING ] discord.client: PyNaCl is not installed, voice will NOT be supported
+[2022-06-18 19:05:34] [INFO    ] discord.client: logging in using static token
+[2022-06-18 19:05:35] [INFO    ] discord.gateway: Shard ID None has sent the IDENTIFY payload.
+[2022-06-18 19:05:35] [INFO    ] discord.gateway: Shard ID None has connected to Gateway: ["gateway-prd-main-nbz2",{"micros":56674,"calls":["discord-sessions-green-prd-2-174",{"micros":53214,"calls":["start_session",{"micros":49535,"calls":["discord-api-9869d5fcc-thj7v",{"micros":45169,"calls":["get_user",{"micros":10793},"add_authorized_ip",{"micros":1563},"get_guilds",{"micros":6983},"coros_wait",{"micros":2}]}]},"guilds_connect",{"micros":1,"calls":[]},"presence_connect",{"micros":2329,"calls":[]}]}]}] (Session ID: a144334f312ea97c71ca29501133349a).
+[2022-06-18 19:06:09] [INFO    ] discord.client: Received signal to terminate bot and event loop.
+[2022-06-18 19:06:09] [INFO    ] discord.client: Cleaning up tasks.
+[2022-06-18 19:06:09] [INFO    ] discord.client: Cleaning up after 1 tasks.
+[2022-06-18 19:06:09] [INFO    ] discord.client: All tasks finished cancelling.
+[2022-06-18 19:06:09] [INFO    ] discord.client: Closing the event loop.
+[2022-06-18 19:06:16] [WARNING ] discord.client: PyNaCl is not installed, voice will NOT be supported
+[2022-06-18 19:06:16] [INFO    ] discord.client: logging in using static token
+[2022-06-18 19:06:17] [INFO    ] discord.gateway: Shard ID None has sent the IDENTIFY payload.
+[2022-06-18 19:06:17] [INFO    ] discord.gateway: Shard ID None has connected to Gateway: ["gateway-prd-main-m5l1",{"micros":135213,"calls":["discord-sessions-green-prd-2-31",{"micros":133734,"calls":["start_session",{"micros":105358,"calls":["discord-api-9869d5fcc-2dlrr",{"micros":86054,"calls":["get_user",{"micros":14601},"add_authorized_ip",{"micros":3123},"get_guilds",{"micros":12736},"coros_wait",{"micros":1}]}]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":15149,"calls":[]}]}]}] (Session ID: 1224dfd1abf34aaf9682c7bba8bd7efb).
+[2022-06-18 19:07:27] [INFO    ] discord.client: Received signal to terminate bot and event loop.
+[2022-06-18 19:07:27] [INFO    ] discord.client: Cleaning up tasks.
+[2022-06-18 19:07:27] [INFO    ] discord.client: Cleaning up after 1 tasks.
+[2022-06-18 19:07:27] [INFO    ] discord.client: All tasks finished cancelling.
+[2022-06-18 19:07:27] [INFO    ] discord.client: Closing the event loop.
+[2022-06-18 19:07:33] [WARNING ] discord.client: PyNaCl is not installed, voice will NOT be supported
+[2022-06-18 19:07:48] [WARNING ] discord.client: PyNaCl is not installed, voice will NOT be supported
+[2022-06-18 19:07:48] [INFO    ] discord.client: logging in using static token
+[2022-06-18 19:07:49] [INFO    ] discord.gateway: Shard ID None has sent the IDENTIFY payload.
+[2022-06-18 19:07:49] [INFO    ] discord.gateway: Shard ID None has connected to Gateway: ["gateway-prd-main-53f9",{"micros":126987,"calls":["discord-sessions-green-prd-2-151",{"micros":124870,"calls":["start_session",{"micros":75410,"calls":["discord-api-9869d5fcc-x5bxl",{"micros":66100,"calls":["get_user",{"micros":11412},"add_authorized_ip",{"micros":4058},"get_guilds",{"micros":11864},"coros_wait",{"micros":0}]}]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":40307,"calls":[]}]}]}] (Session ID: 0da56d6462e3a0c2c3f228b24656c048).
+[2022-06-18 19:09:02] [INFO    ] discord.client: Received signal to terminate bot and event loop.
+[2022-06-18 19:09:02] [INFO    ] discord.client: Cleaning up tasks.
+[2022-06-18 19:09:02] [INFO    ] discord.client: Cleaning up after 1 tasks.
+[2022-06-18 19:09:02] [INFO    ] discord.client: All tasks finished cancelling.
+[2022-06-18 19:09:02] [INFO    ] discord.client: Closing the event loop.
+[2022-06-18 19:09:56] [WARNING ] discord.client: PyNaCl is not installed, voice will NOT be supported
+[2022-06-18 19:09:57] [INFO    ] discord.client: logging in using static token
+[2022-06-18 19:09:57] [INFO    ] discord.gateway: Shard ID None has sent the IDENTIFY payload.
+[2022-06-18 19:09:57] [INFO    ] discord.gateway: Shard ID None has connected to Gateway: ["gateway-prd-main-7lfj",{"micros":67478,"calls":["discord-sessions-green-prd-2-15",{"micros":65958,"calls":["start_session",{"micros":39802,"calls":["discord-api-9869d5fcc-qpcpm",{"micros":35462,"calls":["get_user",{"micros":8240},"add_authorized_ip",{"micros":1289},"get_guilds",{"micros":4006},"coros_wait",{"micros":1}]}]},"guilds_connect",{"micros":1,"calls":[]},"presence_connect",{"micros":24828,"calls":[]}]}]}] (Session ID: fb76b53c87fcedb2cd91b60ed09c6ccd).
+[2022-06-18 19:13:35] [INFO    ] discord.client: Received signal to terminate bot and event loop.
+[2022-06-18 19:13:35] [INFO    ] discord.client: Cleaning up tasks.
+[2022-06-18 19:13:35] [INFO    ] discord.client: Cleaning up after 1 tasks.
+[2022-06-18 19:13:35] [INFO    ] discord.client: All tasks finished cancelling.
+[2022-06-18 19:13:35] [INFO    ] discord.client: Closing the event loop.
+[2022-06-18 19:13:39] [WARNING ] discord.client: PyNaCl is not installed, voice will NOT be supported
+[2022-06-18 19:13:39] [INFO    ] discord.client: logging in using static token
+[2022-06-18 19:13:40] [INFO    ] discord.gateway: Shard ID None has sent the IDENTIFY payload.
+[2022-06-18 19:13:40] [INFO    ] discord.gateway: Shard ID None has connected to Gateway: ["gateway-prd-main-36h9",{"micros":137806,"calls":["discord-sessions-green-prd-2-168",{"micros":134361,"calls":["start_session",{"micros":97895,"calls":["discord-api-9869d5fcc-mm7ll",{"micros":91486,"calls":["get_user",{"micros":9664},"add_authorized_ip",{"micros":3669},"get_guilds",{"micros":14045},"coros_wait",{"micros":1}]}]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":15249,"calls":[]}]}]}] (Session ID: f369519c624328ccf8566ad3ed041a16).
+[2022-06-18 19:14:01] [INFO    ] discord.client: Received signal to terminate bot and event loop.
+[2022-06-18 19:14:01] [INFO    ] discord.client: Cleaning up tasks.
+[2022-06-18 19:14:01] [INFO    ] discord.client: Cleaning up after 1 tasks.
+[2022-06-18 19:14:01] [INFO    ] discord.client: All tasks finished cancelling.
+[2022-06-18 19:14:01] [INFO    ] discord.client: Closing the event loop.
+[2022-06-18 19:16:13] [WARNING ] discord.client: PyNaCl is not installed, voice will NOT be supported
+[2022-06-18 19:16:14] [INFO    ] discord.client: logging in using static token
+[2022-06-18 19:16:14] [INFO    ] discord.gateway: Shard ID None has sent the IDENTIFY payload.
+[2022-06-18 19:16:14] [INFO    ] discord.gateway: Shard ID None has connected to Gateway: ["gateway-prd-main-qg77",{"micros":109196,"calls":["discord-sessions-green-prd-2-25",{"micros":105576,"calls":["start_session",{"micros":66726,"calls":["discord-api-9869d5fcc-pspw5",{"micros":63020,"calls":["get_user",{"micros":13853},"add_authorized_ip",{"micros":5670},"get_guilds",{"micros":15259},"coros_wait",{"micros":1}]}]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":16673,"calls":[]}]}]}] (Session ID: 102d8312d92133d4c5843f8d0bef1e69).
+[2022-06-18 19:19:56] [INFO    ] discord.client: Received signal to terminate bot and event loop.
+[2022-06-18 19:19:56] [INFO    ] discord.client: Cleaning up tasks.
+[2022-06-18 19:19:56] [INFO    ] discord.client: Cleaning up after 2 tasks.
+[2022-06-18 19:19:56] [INFO    ] discord.client: All tasks finished cancelling.
+[2022-06-18 19:19:56] [INFO    ] discord.client: Closing the event loop.
+[2022-06-18 19:21:50] [WARNING ] discord.client: PyNaCl is not installed, voice will NOT be supported
+[2022-06-18 19:21:50] [INFO    ] discord.client: logging in using static token
+[2022-06-18 19:21:50] [INFO    ] discord.gateway: Shard ID None has sent the IDENTIFY payload.
+[2022-06-18 19:21:50] [INFO    ] discord.gateway: Shard ID None has connected to Gateway: ["gateway-prd-main-l542",{"micros":62997,"calls":["discord-sessions-green-prd-2-96",{"micros":61170,"calls":["start_session",{"micros":41040,"calls":["discord-api-9869d5fcc-sdpsr",{"micros":36468,"calls":["get_user",{"micros":8015},"add_authorized_ip",{"micros":1652},"get_guilds",{"micros":3597},"coros_wait",{"micros":2}]}]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":5621,"calls":[]}]}]}] (Session ID: 69e517800840a37e17fb1346f4b13b92).
+[2022-06-18 19:38:28] [INFO    ] discord.client: Received signal to terminate bot and event loop.
+[2022-06-18 19:38:28] [INFO    ] discord.client: Cleaning up tasks.
+[2022-06-18 19:38:28] [INFO    ] discord.client: Cleaning up after 2 tasks.
+[2022-06-18 19:38:28] [INFO    ] discord.client: All tasks finished cancelling.
+[2022-06-18 19:38:28] [INFO    ] discord.client: Closing the event loop.
+[2022-06-18 19:38:35] [WARNING ] discord.client: PyNaCl is not installed, voice will NOT be supported
+[2022-06-18 19:38:35] [INFO    ] discord.client: logging in using static token
+[2022-06-18 19:38:36] [INFO    ] discord.gateway: Shard ID None has sent the IDENTIFY payload.
+[2022-06-18 19:38:36] [INFO    ] discord.gateway: Shard ID None has connected to Gateway: ["gateway-prd-main-ngr8",{"micros":127273,"calls":["discord-sessions-green-prd-2-23",{"micros":122594,"calls":["start_session",{"micros":41984,"calls":["discord-api-9869d5fcc-gx7cr",{"micros":37971,"calls":["get_user",{"micros":9292},"add_authorized_ip",{"micros":1491},"get_guilds",{"micros":9181},"coros_wait",{"micros":1}]}]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":62160,"calls":[]}]}]}] (Session ID: 6aab2fd6a651d7560c5c6489de2e91f5).
+[2022-06-18 19:43:02] [INFO    ] discord.client: Received signal to terminate bot and event loop.
+[2022-06-18 19:43:02] [INFO    ] discord.client: Cleaning up tasks.
+[2022-06-18 19:43:03] [INFO    ] discord.client: Cleaning up after 2 tasks.
+[2022-06-18 19:43:03] [INFO    ] discord.client: All tasks finished cancelling.
+[2022-06-18 19:43:03] [INFO    ] discord.client: Closing the event loop.
+[2022-06-18 19:43:08] [WARNING ] discord.client: PyNaCl is not installed, voice will NOT be supported
+[2022-06-18 19:43:08] [INFO    ] discord.client: logging in using static token
+[2022-06-18 19:43:08] [INFO    ] discord.gateway: Shard ID None has sent the IDENTIFY payload.
+[2022-06-18 19:43:09] [INFO    ] discord.gateway: Shard ID None has connected to Gateway: ["gateway-prd-main-qgrq",{"micros":137665,"calls":["discord-sessions-green-prd-2-159",{"micros":136164,"calls":["start_session",{"micros":111037,"calls":["discord-api-9869d5fcc-7c7xd",{"micros":79265,"calls":["get_user",{"micros":17503},"add_authorized_ip",{"micros":2961},"get_guilds",{"micros":7543},"coros_wait",{"micros":1}]}]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":23932,"calls":[]}]}]}] (Session ID: 904a37189fcf208870a8e9d75ebb3977).
+[2022-06-18 19:43:59] [INFO    ] discord.client: Received signal to terminate bot and event loop.
+[2022-06-18 19:43:59] [INFO    ] discord.client: Cleaning up tasks.
+[2022-06-18 19:43:59] [INFO    ] discord.client: Cleaning up after 2 tasks.
+[2022-06-18 19:43:59] [INFO    ] discord.client: All tasks finished cancelling.
+[2022-06-18 19:43:59] [INFO    ] discord.client: Closing the event loop.
+[2022-06-18 19:44:03] [WARNING ] discord.client: PyNaCl is not installed, voice will NOT be supported
+[2022-06-18 19:44:03] [INFO    ] discord.client: logging in using static token
+[2022-06-18 19:44:04] [INFO    ] discord.gateway: Shard ID None has sent the IDENTIFY payload.
+[2022-06-18 19:44:04] [INFO    ] discord.gateway: Shard ID None has connected to Gateway: ["gateway-prd-main-m7mt",{"micros":68608,"calls":["discord-sessions-green-prd-2-20",{"micros":67347,"calls":["start_session",{"micros":32684,"calls":["discord-api-9869d5fcc-jqmmv",{"micros":28875,"calls":["get_user",{"micros":6487},"add_authorized_ip",{"micros":1268},"get_guilds",{"micros":3141},"coros_wait",{"micros":1}]}]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":26404,"calls":[]}]}]}] (Session ID: ce05ff6d1676bcdd0129c7a48fb122c4).
+[2022-06-18 19:44:10] [INFO    ] discord.client: Received signal to terminate bot and event loop.
+[2022-06-18 19:44:10] [INFO    ] discord.client: Cleaning up tasks.
+[2022-06-18 19:44:10] [INFO    ] discord.client: Cleaning up after 2 tasks.
+[2022-06-18 19:44:10] [INFO    ] discord.client: All tasks finished cancelling.
+[2022-06-18 19:44:10] [INFO    ] discord.client: Closing the event loop.
+[2022-06-18 19:44:34] [WARNING ] discord.client: PyNaCl is not installed, voice will NOT be supported
+[2022-06-18 19:44:34] [INFO    ] discord.client: logging in using static token
+[2022-06-18 19:44:35] [INFO    ] discord.gateway: Shard ID None has sent the IDENTIFY payload.
+[2022-06-18 19:44:35] [INFO    ] discord.gateway: Shard ID None has connected to Gateway: ["gateway-prd-main-sgtn",{"micros":186941,"calls":["discord-sessions-green-prd-2-135",{"micros":185238,"calls":["start_session",{"micros":108972,"calls":["discord-api-9869d5fcc-qcl8j",{"micros":103338,"calls":["get_user",{"micros":26396},"add_authorized_ip",{"micros":10692},"get_guilds",{"micros":7014},"coros_wait",{"micros":1}]}]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":15692,"calls":[]}]}]}] (Session ID: 7cb4545871928fdb78d4d25153a6686a).
+[2022-06-18 19:48:47] [INFO    ] discord.client: Received signal to terminate bot and event loop.
+[2022-06-18 19:48:47] [INFO    ] discord.client: Cleaning up tasks.
+[2022-06-18 19:48:47] [INFO    ] discord.client: Cleaning up after 2 tasks.
+[2022-06-18 19:48:47] [INFO    ] discord.client: All tasks finished cancelling.
+[2022-06-18 19:48:47] [INFO    ] discord.client: Closing the event loop.
+[2022-06-18 19:49:00] [WARNING ] discord.client: PyNaCl is not installed, voice will NOT be supported
+[2022-06-18 19:49:01] [INFO    ] discord.client: logging in using static token
+[2022-06-18 19:49:01] [INFO    ] discord.client: logging in using static token
+[2022-06-18 19:49:01] [INFO    ] discord.client: logging in using static token
+[2022-06-18 19:49:01] [INFO    ] discord.gateway: Shard ID None has sent the IDENTIFY payload.
+[2022-06-18 19:49:01] [INFO    ] discord.gateway: Shard ID None has sent the IDENTIFY payload.
+[2022-06-18 19:49:01] [INFO    ] discord.gateway: Shard ID None has sent the IDENTIFY payload.
+[2022-06-18 19:49:02] [INFO    ] discord.gateway: Shard ID None has connected to Gateway: ["gateway-prd-main-zsdk",{"micros":228169,"calls":["discord-sessions-green-prd-2-56",{"micros":226964,"calls":["start_session",{"micros":170944,"calls":["discord-api-9869d5fcc-sxvgn",{"micros":164577,"calls":["get_user",{"micros":11714},"add_authorized_ip",{"micros":3530},"get_guilds",{"micros":63258},"coros_wait",{"micros":1}]}]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":34025,"calls":[]}]}]}] (Session ID: db72a2cce7a50595d0c7db701ebabf2c).
+[2022-06-18 19:49:02] [INFO    ] discord.gateway: Shard ID None has connected to Gateway: ["gateway-prd-main-zsdk",{"micros":228169,"calls":["discord-sessions-green-prd-2-56",{"micros":226964,"calls":["start_session",{"micros":170944,"calls":["discord-api-9869d5fcc-sxvgn",{"micros":164577,"calls":["get_user",{"micros":11714},"add_authorized_ip",{"micros":3530},"get_guilds",{"micros":63258},"coros_wait",{"micros":1}]}]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":34025,"calls":[]}]}]}] (Session ID: db72a2cce7a50595d0c7db701ebabf2c).
+[2022-06-18 19:49:02] [INFO    ] discord.gateway: Shard ID None has connected to Gateway: ["gateway-prd-main-zsdk",{"micros":228169,"calls":["discord-sessions-green-prd-2-56",{"micros":226964,"calls":["start_session",{"micros":170944,"calls":["discord-api-9869d5fcc-sxvgn",{"micros":164577,"calls":["get_user",{"micros":11714},"add_authorized_ip",{"micros":3530},"get_guilds",{"micros":63258},"coros_wait",{"micros":1}]}]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":34025,"calls":[]}]}]}] (Session ID: db72a2cce7a50595d0c7db701ebabf2c).
+[2022-06-25 13:29:30] [WARNING ] discord.client: PyNaCl is not installed, voice will NOT be supported
+[2022-06-25 13:29:31] [INFO    ] discord.client: logging in using static token
+[2022-06-25 13:29:31] [INFO    ] discord.client: logging in using static token
+[2022-06-25 13:29:31] [INFO    ] discord.client: logging in using static token
+[2022-06-25 13:29:31] [INFO    ] discord.gateway: Shard ID None has sent the IDENTIFY payload.
+[2022-06-25 13:29:31] [INFO    ] discord.gateway: Shard ID None has sent the IDENTIFY payload.
+[2022-06-25 13:29:31] [INFO    ] discord.gateway: Shard ID None has sent the IDENTIFY payload.
+[2022-06-25 13:29:32] [INFO    ] discord.gateway: Shard ID None has connected to Gateway: ["gateway-prd-main-85t7",{"micros":56022,"calls":["discord-sessions-blue-prd-2-180",{"micros":54610,"calls":["start_session",{"micros":36252,"calls":["discord-api-fdb87b79f-b55p4",{"micros":30880,"calls":["get_user",{"micros":6643},"add_authorized_ip",{"micros":1968},"get_guilds",{"micros":3236},"coros_wait",{"micros":1}]}]},"guilds_connect",{"micros":1,"calls":[]},"presence_connect",{"micros":17114,"calls":[]}]}]}] (Session ID: 157af7badc054511ebc96df5ba35eb33).
+[2022-06-25 13:29:32] [INFO    ] discord.gateway: Shard ID None has connected to Gateway: ["gateway-prd-main-85t7",{"micros":56022,"calls":["discord-sessions-blue-prd-2-180",{"micros":54610,"calls":["start_session",{"micros":36252,"calls":["discord-api-fdb87b79f-b55p4",{"micros":30880,"calls":["get_user",{"micros":6643},"add_authorized_ip",{"micros":1968},"get_guilds",{"micros":3236},"coros_wait",{"micros":1}]}]},"guilds_connect",{"micros":1,"calls":[]},"presence_connect",{"micros":17114,"calls":[]}]}]}] (Session ID: 157af7badc054511ebc96df5ba35eb33).
+[2022-06-25 13:29:32] [INFO    ] discord.gateway: Shard ID None has connected to Gateway: ["gateway-prd-main-85t7",{"micros":56022,"calls":["discord-sessions-blue-prd-2-180",{"micros":54610,"calls":["start_session",{"micros":36252,"calls":["discord-api-fdb87b79f-b55p4",{"micros":30880,"calls":["get_user",{"micros":6643},"add_authorized_ip",{"micros":1968},"get_guilds",{"micros":3236},"coros_wait",{"micros":1}]}]},"guilds_connect",{"micros":1,"calls":[]},"presence_connect",{"micros":17114,"calls":[]}]}]}] (Session ID: 157af7badc054511ebc96df5ba35eb33).
+[2022-06-25 13:30:33] [INFO    ] discord.client: Received signal to terminate bot and event loop.
+[2022-06-25 13:30:33] [INFO    ] discord.client: Received signal to terminate bot and event loop.
+[2022-06-25 13:30:33] [INFO    ] discord.client: Received signal to terminate bot and event loop.
+[2022-06-25 13:30:33] [INFO    ] discord.client: Cleaning up tasks.
+[2022-06-25 13:30:33] [INFO    ] discord.client: Cleaning up tasks.
+[2022-06-25 13:30:33] [INFO    ] discord.client: Cleaning up tasks.
+[2022-06-25 13:30:33] [INFO    ] discord.client: Cleaning up after 2 tasks.
+[2022-06-25 13:30:33] [INFO    ] discord.client: Cleaning up after 2 tasks.
+[2022-06-25 13:30:33] [INFO    ] discord.client: Cleaning up after 2 tasks.
+[2022-06-25 13:30:33] [INFO    ] discord.client: All tasks finished cancelling.
+[2022-06-25 13:30:33] [INFO    ] discord.client: All tasks finished cancelling.
+[2022-06-25 13:30:33] [INFO    ] discord.client: All tasks finished cancelling.
+[2022-06-25 13:30:33] [INFO    ] discord.client: Closing the event loop.
+[2022-06-25 13:30:33] [INFO    ] discord.client: Closing the event loop.
+[2022-06-25 13:30:33] [INFO    ] discord.client: Closing the event loop.
+[2022-06-25 13:31:10] [WARNING ] discord.client: PyNaCl is not installed, voice will NOT be supported
+[2022-06-25 13:31:10] [INFO    ] discord.client: logging in using static token
+[2022-06-25 13:31:10] [INFO    ] discord.client: logging in using static token
+[2022-06-25 13:31:10] [INFO    ] discord.client: logging in using static token
+[2022-06-25 13:31:10] [INFO    ] discord.gateway: Shard ID None has sent the IDENTIFY payload.
+[2022-06-25 13:31:10] [INFO    ] discord.gateway: Shard ID None has sent the IDENTIFY payload.
+[2022-06-25 13:31:10] [INFO    ] discord.gateway: Shard ID None has sent the IDENTIFY payload.
+[2022-06-25 13:31:11] [INFO    ] discord.gateway: Shard ID None has connected to Gateway: ["gateway-prd-main-qg77",{"micros":59791,"calls":["discord-sessions-blue-prd-2-30",{"micros":58446,"calls":["start_session",{"micros":41713,"calls":["discord-api-fdb87b79f-bvc2d",{"micros":36692,"calls":["get_user",{"micros":8379},"add_authorized_ip",{"micros":3053},"get_guilds",{"micros":4532},"coros_wait",{"micros":2}]}]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":6812,"calls":[]}]}]}] (Session ID: bc84b7d94bcac45723b47acb76e5a8b0).
+[2022-06-25 13:31:11] [INFO    ] discord.gateway: Shard ID None has connected to Gateway: ["gateway-prd-main-qg77",{"micros":59791,"calls":["discord-sessions-blue-prd-2-30",{"micros":58446,"calls":["start_session",{"micros":41713,"calls":["discord-api-fdb87b79f-bvc2d",{"micros":36692,"calls":["get_user",{"micros":8379},"add_authorized_ip",{"micros":3053},"get_guilds",{"micros":4532},"coros_wait",{"micros":2}]}]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":6812,"calls":[]}]}]}] (Session ID: bc84b7d94bcac45723b47acb76e5a8b0).
+[2022-06-25 13:31:11] [INFO    ] discord.gateway: Shard ID None has connected to Gateway: ["gateway-prd-main-qg77",{"micros":59791,"calls":["discord-sessions-blue-prd-2-30",{"micros":58446,"calls":["start_session",{"micros":41713,"calls":["discord-api-fdb87b79f-bvc2d",{"micros":36692,"calls":["get_user",{"micros":8379},"add_authorized_ip",{"micros":3053},"get_guilds",{"micros":4532},"coros_wait",{"micros":2}]}]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":6812,"calls":[]}]}]}] (Session ID: bc84b7d94bcac45723b47acb76e5a8b0).
+[2022-06-25 13:32:00] [INFO    ] discord.client: Received signal to terminate bot and event loop.
+[2022-06-25 13:32:00] [INFO    ] discord.client: Received signal to terminate bot and event loop.
+[2022-06-25 13:32:00] [INFO    ] discord.client: Received signal to terminate bot and event loop.
+[2022-06-25 13:32:00] [INFO    ] discord.client: Cleaning up tasks.
+[2022-06-25 13:32:00] [INFO    ] discord.client: Cleaning up tasks.
+[2022-06-25 13:32:00] [INFO    ] discord.client: Cleaning up tasks.
+[2022-06-25 13:32:00] [INFO    ] discord.client: Cleaning up after 2 tasks.
+[2022-06-25 13:32:00] [INFO    ] discord.client: Cleaning up after 2 tasks.
+[2022-06-25 13:32:00] [INFO    ] discord.client: Cleaning up after 2 tasks.
+[2022-06-25 13:32:00] [INFO    ] discord.client: All tasks finished cancelling.
+[2022-06-25 13:32:00] [INFO    ] discord.client: All tasks finished cancelling.
+[2022-06-25 13:32:00] [INFO    ] discord.client: All tasks finished cancelling.
+[2022-06-25 13:32:00] [INFO    ] discord.client: Closing the event loop.
+[2022-06-25 13:32:00] [INFO    ] discord.client: Closing the event loop.
+[2022-06-25 13:32:00] [INFO    ] discord.client: Closing the event loop.
+[2022-06-25 13:32:04] [WARNING ] discord.client: PyNaCl is not installed, voice will NOT be supported
+[2022-06-25 13:32:04] [INFO    ] discord.client: logging in using static token
+[2022-06-25 13:32:04] [INFO    ] discord.client: logging in using static token
+[2022-06-25 13:32:04] [INFO    ] discord.client: logging in using static token
+[2022-06-25 13:32:05] [INFO    ] discord.gateway: Shard ID None has sent the IDENTIFY payload.
+[2022-06-25 13:32:05] [INFO    ] discord.gateway: Shard ID None has sent the IDENTIFY payload.
+[2022-06-25 13:32:05] [INFO    ] discord.gateway: Shard ID None has sent the IDENTIFY payload.
+[2022-06-25 13:32:05] [INFO    ] discord.gateway: Shard ID None has connected to Gateway: ["gateway-prd-main-r0wx",{"micros":91548,"calls":["discord-sessions-blue-prd-2-94",{"micros":87346,"calls":["start_session",{"micros":56893,"calls":["discord-api-fdb87b79f-b8pjm",{"micros":46402,"calls":["get_user",{"micros":10026},"add_authorized_ip",{"micros":1737},"get_guilds",{"micros":4750},"coros_wait",{"micros":2}]}]},"guilds_connect",{"micros":1,"calls":[]},"presence_connect",{"micros":16218,"calls":[]}]}]}] (Session ID: 438876674aa7c7cc1e2eef75b631cc9c).
+[2022-06-25 13:32:05] [INFO    ] discord.gateway: Shard ID None has connected to Gateway: ["gateway-prd-main-r0wx",{"micros":91548,"calls":["discord-sessions-blue-prd-2-94",{"micros":87346,"calls":["start_session",{"micros":56893,"calls":["discord-api-fdb87b79f-b8pjm",{"micros":46402,"calls":["get_user",{"micros":10026},"add_authorized_ip",{"micros":1737},"get_guilds",{"micros":4750},"coros_wait",{"micros":2}]}]},"guilds_connect",{"micros":1,"calls":[]},"presence_connect",{"micros":16218,"calls":[]}]}]}] (Session ID: 438876674aa7c7cc1e2eef75b631cc9c).
+[2022-06-25 13:32:05] [INFO    ] discord.gateway: Shard ID None has connected to Gateway: ["gateway-prd-main-r0wx",{"micros":91548,"calls":["discord-sessions-blue-prd-2-94",{"micros":87346,"calls":["start_session",{"micros":56893,"calls":["discord-api-fdb87b79f-b8pjm",{"micros":46402,"calls":["get_user",{"micros":10026},"add_authorized_ip",{"micros":1737},"get_guilds",{"micros":4750},"coros_wait",{"micros":2}]}]},"guilds_connect",{"micros":1,"calls":[]},"presence_connect",{"micros":16218,"calls":[]}]}]}] (Session ID: 438876674aa7c7cc1e2eef75b631cc9c).
+[2022-06-25 13:33:40] [INFO    ] discord.client: Received signal to terminate bot and event loop.
+[2022-06-25 13:33:40] [INFO    ] discord.client: Received signal to terminate bot and event loop.
+[2022-06-25 13:33:40] [INFO    ] discord.client: Received signal to terminate bot and event loop.
+[2022-06-25 13:33:40] [INFO    ] discord.client: Cleaning up tasks.
+[2022-06-25 13:33:40] [INFO    ] discord.client: Cleaning up tasks.
+[2022-06-25 13:33:40] [INFO    ] discord.client: Cleaning up tasks.
+[2022-06-25 13:33:40] [INFO    ] discord.client: Cleaning up after 2 tasks.
+[2022-06-25 13:33:40] [INFO    ] discord.client: Cleaning up after 2 tasks.
+[2022-06-25 13:33:40] [INFO    ] discord.client: Cleaning up after 2 tasks.
+[2022-06-25 13:33:40] [INFO    ] discord.client: All tasks finished cancelling.
+[2022-06-25 13:33:40] [INFO    ] discord.client: All tasks finished cancelling.
+[2022-06-25 13:33:40] [INFO    ] discord.client: All tasks finished cancelling.
+[2022-06-25 13:33:40] [INFO    ] discord.client: Closing the event loop.
+[2022-06-25 13:33:40] [INFO    ] discord.client: Closing the event loop.
+[2022-06-25 13:33:40] [INFO    ] discord.client: Closing the event loop.
+[2022-06-25 13:33:44] [WARNING ] discord.client: PyNaCl is not installed, voice will NOT be supported
+[2022-06-25 13:33:45] [INFO    ] discord.client: logging in using static token
+[2022-06-25 13:33:45] [INFO    ] discord.client: logging in using static token
+[2022-06-25 13:33:45] [INFO    ] discord.client: logging in using static token
+[2022-06-25 13:33:45] [INFO    ] discord.gateway: Shard ID None has sent the IDENTIFY payload.
+[2022-06-25 13:33:45] [INFO    ] discord.gateway: Shard ID None has sent the IDENTIFY payload.
+[2022-06-25 13:33:45] [INFO    ] discord.gateway: Shard ID None has sent the IDENTIFY payload.
+[2022-06-25 13:33:45] [INFO    ] discord.gateway: Shard ID None has connected to Gateway: ["gateway-prd-main-022n",{"micros":58644,"calls":["discord-sessions-blue-prd-2-131",{"micros":54729,"calls":["start_session",{"micros":42213,"calls":["discord-api-fdb87b79f-kgj7b",{"micros":36322,"calls":["get_user",{"micros":7466},"add_authorized_ip",{"micros":1595},"get_guilds",{"micros":4010},"coros_wait",{"micros":1}]}]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":5205,"calls":[]}]}]}] (Session ID: 6b2479b2e10b6f5d6149b3e3a7d437be).
+[2022-06-25 13:33:45] [INFO    ] discord.gateway: Shard ID None has connected to Gateway: ["gateway-prd-main-022n",{"micros":58644,"calls":["discord-sessions-blue-prd-2-131",{"micros":54729,"calls":["start_session",{"micros":42213,"calls":["discord-api-fdb87b79f-kgj7b",{"micros":36322,"calls":["get_user",{"micros":7466},"add_authorized_ip",{"micros":1595},"get_guilds",{"micros":4010},"coros_wait",{"micros":1}]}]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":5205,"calls":[]}]}]}] (Session ID: 6b2479b2e10b6f5d6149b3e3a7d437be).
+[2022-06-25 13:33:45] [INFO    ] discord.gateway: Shard ID None has connected to Gateway: ["gateway-prd-main-022n",{"micros":58644,"calls":["discord-sessions-blue-prd-2-131",{"micros":54729,"calls":["start_session",{"micros":42213,"calls":["discord-api-fdb87b79f-kgj7b",{"micros":36322,"calls":["get_user",{"micros":7466},"add_authorized_ip",{"micros":1595},"get_guilds",{"micros":4010},"coros_wait",{"micros":1}]}]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":5205,"calls":[]}]}]}] (Session ID: 6b2479b2e10b6f5d6149b3e3a7d437be).
+[2022-06-25 13:35:45] [INFO    ] discord.client: Received signal to terminate bot and event loop.
+[2022-06-25 13:35:45] [INFO    ] discord.client: Received signal to terminate bot and event loop.
+[2022-06-25 13:35:45] [INFO    ] discord.client: Received signal to terminate bot and event loop.
+[2022-06-25 13:35:45] [INFO    ] discord.client: Cleaning up tasks.
+[2022-06-25 13:35:45] [INFO    ] discord.client: Cleaning up tasks.
+[2022-06-25 13:35:45] [INFO    ] discord.client: Cleaning up tasks.
+[2022-06-25 13:35:45] [INFO    ] discord.client: Cleaning up after 2 tasks.
+[2022-06-25 13:35:45] [INFO    ] discord.client: Cleaning up after 2 tasks.
+[2022-06-25 13:35:45] [INFO    ] discord.client: Cleaning up after 2 tasks.
+[2022-06-25 13:35:45] [INFO    ] discord.client: All tasks finished cancelling.
+[2022-06-25 13:35:45] [INFO    ] discord.client: All tasks finished cancelling.
+[2022-06-25 13:35:45] [INFO    ] discord.client: All tasks finished cancelling.
+[2022-06-25 13:35:45] [INFO    ] discord.client: Closing the event loop.
+[2022-06-25 13:35:45] [INFO    ] discord.client: Closing the event loop.
+[2022-06-25 13:35:45] [INFO    ] discord.client: Closing the event loop.
+[2022-06-25 13:35:48] [WARNING ] discord.client: PyNaCl is not installed, voice will NOT be supported
+[2022-06-25 13:35:49] [INFO    ] discord.client: logging in using static token
+[2022-06-25 13:35:49] [INFO    ] discord.client: logging in using static token
+[2022-06-25 13:35:49] [INFO    ] discord.client: logging in using static token
+[2022-06-25 13:35:49] [INFO    ] discord.gateway: Shard ID None has sent the IDENTIFY payload.
+[2022-06-25 13:35:49] [INFO    ] discord.gateway: Shard ID None has sent the IDENTIFY payload.
+[2022-06-25 13:35:49] [INFO    ] discord.gateway: Shard ID None has sent the IDENTIFY payload.
+[2022-06-25 13:35:49] [INFO    ] discord.gateway: Shard ID None has connected to Gateway: ["gateway-prd-main-7lfj",{"micros":164996,"calls":["discord-sessions-blue-prd-2-38",{"micros":163697,"calls":["start_session",{"micros":112169,"calls":["discord-api-fdb87b79f-rc8st",{"micros":108173,"calls":["get_user",{"micros":10572},"add_authorized_ip",{"micros":1889},"get_guilds",{"micros":30093},"coros_wait",{"micros":2}]}]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":1032,"calls":[]}]}]}] (Session ID: 53a0b06e9adb2dd5a79a65f0745222ed).
+[2022-06-25 13:35:49] [INFO    ] discord.gateway: Shard ID None has connected to Gateway: ["gateway-prd-main-7lfj",{"micros":164996,"calls":["discord-sessions-blue-prd-2-38",{"micros":163697,"calls":["start_session",{"micros":112169,"calls":["discord-api-fdb87b79f-rc8st",{"micros":108173,"calls":["get_user",{"micros":10572},"add_authorized_ip",{"micros":1889},"get_guilds",{"micros":30093},"coros_wait",{"micros":2}]}]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":1032,"calls":[]}]}]}] (Session ID: 53a0b06e9adb2dd5a79a65f0745222ed).
+[2022-06-25 13:35:49] [INFO    ] discord.gateway: Shard ID None has connected to Gateway: ["gateway-prd-main-7lfj",{"micros":164996,"calls":["discord-sessions-blue-prd-2-38",{"micros":163697,"calls":["start_session",{"micros":112169,"calls":["discord-api-fdb87b79f-rc8st",{"micros":108173,"calls":["get_user",{"micros":10572},"add_authorized_ip",{"micros":1889},"get_guilds",{"micros":30093},"coros_wait",{"micros":2}]}]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":1032,"calls":[]}]}]}] (Session ID: 53a0b06e9adb2dd5a79a65f0745222ed).
+[2022-06-25 13:36:13] [INFO    ] discord.client: Received signal to terminate bot and event loop.
+[2022-06-25 13:36:13] [INFO    ] discord.client: Received signal to terminate bot and event loop.
+[2022-06-25 13:36:13] [INFO    ] discord.client: Received signal to terminate bot and event loop.
+[2022-06-25 13:36:13] [INFO    ] discord.client: Cleaning up tasks.
+[2022-06-25 13:36:13] [INFO    ] discord.client: Cleaning up tasks.
+[2022-06-25 13:36:13] [INFO    ] discord.client: Cleaning up tasks.
+[2022-06-25 13:36:13] [INFO    ] discord.client: Cleaning up after 2 tasks.
+[2022-06-25 13:36:13] [INFO    ] discord.client: Cleaning up after 2 tasks.
+[2022-06-25 13:36:13] [INFO    ] discord.client: Cleaning up after 2 tasks.
+[2022-06-25 13:36:13] [INFO    ] discord.client: All tasks finished cancelling.
+[2022-06-25 13:36:13] [INFO    ] discord.client: All tasks finished cancelling.
+[2022-06-25 13:36:13] [INFO    ] discord.client: All tasks finished cancelling.
+[2022-06-25 13:36:13] [INFO    ] discord.client: Closing the event loop.
+[2022-06-25 13:36:13] [INFO    ] discord.client: Closing the event loop.
+[2022-06-25 13:36:13] [INFO    ] discord.client: Closing the event loop.
