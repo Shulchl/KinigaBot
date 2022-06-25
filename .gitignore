@@ -1,0 +1,10 @@
+.idea/
+.vscode/
+*.logss
+base/image.py
+cogs/__pycache__/
+cogs/mod.py.deactivated
+venv/
+module.py
+bot.pydebug.log
+config.json
