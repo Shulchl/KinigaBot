@@ -13,3 +13,5 @@ class Config:
         self.mark_role  = cfg['mark_role']
         self.aut_role  = cfg['aut_role']
         self.creat_role  = cfg['creat_role']
+        self.feed_loop  = cfg['feed_loop']
+        self.chat_creators  = cfg['chat_creators']

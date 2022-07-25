@@ -1,10 +1,13 @@
 .idea/
 .vscode/
-*.logss
+*.log
 base/image.py
+base/__pycache__/
 cogs/__pycache__/
 cogs/mod.py.deactivated
+cogs/noticia.py
 venv/
 module.py
 bot.pydebug.log
 config.json
+kiniga_tests

@@ -64,42 +64,42 @@ class Bot(commands.Bot):
     
     @tasks.loop(minutes = 5)
     async def feed(self):
-        async with aiohttp.ClientSession() as session:
-            async with session.get("http://kiniga.com/") as resp:
-                soup = BeautifulSoup(await resp.text(), 'lxml')
-                table = soup.find('table', attrs={'class':'manga-chapters-listing'})
-                titles = table.find('td', attrs={'class':'title'})
-                for t in titles:
-                    try:
-                        links = table.find_all('td', attrs={'class':'release'})[0]
-                        for l in links.find_all('a', href=True):
-                            try:
-                                emoji = self.get_emoji(id=769235205407637505)
-                                channel = discord.utils.get(self.get_all_channels(), 
-                                                            guild__name=self.cfg.guild, 
-                                                            id=self.cfg.chat_loop)
-                                messages = await channel.history(limit=1).flatten()
-                                messages.reverse()
-                                cont = '{} | Saiu o **{}** de **{}**!\n{}'.format(emoji, l.get_text(),
-                                                                            t.get_text(),
-                                                                            l['href'])
-                                member = channel.guild.get_member(741770490598653993)
-                                webhooks = await channel.webhooks()
-                                webhook = discord.utils.get(webhooks, name = "Capitulos Recentes")
-                                
-                                if webhook is None:
-                                    webhook = await channel.create_webhook(name = "Capitulos Recentes")
-                                
-                                for i, message in enumerate(messages):
-                                    message = message.content
-                                    if message == cont:
-                                        pass
-                                    else:
-                                        await webhook.send(cont, username = member.name, avatar_url = member.avatar_url)
-                            except Exception as e: raise e
-                        else: pass
-                    except Exception as e: raise e
-                else: pass
+        if self.cfg.feed_loop == True:
+            async with aiohttp.ClientSession() as session:
+                async with session.get("http://kiniga.com/") as resp:
+                    soup = BeautifulSoup(await resp.text(), 'lxml')
+                    table = soup.find('table', attrs={'class':'manga-chapters-listing'})
+                    titles = table.find('td', attrs={'class':'title'})
+                    for t in titles:
+                        try:
+                            links = table.find_all('td', attrs={'class':'release'})[0]
+                            for l in links.find_all('a', href=True):
+                                try:
+                                    emoji = self.get_emoji(id=769235205407637505)
+                                    channel = discord.utils.get(self.get_all_channels(), 
+                                                                guild__name=self.cfg.guild, 
+                                                                id=self.cfg.chat_loop)
+                                    messages = await channel.history(limit=1).flatten()
+                                    messages.reverse()
+                                    cont = '{} | Saiu o **{}** de **{}**!\n{}'.format(emoji, l.get_text(),
+                                                                                t.get_text(),
+                                                                                l['href'])
+                                    member = channel.guild.get_member(741770490598653993)
+                                    webhooks = await channel.webhooks()
+                                    webhook = discord.utils.get(webhooks, name = "Capitulos Recentes")
+                                    
+                                    if webhook is None:
+                                        webhook = await channel.create_webhook(name = "Capitulos Recentes")
+                                    for i, message in enumerate(messages):
+                                        message = message.content
+                                        if message == cont:
+                                            pass
+                                        else:
+                                            await webhook.send(cont, username = member.name, avatar_url = member.avatar_url)
+                                except Exception as e: raise e
+                            else: pass
+                        except Exception as e: raise e
+                    else: pass
     
     @feed.before_loop  # wait for the bot before starting the task
     async def before_send(self):

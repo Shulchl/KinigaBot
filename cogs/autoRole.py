@@ -6,24 +6,6 @@ from discord_components import DiscordComponents, ComponentsBot, Button, Select,
 
 from base.struct import Config
 
-import logging
-import logging.handlers
-
-logger = logging.getLogger('discord')
-logger.setLevel(logging.INFO)
-#logging.getLogger('discord.http').setLevel(logging.INFO)
-
-handler = logging.handlers.RotatingFileHandler(
-    filename='discord.log',
-    encoding='utf-8',
-    maxBytes=32 * 1024 * 1024,  # 32 MiB
-    backupCount=5,  # Rotate through 5 files
-)
-dt_fmt = '%Y-%m-%d %H:%M:%S'
-formatter = logging.Formatter('[{asctime}] [{levelname:<8}] {name}: {message}', dt_fmt, style='{')
-handler.setFormatter(formatter)
-logger.addHandler(handler)
-
 class NoPrivateMessages(commands.CheckFailure):
     pass
 
@@ -46,7 +28,7 @@ class Role(commands.Cog, name='Cargos'):
     @commands.command(name='editar', help='Edita um determinado cargo ao digitar `.editar <história> <usuário>` __(campo usuário é opcional)__ ')
     @commands.max_concurrency(1, per=BucketType.default, wait=False)
     @commands.has_any_role("Autor(a)", "Criador(a)", "Ajudante", "Equipe")
-    async def editar(self, ctx, role: discord.Role, colour: discord.Colour, *, name = None):
+    async def editar(self, ctx, role: discord.Role, colour: discord.Colour = None, *, name = None):
         autorRole = discord.utils.get(ctx.guild.roles, id=role.id)
         markAuthorRole = discord.utils.get(ctx.guild.roles, id=self.cfg.mark_role)
         if autorRole:
@@ -63,6 +45,20 @@ class Role(commands.Cog, name='Cargos'):
                 await ctx.send('', embed=embed)
             else:
                 await ctx.send("Você não pode editar um cargo superior ao seu.", delete_after=5)
+    
+    @editar.error
+    async def editar_error(self, ctx, error):
+        if isinstance(error, commands.BadColourArgument):
+            role = [i for i in ctx.message.content.split()]
+            
+            try:
+                if role[3]:
+                    name = role[3]
+                else:
+                    name=  None
+            except: name = None
+                
+            await ctx.send(f"O correto seria: \n\n.projeto **#**{error.argument} {name if name != None else ''}", delete_after=10)
 
     @guild_only() # GET PROJECT ROLE #
     @commands.command(name='projeto', help='Recebe um determinado cargo ao digitar `.projeto <história> <usuário>` __(campo usuário é opcional)__ ')
@@ -125,7 +121,10 @@ class Role(commands.Cog, name='Cargos'):
             if ctx.message.channel == ctx.guild.get_channel(self.cfg.chat_cmds):
                 eqpRole = discord.utils.get(ctx.guild.roles, id=self.cfg.eqp_role)
                 markAuthorRole = discord.utils.get(ctx.guild.roles, id=self.cfg.mark_role)
-                channel = discord.utils.get(self.client.get_all_channels(), guild__name='Kiniga Brasil', id=855526372403445830)
+                channel = discord.utils.get(
+                            self.client.get_all_channels(), 
+                            guild__name=self.cfg.guild, 
+                            id=self.cfg.chat_creators)
                 #split the message into words
                 string = str(ctx.message.content)
                 temp = string.split()
