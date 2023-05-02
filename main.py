@@ -1,112 +1,162 @@
-import discord, os, aiohttp, json
+import discord
+import os
+import aiohttp
+import sys
+import asyncio
+import json
+
 from discord.ext import commands, tasks
 from bs4 import BeautifulSoup
-from discord_components import DiscordComponents
 
-from base.struct import Config
-
-import logging
-import logging.handlers
-
-logger = logging.getLogger('discord')
-logger.setLevel(logging.INFO)
-#logging.getLogger('discord.http').setLevel(logging.INFO)
-
-handler = logging.handlers.RotatingFileHandler(
-    filename='discord.log',
-    encoding='utf-8',
-    maxBytes=32 * 1024 * 1024,  # 32 MiB
-    backupCount=5,  # Rotate through 5 files
-)
-dt_fmt = '%Y-%m-%d %H:%M:%S'
-formatter = logging.Formatter('[{asctime}] [{levelname:<8}] {name}: {message}', dt_fmt, style='{')
-handler.setFormatter(formatter)
-logger.addHandler(handler)
-
+from base import log, cfg
 
 intents = discord.Intents().all()
 intents.members = True
 
-class Bot(commands.Bot):
-    def __init__(self):
-            
+class KinigaBot(commands.Bot):
+    def __init__(self ) -> None:
+        intents = discord.Intents.all()
+        atividade = discord.Activity(
+            type=discord.ActivityType.watching,
+            name="Kiniga")
+
         super().__init__(
             intents=intents,
-            command_prefix=commands.when_mentioned_or('.'),
-            description='Bot da Kiniga Brasil.',
-            activity=discord.Streaming(name="https://kiniga.com/", url='https://kiniga.com/')
-            ),
-        DiscordComponents(self),
-        self.remove_command('help'),
+            command_prefix=commands.when_mentioned_or(cfg.bot_prefix),
+            description='Kiniga Brasil',
+            activity=atividade
+        )
+        self.last_release = {}
+        
+
+    async def load_cogs(self) -> None:
+        for filename in os.listdir('./base/cmds'):
+            if filename.endswith('.py'):
+                try:
+                    await self.load_extension(f'base.cmds.{filename[:-3]}')
+                except Exception as e:
+                    log.error(f'Ocorreu um erro enquanto a cog "{filename}" carregava.\n{e}')
+
+    async def setup_hook(self) -> None:
+        # discord.utils.setup_logging()
+        log.info(f'Logado como {self.user} (ID: {self.user.id}) usando discord.py {discord.__version__}')
         self.feed.start()
-                                
+        await self.load_cogs()
+        # self.tree.copy_global_to(guild=TEST_GUILD)
+        # await self.tree.sync(guild=TEST_GUILD)
 
-        with open('config.json', 'r', encoding='utf-8') as f:
-            self.cfg = Config(json.loads(f.read()))
-        
-        try:
-            for filename in os.listdir('./cogs'):
-                if filename.endswith('.py'):
-                    try:
-                        self.load_extension(f'cogs.{filename[:-3]}')
-                        print(f'Cog "{filename}" foi carregada.')
-                    except Exception as e:
-                        print(f'Error occured while cog "{filename}" was loaded.\n{e}')
-        except Exception as i:
-            raise i
+    async def close(self) -> None:
+        log.info("desligando o bot...")
+        self.feed.stop()
+        await super().close()
+        await self.session.close()
 
-    def cog_unload(self):
-      return self.feed.close()  
-         
-    def startup(self):
-        self.run(self.cfg.bot_token)
-        
-    
+    async def get_release(self):
+        items = {}
+        async with aiohttp.ClientSession() as session:
+            async with session.get("http://kiniga.com/") as resp:
+                if resp.status == 200:
+                    soup = BeautifulSoup(await resp.text(), 'lxml')
+                    tbody = soup.find(
+                        'table', attrs={'class':'manga-chapters-listing'}
+                    ).find('tbody')
+                    this_name = tbody.tr.td.next_sibling.next_sibling.a.get_text()
+                    this_url = tbody.tr.td.next_sibling.next_sibling.next_sibling.next_sibling.a['href']
+                    items[str(this_name)] = str(this_url)
+                    json.dumps(items)
+
+        if items == self.last_release:
+            return "No_Changes"
+
+        return items
+
     @tasks.loop(minutes = 5)
     async def feed(self):
-        if self.cfg.feed_loop == True:
-            async with aiohttp.ClientSession() as session:
-                async with session.get("http://kiniga.com/") as resp:
-                    soup = BeautifulSoup(await resp.text(), 'lxml')
-                    table = soup.find('table', attrs={'class':'manga-chapters-listing'})
-                    titles = table.find('td', attrs={'class':'title'})
-                    for t in titles:
-                        try:
-                            links = table.find_all('td', attrs={'class':'release'})[0]
-                            for l in links.find_all('a', href=True):
-                                try:
-                                    emoji = self.get_emoji(id=769235205407637505)
-                                    channel = discord.utils.get(self.get_all_channels(), 
-                                                                guild__name=self.cfg.guild, 
-                                                                id=self.cfg.chat_loop)
-                                    messages = await channel.history(limit=1).flatten()
-                                    messages.reverse()
-                                    cont = '{} | Saiu o **{}** de **{}**!\n{}'.format(emoji, l.get_text(),
-                                                                                t.get_text(),
-                                                                                l['href'])
-                                    member = channel.guild.get_member(741770490598653993)
-                                    webhooks = await channel.webhooks()
-                                    webhook = discord.utils.get(webhooks, name = "Capitulos Recentes")
-                                    
-                                    if webhook is None:
-                                        webhook = await channel.create_webhook(name = "Capitulos Recentes")
-                                    for i, message in enumerate(messages):
-                                        message = message.content
-                                        if message == cont:
-                                            pass
-                                        else:
-                                            await webhook.send(cont, username = member.name, avatar_url = member.avatar_url)
-                                except Exception as e: raise e
-                            else: pass
-                        except Exception as e: raise e
-                    else: pass
-    
-    @feed.before_loop  # wait for the bot before starting the task
-    async def before_send(self):
-        await self.wait_until_ready()
-        return
+        if cfg.feed_loop == False:
+            return
+
+        release = await self.get_release()
         
+        if not release or type(release) == str:
+            return
+        
+        channel = self.get_channel(406996662997745674)
+
+        sys.stdout.write(str(channel))
+        sys.stdout.flush()
+
+        message = [message async for message in channel.history(limit=1) 
+                    if message.author == self.user]
+
+        msg = None
+        for key, value in release.items():
+            if not key in release:
+                if not self.last_release:
+                    return
+
+                key, value = [(key, value) for x, z in self.last_release.items()]
+
+            if value == self.last_release.get(key):
+                return
+
+            if message:
+                message.reverse()
+                message = message[0].content.split(" | ")
+
+                log.info(message)
+                if len(message) == 3:
+                    x, old_key, old_value = message
+                elif len(message) == 2:
+                    old_key, old_value = message
+
+                old_key = old_key.strip("**")
+                log.info((old_key + '\n' + old_value))
+                if old_key in release:
+                    if release.get(old_key) == old_value:
+                        return
+
+                    release[old_key] = value
+
+                json.dumps(release)
+
+            emoji = self.get_emoji(769235205407637505)
+
+            msg = '%s | **%s** | %s' % (
+                emoji,
+                key,
+                value
+            )
+            break
+
+        self.last_release = release
+
+        if not msg:
+            return
+
+        member = channel.guild.get_member(737086135037329540)
+        
+        await channel.send(msg)
+
+    @feed.before_loop
+    async def get_ready(self):
+        sys.stdout.write("Aguardando inicialização...\n")
+        sys.stdout.flush()
+        await self.wait_until_ready()
+        sys.stdout.write("Inicialização completa.\n")
+        sys.stdout.flush()
+
+async def main() -> None:
+    bot = KinigaBot()
+    async with aiohttp.ClientSession() as session, bot:
+        bot.session = session
+        await bot.start(cfg.bot_token)
 
 
-if __name__ == '__main__':
-    Bot().startup()
+async def warn() -> None:
+    return log.info("bot foi desligado usando ctrl+c no terminal!")
+
+if __name__ == "__main__":
+    try:
+        asyncio.run(main())
+    except KeyboardInterrupt:
+        asyncio.run(warn())

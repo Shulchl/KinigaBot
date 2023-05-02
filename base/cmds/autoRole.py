@@ -2,9 +2,10 @@ import discord, asyncio, json
 from discord.ext import commands
 import discord.utils
 from discord.ext.commands.cooldowns import BucketType
-from discord_components import DiscordComponents, ComponentsBot, Button, Select, SelectOption, ButtonStyle, Interaction
 
 from base.struct import Config
+
+from base.views import defaultViewButton
 
 class NoPrivateMessages(commands.CheckFailure):
     pass
@@ -19,8 +20,8 @@ def guild_only():
 
 class Role(commands.Cog, name='Cargos'):
 
-    def __init__(self, client):
-        self.client = client
+    def __init__(self, bot: commands.Bot):
+        self.bot = bot
         with open('config.json', 'r', encoding='utf-8') as f:
             self.cfg = Config(json.loads(f.read()))
 
@@ -73,47 +74,42 @@ class Role(commands.Cog, name='Cargos'):
             autorRole = discord.utils.get(ctx.guild.roles, id=role_id)
             eqpRole = discord.utils.get(ctx.guild.roles, id=self.cfg.eqp_role)
             emb = discord.Embed(
-                                description='O cargo **{}** já existe, deseja adicioná-lo?!'.format(autorRole.mention),
-                                color=discord.Color.blue())
-            await ctx.send(embed=emb,
-                            components = [[
-                                Button(style=ButtonStyle.green, label = "Sim", custom_id = "Aceitar", emoji="👌"),
-                                Button(style=ButtonStyle.red, label = "Não", custom_id = "Negar", emoji="👎")
+                description='O cargo %s já existe, deseja adicioná-lo?!' % (autorRole.mention),
+                color=discord.Color.blue()
+            )
 
-                            ]]
-                        )
+            view = defaultViewButton()
+            await ctx.send(embed=emb, view=view)
+            await view.wait()
             #await msg.add_reaction('✅')
             await ctx.message.delete()
-            res  = await self.client.wait_for("button_click")
-            if res.component.label == "Sim":
+            if view.value == "sim":
                 if role in member.roles:
                     emb4 = discord.Embed(
-                                        description='Parece que {} já tem esse cargo.'.format(member.mention),color=discord.Color.orange())
-                    await res.send(embed=emb4)
+                        description='Parece que {} já tem esse cargo.'.format(member.mention),
+                        color=discord.Color.orange()
+                    )
+                    await ctx.send(embed=emb4)
                 else:
                     emb = discord.Embed(
-                                        description='O cargo **{}** será recebido assim que alguém da equipe reagir à essa mensagem!'.format(autorRole.mention),
-                                        )
-                    await ctx.send(embed=emb,
-                                            components = [[
-                                                Button(style=ButtonStyle.green, label = "Sim", custom_id = "Aceitar", emoji="👌"),
-                                                Button(style=ButtonStyle.red, label = "Não", custom_id = "Negar", emoji="👎")
+                        description='O cargo %s será recebido assim que alguém da equipe reagir à essa mensagem!' % (autorRole.mention),
+                    )
+                    await ctx.send(embed=emb,view=view)
 
-                                            ]])
-                    res  = await self.client.wait_for("button_click", check = lambda i: eqpRole in i.user.roles)
-                    if res.component.label == "Sim":
+                    view  = await self.bot.wait_for("button_click", check = lambda i: eqpRole in i.user.roles)
+                    if view.value == "sim":
                         if markAuthorRole in member.roles:
                             await member.add_roles(autorRole)
                         else:
                             await member.add_roles(autorRole, markAuthorRole)
                         emb4 = discord.Embed(
-                                            description='O cargo **{}** foi adicionado, e agora você é autor!'.format(autorRole.mention),color=discord.Color.dark_blue()
-                                            )
-                        await res.respond(embed=emb4)
-                    if res.component.label == "Não":
-                        await res.send("História recusada.")
-            if res.component.label == "Não":
-                await res.send("Tudo bem!")
+                            description='O cargo **{}** foi adicionado, e agora você é autor!'.format(autorRole.mention),color=discord.Color.dark_blue()
+                        )
+                        await view.respond(embed=emb4)
+                    if view.value == "nao":
+                        await ctx.send("História recusada.")
+            if view.component.label == "Não":
+                await ctx.send("Tudo bem!")
 
     @projeto.error
     async def projeto_error(self, ctx, error):
@@ -122,7 +118,7 @@ class Role(commands.Cog, name='Cargos'):
                 eqpRole = discord.utils.get(ctx.guild.roles, id=self.cfg.eqp_role)
                 markAuthorRole = discord.utils.get(ctx.guild.roles, id=self.cfg.mark_role)
                 channel = discord.utils.get(
-                            self.client.get_all_channels(), 
+                            self.bot.get_all_channels(), 
                             guild__name=self.cfg.guild, 
                             id=self.cfg.chat_creators)
                 #split the message into words
@@ -171,47 +167,45 @@ class Role(commands.Cog, name='Cargos'):
                     await ctx.send("Você precisa digitar alguma coisa, meu querido.", delete_after=5)
                 await ctx.message.delete()
                 emb = discord.Embed(
-                                    description='{}, o cargo **{}** será criado assim que alguém da equipe reagir à essa mensagem!'.format(member.mention, a_clean),
-                                    color=discord.Color.blue())
-                msg = await ctx.send(embed=emb,
-                                    components = [[
-                                        Button(style=ButtonStyle.green, label = "Sim", custom_id = "Aceitar", emoji="👌"),
-                                        Button(style=ButtonStyle.red, label = "Não", custom_id = "Negar", emoji="👎")
-                                    ]])
-                res  = await self.client.wait_for("button_click", check = lambda i: eqpRole in i.user.roles)
-                if res.component.label == "Sim":
+                    description='%s, o cargo %s será criado assim que '
+                    'alguém da equipe reagir à essa mensagem!' % (member.mention, a_clean),
+                    color=discord.Color.blue())
+                await view.wait()
+                msg = await ctx.send(embed=emb,)
+                if view.value == "sim":
                     if aRole:
                         emb = discord.Embed(
-                                            description='O cargo **{}** já existe, deseja adicioná-lo?!'.format(aRole),
-                                            color=discord.Color.dark_blue()).set_footer(text='Use a reação para confirmar.')
-                        await res.send(embed=emb)
-                        res  = await self.client.wait_for("button_click")
-                        if res.component.label == "Sim":
+                            description='O cargo **{}** já existe, deseja adicioná-lo?!'.format(aRole),
+                            color=discord.Color.dark_blue()).set_footer(text='Use a reação para confirmar.')
+                        await ctx.send(embed=emb)
+                        await view.wait()
+                        if view.value == "sim":
                             if aRole in member.roles:
                                 emb4 = discord.Embed(
-                                                    description='Parece que {} já tem esse cargo.'.format(member.mention)
-                                                    )
-                                await res.send(embed=emb4)
+                                    description='Parece que {} já tem esse cargo.'.format(member.mention)
+                                )
+                                return await ctx.send(embed=emb4)
                             else:
     
                                 emb = discord.Embed(
-                                                    description='{}, o cargo **{}** será recebido assim que alguém da equipe reagir à essa mensagem!'.format(member, aRole)
-                                                    )
+                                    description='{}, o cargo **{}** será recebido assim que alguém da equipe reagir à essa mensagem!'.format(member, aRole)
+                                )
                                 await ctx.send(embed=emb)
-                                res  = await self.client.wait_for("button_click", check = lambda i: eqpRole in i.user.roles)
-                                if res.component.label == "Sim":
+                                res  = await self.bot.wait_for("button_click", check = lambda i: eqpRole in i.user.roles)
+                                if view.value == "sim":
                                     if markAuthorRole in member.roles:
                                         await member.add_roles(aRole)
                                     else:
                                         await member.add_roles(aRole, markAuthorRole)
                                     emb4 = discord.Embed(
-                                                        description='{} foi criado(a), e agora você é autor(a)!\nQualquer dúvida, leia o canal {}.'.format(aRole, channel.mention),
-                                                        color=discord.Color.green()).set_footer(text='Espero que seja muito produtivo escrevendo!')
-                                    await res.send(embed=emb4)
-                                if res.component.label == "Não":
-                                    await res.send("Tudo bem!")
-                        if res.component.label == "Não":
-                            await res.send("Tudo bem!")
+                                        description='{} foi criado(a), e agora você é autor(a)!\nQualquer dúvida, leia o canal {}.'.format(aRole, channel.mention),
+                                        color=discord.Color.green()
+                                        ).set_footer(text='Espero que seja muito produtivo escrevendo!')
+                                    await ctx.send(embed=emb4)
+                                if view.value == "nao":
+                                    await ctx.send("Tudo bem!")
+                        if view.value == "nao":
+                            await ctx.send("Tudo bem!")
                     else:
                         nRole = await ctx.guild.create_role(name=a_clean.title(), reason="Nova história!", mentionable=True)
                         if markAuthorRole in member.roles:
@@ -219,11 +213,12 @@ class Role(commands.Cog, name='Cargos'):
                         else:
                             await member.add_roles(nRole, markAuthorRole)
                         emb6 = discord.Embed(
-                                            description='{} foi criado(a), e agora você é autor(a)! \nQualquer dúvida, leia o canal {}'.format(nRole.mention, channel.mention),
-                                            color=discord.Color.green()).set_footer(text='Espero que seja muito produtivo escrevendo!')
+                            description='{} foi criado(a), e agora você é autor(a)! \nQualquer dúvida, leia o canal {}'.format(nRole.mention, channel.mention),
+                            color=discord.Color.green()
+                            ).set_footer(text='Espero que seja muito produtivo escrevendo!')
                         await ctx.send(embed=emb6)
-                if res.component.label == "Não":
-                    await res.send("História recusada.")
+                if view.value == "Não":
+                    await ctx.send("História recusada.")
 
                 await msg.delete()
 
@@ -234,7 +229,7 @@ class Role(commands.Cog, name='Cargos'):
         elif isinstance(error, commands.MissingPermissions):
             await ctx.send("Parece que você não tenho permissão para isso!", delete_after=5)
         elif isinstance(error, commands.CheckFailure):
-            await ctx.send(error)
+            await ctx.send(error) 
 
     @guild_only() # REMOVE PROJECT ROLE #
     @commands.command(name='r', help='Deletar história ao digitar `.r <cargo> <usuário>` __(campo usuário é opcional)__ ')
@@ -251,16 +246,12 @@ class Role(commands.Cog, name='Cargos'):
                 return await ctx.send("Você precisa digitar o nome ou marcar algum cargo!", delete_after=5)
 
             emb = discord.Embed(
-                                description='Deseja remover de {}?'.format(member.mention),
-                                color=discord.Color.red()).set_footer(text='Use a reação para confirmar')
-            msg = await ctx.send(embed=emb,
-                                components = [[
-                                    Button(style=ButtonStyle.green, label = "Sim", custom_id = "Aceitar", emoji="👌"),
-                                    Button(style=ButtonStyle.red, label = "Não", custom_id = "Negar", emoji="👎")
-                                ]])
+                description='Deseja remover de {}?'.format(member.mention),
+                color=discord.Color.red()).set_footer(text='Use a reação para confirmar')
+            view = defaultViewButton()
+            msg = await ctx.send(embed=emb, view=view)
             await ctx.message.delete()
-            res  = await self.client.wait_for("button_click", check = lambda i: eqprole in i.user.roles)
-            if res.component.label == "Sim":
+            if view.value == "Sim":
                 try:
                     await member.remove_roles(autorRole)
                 except Exception as e:
@@ -268,28 +259,29 @@ class Role(commands.Cog, name='Cargos'):
                     await ctx.send(e)
                 if eqprole in member.roles:
                     emb = discord.Embed(
-                                        description='Deseja remover do servidor? \nEssa ação não pode ser desfeita!',
-                                        color=discord.Color.red()
-                                        )
-                    res  = await self.client.wait_for("button_click", check = lambda i: eqprole in i.user.roles)
-
-                    if res.component.label == "Sim":
+                        description='Deseja remover do servidor? \nEssa ação não pode ser desfeita!',
+                        color=discord.Color.red()
+                    )
+                    if view.value == "sim":
                         await autorRole.delete(reason="Hitória removida.")
-                        emb2 = discord.Embed(title='História removida!',
-                                            description='Espero que não se arrependa...',
-                                            color=discord.Color.dark_blue())
-                        await res.send(embed=emb2)
+                        emb2 = discord.Embed(
+                            title='História removida!',
+                            description='Espero que não se arrependa...',
+                            color=discord.Color.dark_blue()
+                        )
+                        await ctx.send(embed=emb2)
 
-                    if res.component.label == "Não":
+                    if view.value == "nao":
                         emb3 = discord.Embed(
-                                            description='O cargo foi removido do usuário, mas não será removido completamente do servidor.',
-                                            color=discord.Color.blue())
+                            description='O cargo foi removido do usuário, mas não será removido completamente do servidor.',
+                            color=discord.Color.blue())
                         await res.send(embed=emb3)
-            if res.component.label == "Não":
+            if view.value == "nao":
                 emb = discord.Embed(
-                                    description='Certo!',
-                                    color=discord.Color.blue())
-                await res.send(embed=emb, delete_after=2)
+                    description='Certo!',
+                    color=discord.Color.blue()
+                    )
+                await ctx.send(embed=emb, delete_after=2)
             await msg.delete()
 
 
@@ -305,5 +297,6 @@ class Role(commands.Cog, name='Cargos'):
             await ctx.send(error)
 
 
-def setup(client):
-    client.add_cog(Role(client))
+async def setup(bot: commands.Bot) -> None:
+    # , guilds=[ discord.Object(id=943170102759686174), discord.Object(id=1010183521907789977)]
+    await bot.add_cog(Role(bot))

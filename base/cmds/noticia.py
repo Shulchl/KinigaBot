@@ -17,8 +17,8 @@ def guild_only():
 
 class Noticia(commands.Cog):
 
-    def __init__(self, client):
-        self.client = client
+    def __init__(self, bot: commands.Bot):
+        self.bot = bot
         with open('config.json', 'r', encoding='utf-8') as f:
             self.cfg = Config(json.loads(f.read()))
     
@@ -26,7 +26,7 @@ class Noticia(commands.Cog):
     @commands.command(name='aaaa', help='Anuncia o lançamento mais recente ao digitar `.novo` ')
     @commands.has_permissions(manage_webhooks=True)
     async def release(self, ctx, member: str):
-        await self.client.wait_until_ready()
+        await self.bot.wait_until_ready()
         await ctx.message.delete()
         
         user = await ctx.guild.get_member_named(member)
@@ -39,7 +39,7 @@ class Noticia(commands.Cog):
         except Exception as e:
             await ctx.send(f"Ocorreu um erro \n ```{e}```")
         
-        while not self.client.is_closed():
+        while not self.bot.is_closed():
             soup = BeautifulSoup(requests.get("http://kiniga.com/").text, 'lxml')
             table = soup.find_all('div', attrs={'class': 'tab-content-wrap'})[3]
             novel_recente = table.find_all('div', attrs={'class': 'page-item-detail'})[0]
@@ -58,7 +58,7 @@ class Noticia(commands.Cog):
 
                             i = novel.find('div', attrs={'class': 'summary_image'}).find_all('img', {'class': 'img-responsive'})[0]  # img novel
                             img = i.get('data-src')
-                            channel = discord.utils.get(self.client.get_all_channels(),
+                            channel = discord.utils.get(self.bot.get_all_channels(),
                                                         guild__name=self.cfg.guild,
                                                         id=self.cfg.chat_release)
                             emb = discord.Embed(title="📢 NOVA OBRA PUBLICADA 📢", url=link,
@@ -76,7 +76,6 @@ class Noticia(commands.Cog):
                 except Exception as i:
                     raise i
 
-
-
-def setup(client):
-    client.add_cog(Noticia(client))
+async def setup(bot: commands.Bot) -> None:
+    # , guilds=[ discord.Object(id=943170102759686174), discord.Object(id=1010183521907789977)]
+    await bot.add_cog(Noticia(bot))
