@@ -135,7 +135,7 @@ class Admin(commands.Cog, name="admin"):
 	@commands.is_owner()
 	async def show_bot_logs(self, ctx: commands.Context):
 		"""Upload the bot logs"""
-		logs_file = os.path.join(root_directory, "kiniga.log")
+		logs_file = os.path.join('.', "kiniga.log")
 
 		await ctx.send(file=discord.File(fp=logs_file, filename="bot.log"))
 

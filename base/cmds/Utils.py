@@ -105,14 +105,13 @@ class Utils(commands.Cog, name='Utilidades'):
         async with aiohttp.ClientSession() as session:
             async with session.get("http://kiniga.com/") as resp:
                 if resp.status == 200:
-                    print("6", flush=True)
+                    
                     soup = BeautifulSoup(await resp.text(), 'lxml')
                     div = soup.find_all('div', attrs={'class':'c-page'}
                     )[3].find('div', attrs={'class': 'item-summary'})
-                    print("7", flush=True)
+                    
                     this_name = div.h3.a.get_text()
                     this_url = div.h3.a['href']
-                    print(f"{this_name}, {this_url}", flush=True)
                     items[str(this_name)] = str(this_url)
                     json.dumps(items)
         log.info(items)
@@ -123,20 +122,19 @@ class Utils(commands.Cog, name='Utilidades'):
 
         if not items or type(items) == str:
             return
-        print([(name, url) for name, url in items.items()], flush=True)
 
         h = [(name, url) for name, url in items.items()]
         titulo, link = h[0]
         novel = None
-        print("1", flush=True)
+        
         async with aiohttp.ClientSession() as session:
             async with session.get(link) as resp:
                 if resp.status == 200:
                     novel = BeautifulSoup(await resp.text(), 'lxml')
 
-        print("2", flush=True)
+        
         if not novel: return
-        print("3", flush=True)
+        
         author = novel.find(
             'div', attrs={'class': 'author-content'}
         ).find_all('a', href=True)[0]  # nome do autor
@@ -198,12 +196,12 @@ class Utils(commands.Cog, name='Utilidades'):
                         ).set_footer(text='Qualquer coisa, marque o Shuichi! :D')
                     
             except Exception as f:
-                print("4", flush=True)
+                
                 log.info(f)
               
             return emb
         except Exception as a:
-            print("5", flush=True)
+            
             
             log.info(a)
             return discord.Embed(
@@ -277,19 +275,21 @@ class Utils(commands.Cog, name='Utilidades'):
                     
                                                           
                     else:
-                        await channel.send(embed=releaseMessage)
+                        await channel.send(content='@everyone',embed=releaseMessage)
 
-                        await user.add_roles(markAuthorRole, autorRole if not markAuthorRole in user.roles else autorRole)
+                        await user.add_roles(
+                            markAuthorRole, autorRole if not markAuthorRole in user.roles else autorRole)
 
                         await user.send(embeds=userMessages)
                         
                         releaseMessage = discord.Embed(
                             title=f"História Publicada!",
-                            color=0x00ff33).set_author(
-                            name="Kiniga Brasil",
-                            url='https://kiniga.com/',
-                            icon_url='https://kiniga.com/wp-content/uploads/fbrfg/favicon-32x32.png'
-                        ).set_footer(text='Qualquer coisa, marque o Shuichi! :D')
+                                color=0x00ff33).set_author(
+                                    name="Kiniga Brasil",
+                                    url='https://kiniga.com/',
+                                    icon_url='https://kiniga.com/wp-content/uploads/fbrfg/favicon-32x32.png'
+                                ).set_footer(
+                                text='Qualquer coisa, marque o Shuichi! :D')
                     
                         ## Fazer um doc de errors para embeds ##
 
@@ -305,9 +305,10 @@ class Utils(commands.Cog, name='Utilidades'):
                     color=discord.Color.blue())
                 await ctx.send(embed=emb, view=view)
                 try:
-                    await user.remove_roles(markAuthorRole, autorRole, creatorRole
-                                            if not markAuthorRole in user.roles
-                                            else autorRole, creatorRole)
+                    await user.remove_roles(
+                        markAuthorRole, autorRole, creatorRole
+                        if not markAuthorRole in user.roles
+                        else autorRole, creatorRole)
                 except Exception as a:
                     await ctx.send(
                         "Não consegui finalizar por conta do seguinte erro: "
