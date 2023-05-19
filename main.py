@@ -14,17 +14,15 @@ intents = discord.Intents().all()
 intents.members = True
 
 class KinigaBot(commands.Bot):
-    def __init__(self ) -> None:
-        intents = discord.Intents.all()
-        atividade = discord.Activity(
-            type=discord.ActivityType.watching,
-            name="Kiniga")
-
+    def __init__(self, **kwargs) -> None:
         super().__init__(
-            intents=intents,
-            command_prefix=commands.when_mentioned_or(cfg.bot_prefix),
-            description='Kiniga Brasil',
-            activity=atividade
+            intents=kwargs.pop("intents"),
+            command_prefix=commands.when_mentioned_or(kwargs.pop("prefix")),
+            description=kwargs.pop("description"),
+            activity=kwargs.pop("activity"),
+            case_insensitive = True,
+            config = kwargs.pop("config", cfg),
+            **kwargs,
         )
         self.last_release = {}
         
@@ -36,6 +34,8 @@ class KinigaBot(commands.Bot):
                     await self.load_extension(f'base.cmds.{filename[:-3]}')
                 except Exception as e:
                     log.error(f'Ocorreu um erro enquanto a cog "{filename}" carregava.\n{e}')
+                else:
+                    log.info(f"Cog {filename[:-3]} carregada.")
 
     async def setup_hook(self) -> None:
         # discord.utils.setup_logging()
@@ -72,7 +72,7 @@ class KinigaBot(commands.Bot):
 
     @tasks.loop(minutes = 5)
     async def feed(self):
-        if cfg.feed_loop == False:
+        if self.config["config"]["feed_loop"] == False:
             return
 
         release = await self.get_release()
@@ -80,14 +80,9 @@ class KinigaBot(commands.Bot):
         if not release or type(release) == str:
             return
         
-        channel = self.get_channel(406996662997745674)
-
-        sys.stdout.write(str(channel))
-        sys.stdout.flush()
-
+        channel = self.get_channel(self.config["config"]["chat_loop"])
         message = [message async for message in channel.history(limit=1) 
                     if message.author == self.user]
-
         msg = None
         for key, value in release.items():
             if not key in release:
@@ -103,14 +98,12 @@ class KinigaBot(commands.Bot):
                 message.reverse()
                 message = message[0].content.split(" | ")
 
-                log.info(message)
                 if len(message) == 3:
                     x, old_key, old_value = message
                 elif len(message) == 2:
                     old_key, old_value = message
 
                 old_key = old_key.strip("**")
-                log.info((old_key + '\n' + old_value))
                 if old_key in release:
                     if release.get(old_key) == old_value:
                         return
@@ -139,17 +132,25 @@ class KinigaBot(commands.Bot):
 
     @feed.before_loop
     async def get_ready(self):
-        sys.stdout.write("Aguardando inicialização...\n")
-        sys.stdout.flush()
+        log.info("Aguardando inicialização...\n")
         await self.wait_until_ready()
-        sys.stdout.write("Inicialização completa.\n")
-        sys.stdout.flush()
+        log.info("Inicialização completa.\n")
 
 async def main() -> None:
-    bot = KinigaBot()
+    config = cfg
+    bot = KinigaBot(
+        config = config,
+        prefix = config["config"]["bot_prefix"], 
+        description = config["config"]["description"], 
+        activity = discord.Activity(
+            type=discord.ActivityType.watching, name="Kiniga"
+        ),
+        intents = discord.Intents.all())
+    bot.config = config
+    bot.log = log
     async with aiohttp.ClientSession() as session, bot:
         bot.session = session
-        await bot.start(cfg.bot_token)
+        await bot.start(bot.config["config"]["bot_token"])
 
 
 async def warn() -> None:

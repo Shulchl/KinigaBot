@@ -1,0 +1,17 @@
+{
+    "bot_token": "************************.******.**************************************",
+    "bot_prefix": ".",
+    "description": "O limite é a sua imaginação.",
+    "guild": "Kiniga Brasil",
+    "chat_cmds": 123456788901234567,
+    "setup": false,
+    "eqp_role": 123456788901234567,
+    "mark_role": 123456788901234567,
+    "aut_role": 123456788901234567,
+    "creat_role": 123456788901234567,
+    "chat_loop": 123456788901234567,
+    "chat_release": 123456788901234567,
+    "feed_loop": false,
+    "chat_creators": 123456788901234567
+
+}

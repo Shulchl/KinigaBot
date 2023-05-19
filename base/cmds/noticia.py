@@ -3,8 +3,6 @@ from discord.ext import commands
 import requests
 from bs4 import BeautifulSoup
 
-from base.struct import Config
-
 class NoPrivateMessages(commands.CheckFailure):
     pass
 
@@ -19,8 +17,7 @@ class Noticia(commands.Cog):
 
     def __init__(self, bot: commands.Bot):
         self.bot = bot
-        with open('config.json', 'r', encoding='utf-8') as f:
-            self.cfg = Config(json.loads(f.read()))
+        self.cfg = self.bot.config["config"]
     
     @guild_only()
     @commands.command(name='aaaa', help='Anuncia o lançamento mais recente ao digitar `.novo` ')
@@ -35,7 +32,7 @@ class Noticia(commands.Cog):
             return await ctx.send(f'Não encontrei ninguém com o nome "{member}".', delete_after=10)
         
         try:
-            await user.add_roles((self.cfg.mark_role, self.cfg.eqp_role) if not (self.cfg.mark_role) in user.roles else (self.cfg.eqp_role))
+            await user.add_roles((self.cfg["mark_role"], self.cfg["eqp_role"]) if not (self.cfg["mark_role"]) in user.roles else (self.cfg["eqp_role"]))
         except Exception as e:
             await ctx.send(f"Ocorreu um erro \n ```{e}```")
         
@@ -59,8 +56,8 @@ class Noticia(commands.Cog):
                             i = novel.find('div', attrs={'class': 'summary_image'}).find_all('img', {'class': 'img-responsive'})[0]  # img novel
                             img = i.get('data-src')
                             channel = discord.utils.get(self.bot.get_all_channels(),
-                                                        guild__name=self.cfg.guild,
-                                                        id=self.cfg.chat_release)
+                                                        guild__name=self.cfg["guild"],
+                                                        id=self.cfg["chat_release"])
                             emb = discord.Embed(title="📢 NOVA OBRA PUBLICADA 📢", url=link,
                                                 color=discord.Color.green())
                             emb = emb.set_author(name=author.get_text(), url=author['href'],

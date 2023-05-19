@@ -11,8 +11,6 @@ from bs4 import BeautifulSoup
 
 from base.views import defaultViewButton
 from base.functions import *
-from base import cfg, log
-
 
 class NoPrivateMessages(commands.CheckFailure):
     pass
@@ -30,7 +28,7 @@ class Utils(commands.Cog, name='Utilidades'):
 
     def __init__(self, bot: commands.Bot):
         self.bot = bot
-        self.cfg = cfg
+        self.cfg = self.bot.config["config"]
 
 
     async def sendEmb(self, user, author):
@@ -90,8 +88,8 @@ class Utils(commands.Cog, name='Utilidades'):
         try:
             channel = discord.utils.get(
                 self.bot.get_all_channels(),
-                guild__name=self.cfg.guild,
-                id=self.cfg.chat_release)
+                guild__name=self.cfg["guild"],
+                id=self.cfg["chat_release"])
             messages = [message async for message in channel.history(limit=1)]
             messages.reverse()
             for i, message in enumerate(messages):
@@ -114,7 +112,6 @@ class Utils(commands.Cog, name='Utilidades'):
                     this_url = div.h3.a['href']
                     items[str(this_name)] = str(this_url)
                     json.dumps(items)
-        log.info(items)
         return items
 
     async def getRelease(self, author):
@@ -178,14 +175,16 @@ class Utils(commands.Cog, name='Utilidades'):
         )
         
         try:
-            oldEmb = await self.checkRelease()
+            if oldEmb := await self.checkRelease():
+                if isinstance(oldEmb, discord.Embed):
+                    oldEmb = oldEmb.to_dict().get('url')
             
             # print("*" * 20)
             # print( oldEmb.get('url') )
             # print("*" * 20)
             # print( emb.to_dict().get('url') )
             try:
-                if emb.to_dict().get('url') == oldEmb.to_dict().get('url'):
+                if emb.to_dict().get('url') == oldEmb:
                     emb = discord.Embed(
                         title="Ops",
                         description="Essa história Já Foi Publicada!",
@@ -197,13 +196,13 @@ class Utils(commands.Cog, name='Utilidades'):
                     
             except Exception as f:
                 
-                log.info(f)
+                self.bot.log.info(f)
               
             return emb
         except Exception as a:
             
             
-            log.info(a)
+            self.bot.log.info(a)
             return discord.Embed(
                 title=f"Erro!",
                 description="\nUm erro ocorreu devido ao seguinte problema: \n\n{}.".format(a),
@@ -234,16 +233,16 @@ class Utils(commands.Cog, name='Utilidades'):
 
         try:
             autorRole = discord.utils.get(ctx.guild.roles,
-                                          id=self.cfg.aut_role)
+                                          id=self.cfg["aut_role"])
             creatorRole = discord.utils.get(ctx.guild.roles,
-                                            id=self.cfg.creat_role)
+                                            id=self.cfg["creat_role"])
             markAuthorRole = discord.utils.get(ctx.guild.roles,
-                                               id=self.cfg.mark_role)
+                                               id=self.cfg["mark_role"])
             eqpRole = discord.utils.get(ctx.guild.roles,
-                                        id=self.cfg.eqp_role)
+                                        id=self.cfg["eqp_role"])
             channel = discord.utils.get(self.bot.get_all_channels(),
-                                        guild__name=self.cfg.guild,
-                                        id=self.cfg.chat_release)
+                                        guild__name=self.cfg["guild"],
+                                        id=self.cfg["chat_release"])
 
             embb = discord.Embed(
                 title='Deseja lançar uma nova história?',
@@ -295,9 +294,9 @@ class Utils(commands.Cog, name='Utilidades'):
 
                 except Exception as u:
                     await ctx.message.author.send(content=u)
-                    log.info(u)
+                    self.bot.log.info(u)
                     return
-                await ctx.send(embed=releaseMessage, view=view)
+                await ctx.reply(embed=releaseMessage, delete_after=15)
                 
             elif view.value == False:
                 emb = discord.Embed(
@@ -313,12 +312,12 @@ class Utils(commands.Cog, name='Utilidades'):
                     await ctx.send(
                         "Não consegui finalizar por conta do seguinte erro: "
                         "\n{} \n\n Marca o Jonathan aí.".format(a))
-                    log.info(a)
+                    self.bot.log.info(a)
                 
         # Fim
         except Exception as e:
             await ctx.message.author.send(f"Ocorreu um erro \n ```{e}``` \n Tente novamente em alguns segundos.")
-            log.info(e)
+            self.bot.log.info(e)
         await ctx.message.delete()
         await msg.delete()
 
