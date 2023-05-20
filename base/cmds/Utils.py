@@ -182,7 +182,7 @@ class Utils(commands.Cog, name='Utilidades'):
             if oldEmb := await self.checkRelease():
                 if isinstance(oldEmb, discord.Embed):
                     oldEmb = oldEmb.to_dict().get('url')
-            
+            self.bot.log.info(f"{oldEmb}")
             # print("*" * 20)
             # print( oldEmb.get('url') )
             # print("*" * 20)
