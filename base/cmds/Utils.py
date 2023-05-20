@@ -17,6 +17,9 @@ from typing import Union
 class NoPrivateMessages(commands.CheckFailure):
     pass
 
+kiniga_headers = {
+        "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36",
+        "Accept": "text/html,application/xhtml+xml,application/xml; q=0.9,image/webp,image/apng,*/*;q=0.8"}
 
 def guild_only():
     async def predicate(ctx):
@@ -101,7 +104,7 @@ class Utils(commands.Cog, name='Utilidades'):
 
     async def get_release_item(self):
         items = {}
-        async with aiohttp.ClientSession() as session:
+        async with aiohttp.ClientSession(headers=kiniga_headers) as session:
             async with session.get("http://kiniga.com/") as resp:
                 if resp.status == 200:
                     

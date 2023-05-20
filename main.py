@@ -14,7 +14,9 @@ from base import log, cfg
 from base.functions import cogs_manager
 from discord.ext import commands, tasks
 
-
+kiniga_headers = {
+        "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36",
+        "Accept": "text/html,application/xhtml+xml,application/xml; q=0.9,image/webp,image/apng,*/*;q=0.8"}
 
 intents = discord.Intents().all()
 intents.members = True
@@ -52,7 +54,7 @@ class KinigaBot(commands.Bot):
 
     async def get_release(self):
         items = {}
-        async with aiohttp.ClientSession() as session:
+        async with aiohttp.ClientSession(headers=kiniga_headers) as session:
             async with session.get("http://kiniga.com/") as resp:
                 if resp.status == 200:
                     soup = BeautifulSoup(await resp.text(), 'lxml')
@@ -150,6 +152,7 @@ async def main() -> None:
         intents = discord.Intents.all())
     bot.config = config
     bot.log = log
+
     async with aiohttp.ClientSession() as session, bot:
         bot.session = session
         await bot.start(bot.config["config"]["bot_token"])
