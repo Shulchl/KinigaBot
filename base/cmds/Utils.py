@@ -30,7 +30,6 @@ class Utils(commands.Cog, name='Utilidades'):
         self.bot = bot
         self.cfg = self.bot.config["config"]
 
-
     async def sendEmb(self, user, author):
         try:
             # to author

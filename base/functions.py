@@ -1,29 +1,30 @@
 import discord
 import asyncio
+import logging
 
 from discord import app_commands
 from discord.ext import commands
 
 from base import log, cfg
 
-from typing import Union
+from typing import Union, List
 
 async def error_delete_after(interaction, error):
-    if  interaction.response.type == discord.InteractionResponseType.channel_message:
-        return await interaction.response.send_message(
-            content="%s você poderá usar este comando de novo." % format_dt(
-                datetime.datetime.now() +
-                datetime.timedelta(seconds=error.retry_after),
-                'R'),
-            delete_after=int(error.retry_after) - 1)
+        if  interaction.response.type == discord.InteractionResponseType.channel_message:
+            return await interaction.response.send_message(
+                content="%s você poderá usar este comando de novo." % format_dt(
+                    datetime.datetime.now() +
+                    datetime.timedelta(seconds=error.retry_after),
+                    'R'),
+                delete_after=int(error.retry_after) - 1)
 
-    elif interaction.response.type == discord.InteractionResponseType.deferred_message_update:
-        return await interaction.followup.send(
-            content="%s você poderá usar este comando de novo." % format_dt(
-                datetime.datetime.now() +
-                datetime.timedelta(seconds=error.retry_after),
-                'R'),
-            delete_after=int(error.retry_after) - 1)
+        elif interaction.response.type == discord.InteractionResponseType.deferred_message_update:
+            return await interaction.followup.send(
+                content="%s você poderá usar este comando de novo." % format_dt(
+                    datetime.datetime.now() +
+                    datetime.timedelta(seconds=error.retry_after),
+                    'R'),
+                delete_after=int(error.retry_after) - 1)
 
 async def report_error(self, error):
     log.exception(error)
@@ -35,7 +36,13 @@ async def report_error(self, error):
 
     await admin.send(embed=embed)
 
-async def cogs_manager(bot: commands.Bot, mode: str, cogs: list[str]) -> None:
+async def send_error_response(self, interaction, msg):
+    if interaction.response.type == discord.InteractionResponseType.channel_message:
+        return await interaction.response.send_message(msg, ephemeral=True)
+    elif interaction.response.type == discord.InteractionResponseType.deferred_message_update:
+        return await interaction.followup.send(msg, ephemeral=True)  
+
+async def cogs_manager(bot: commands.Bot, mode: str, cogs: List[str]) -> None:
     for cog in cogs:
         try:
             if mode == "unload":
@@ -46,7 +53,7 @@ async def cogs_manager(bot: commands.Bot, mode: str, cogs: list[str]) -> None:
                 await bot.reload_extension(cog)
             else:
                 raise ValueError("Invalid mode.")
-            bot.log(f"Cog {cog} {mode}ed.", name="classes.utilities", level=logging.DEBUG)
+            bot.log.info(f"Cog {cog} {mode}ed.")
         except Exception as e:
             raise e
 def bot_has_permissions(**perms: bool):

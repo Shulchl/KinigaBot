@@ -4,11 +4,17 @@ import aiohttp
 import sys
 import asyncio
 import json
+import logging
 
-from discord.ext import commands, tasks
+from os import listdir
+
 from bs4 import BeautifulSoup
 
 from base import log, cfg
+from base.functions import cogs_manager
+from discord.ext import commands, tasks
+
+
 
 intents = discord.Intents().all()
 intents.members = True
@@ -26,22 +32,15 @@ class KinigaBot(commands.Bot):
         )
         self.last_release = {}
         
-
-    async def load_cogs(self) -> None:
-        for filename in os.listdir('./base/cmds'):
-            if filename.endswith('.py'):
-                try:
-                    await self.load_extension(f'base.cmds.{filename[:-3]}')
-                except Exception as e:
-                    log.error(f'Ocorreu um erro enquanto a cog "{filename}" carregava.\n{e}')
-                else:
-                    log.info(f"Cog {filename[:-3]} carregada.")
-
     async def setup_hook(self) -> None:
         # discord.utils.setup_logging()
         log.info(f'Logado como {self.user} (ID: {self.user.id}) usando discord.py {discord.__version__}')
         self.feed.start()
-        await self.load_cogs()
+
+        cogs = [f"base.cmds.{filename[:-3]}" for filename in listdir("./base/cmds") if filename.endswith(".py")]
+        await cogs_manager(self, "load", cogs)
+        log.info(f"Cogs loaded ({len(cogs)}): {', '.join(cogs)}")
+
         # self.tree.copy_global_to(guild=TEST_GUILD)
         # await self.tree.sync(guild=TEST_GUILD)
 
@@ -92,6 +91,9 @@ class KinigaBot(commands.Bot):
                 key, value = [(key, value) for x, z in self.last_release.items()]
 
             if value == self.last_release.get(key):
+                return
+
+            if value.startswith("https://www.kiniga.com/?chapter"):
                 return
 
             if message:

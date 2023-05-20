@@ -1,5 +1,4 @@
 import json
-
 from os import listdir
 from json import load
 from os.path import dirname, abspath, join, basename, splitext
