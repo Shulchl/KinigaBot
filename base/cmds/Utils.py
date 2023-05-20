@@ -220,6 +220,7 @@ class Utils(commands.Cog, name='Utilidades'):
     @commands.has_any_role("Ajudante", "Equipe", "Administrador", "Editores")
     async def release(self, ctx, member: str = None):
         # author = await self.fetch_user(ctx.author.id)
+        await ctx.message.delete()
         if not member:
             await ctx.message.delete()
             return await ctx.send('Você não adicionou um autor.', delete_after=5)
@@ -317,7 +318,6 @@ class Utils(commands.Cog, name='Utilidades'):
         except Exception as e:
             await ctx.message.author.send(f"Ocorreu um erro \n ```{e}``` \n Tente novamente em alguns segundos.")
             self.bot.log.info(e)
-        await ctx.message.delete()
         await msg.delete()
 
 async def setup(bot: commands.Bot) -> None:
