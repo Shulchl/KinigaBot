@@ -222,13 +222,12 @@ class Utils(commands.Cog, name='Utilidades'):
         # author = await self.fetch_user(ctx.author.id)
         await ctx.message.delete()
         if not member:
-            await ctx.message.delete()
             return await ctx.send('Você não adicionou um autor.', delete_after=5)
 
         user = ctx.guild.get_member_named(member)
 
         if not user:
-            await ctx.message.delete()
+            
             return await ctx.send(f'Não encontrei ninguém com o nome "{member}".', delete_after=5)
 
         try:
@@ -268,7 +267,7 @@ class Utils(commands.Cog, name='Utilidades'):
                     userMessages = await self.sendEmb(user=user, author=ctx.message.author)
 
                     if releaseMessage.title == "Ops":
-                        await ctx.message.delete()
+                        
                         await msg.delete()
                         return await ctx.author.send(embed=releaseMessage)
                     
