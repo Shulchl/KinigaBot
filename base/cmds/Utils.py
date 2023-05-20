@@ -12,6 +12,8 @@ from bs4 import BeautifulSoup
 from base.views import defaultViewButton
 from base.functions import *
 
+from typing import Union
+
 class NoPrivateMessages(commands.CheckFailure):
     pass
 
@@ -218,13 +220,25 @@ class Utils(commands.Cog, name='Utilidades'):
             ' __(campo de id do usuário é opcional, caso já seja autor ou autora)__ ')
     @commands.max_concurrency(1, per=BucketType.default, wait=False)
     @commands.has_any_role("Ajudante", "Equipe", "Administrador", "Editores")
-    async def release(self, ctx, member: str = None):
+    async def release(self, ctx, member: Union[discord.Member, str]):
         # author = await self.fetch_user(ctx.author.id)
         await ctx.message.delete()
         if not member:
             return await ctx.send('Você não adicionou um autor.', delete_after=5)
 
-        user = ctx.guild.get_member_named(member)
+        try:
+            if isinstance(member, discord.Member):
+                user = ctx.guild.get_member_named(member)
+            elif isinstance(member, str):
+                raise
+        except:
+            if isinstance(member, discord.Member):
+                user = ctx.guild.get_member(member.id)
+                user = ctx.guild.get_member_named(str(user))
+            elif isinstance(member, str):
+                member = [m.replace('"', '') for m in member]
+                member = ''.join(member)
+                user = ctx.guild.get_member_named(member)
 
         if not user:
             
