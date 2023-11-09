@@ -37,7 +37,7 @@ class KinigaBot(commands.Bot):
     async def setup_hook(self) -> None:
         # discord.utils.setup_logging()
         log.info(f'Logado como {self.user} (ID: {self.user.id}) usando discord.py {discord.__version__}')
-        self.feed.start()
+        #self.feed.start()
 
         cogs = [f"base.cmds.{filename[:-3]}" for filename in listdir("./base/cmds") if filename.endswith(".py")]
         await cogs_manager(self, "load", cogs)
@@ -130,7 +130,7 @@ class KinigaBot(commands.Bot):
         if not msg:
             return
 
-        member = channel.guild.get_member(737086135037329540)
+        member = channel.guild.get_member(741770490598653993)
         
         await channel.send(msg)
 

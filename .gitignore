@@ -11,3 +11,4 @@ module.py
 bot.pydebug.log
 config.json
 kiniga_tests
+dependencies
